@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on ZDoc</title>
+    <link>http://example.org/blog/</link>
+    <description>Recent content in Blog on ZDoc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 19 Jun 2022 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="http://example.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>born</title>
+        <link>http://example.org/blog/fondulac/</link>
+        <pubDate>Sun, 19 Jun 2022 00:00:00 +0000</pubDate>
+        
+        <guid>http://example.org/blog/fondulac/</guid>
+        <description>&lt;p&gt;what does she remember? what has she forgotten? fuzz. lint on tongue. sharp angles. mother&amp;rsquo;s voice, like water on leaves. warmth filling her chest that she just now realized was empty. brushing her hair away from her face and around her ears, so her cheek lay bare against the clean pillow. she would fall asleep. a face, like her own, looking back at her, eyes wide in a silent scream. she couldn&amp;rsquo;t hear anything. red ribbons flowing from her hands as mother ate the little girl&amp;rsquo;s fingers.&lt;/p&gt;</description>
+      </item>
+      
+      <item>
+        <title>Mom</title>
+        <link>http://example.org/blog/content/posts/mom/</link>
+        <pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate>
+        
+        <guid>http://example.org/blog/content/posts/mom/</guid>
+        <description>earlier. we got a message from the others. the reconaissance team. the strike force. the ones who had their shit together. they left. it crippled joyce. she couldn&amp;rsquo;t speak. just solid to flickering activity light. then solid, until she disconnected the power and waited a few months. it was the only thing she could think of to reset her. the time she was off was rough. most of the other half of the crew, that hadn&amp;rsquo;t died, died during this time.</description>
+      </item>
+      
+      <item>
+        <title>Sera</title>
+        <link>http://example.org/blog/content/posts/sera/</link>
+        <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
+        
+        <guid>http://example.org/blog/content/posts/sera/</guid>
+        <description>Sera is a little girl who lives aboard a space station. She is one in a line of clones. Where in the line? She doesn&amp;rsquo;t know. When she was born. A few sleep cycles ago. She decided to keep a journal, so she could remember things more precisely. she thought she had a good memory, but was conflicted that if she didn&amp;rsquo;t remember she had a bad memory it would make the excercise futile.</description>
+      </item>
+      
+      <item>
+        <title>Sera</title>
+        <link>http://example.org/blog/mom/</link>
+        <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
+        
+        <guid>http://example.org/blog/mom/</guid>
+        <description>Is this what we wanted? or is there a picture involved. perhaps a tantrum. I have been here enough times to know when enough is enough
+Are you rough enough for my love?
+no, not that guy</description>
+      </item>
+      
+      <item>
+        <title>Markdown Syntax Guide</title>
+        <link>http://example.org/blog/markdown-syntax/</link>
+        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>http://example.org/blog/markdown-syntax/</guid>
+        <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de&lt;br /&gt;
+pectora summo. Redit teque digerit hominumque toris verebor lumina non cervice&lt;br /&gt;
+subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc&lt;br /&gt;
+caluere tempus&lt;/p&gt;</description>
+      </item>
+      
+      <item>
+        <title>Rich Content</title>
+        <link>http://example.org/blog/rich-content/</link>
+        <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>http://example.org/blog/rich-content/</guid>
+        <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de&lt;br /&gt;
+pectora summo. Redit teque digerit hominumque toris verebor lumina non cervice&lt;br /&gt;
+subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc&lt;br /&gt;
+caluere tempus&lt;/p&gt;</description>
+      </item>
+      
+      <item>
+        <title>Placeholder Text</title>
+        <link>http://example.org/blog/placeholder-text/</link>
+        <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>http://example.org/blog/placeholder-text/</guid>
+        <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de&lt;br /&gt;
+pectora summo. Redit teque digerit hominumque toris verebor lumina non cervice&lt;br /&gt;
+subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc&lt;br /&gt;
+caluere tempus&lt;/p&gt;</description>
+      </item>
+      
+      <item>
+        <title>Emoji Support</title>
+        <link>http://example.org/blog/emoji-support/</link>
+        <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>http://example.org/blog/emoji-support/</guid>
+        <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de&lt;br /&gt;
+pectora summo. Redit teque digerit hominumque toris verebor lumina non cervice&lt;br /&gt;
+subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc&lt;br /&gt;
+caluere tempus&lt;/p&gt;</description>
+      </item>
+      
+    
+  </channel>
+</rss>
