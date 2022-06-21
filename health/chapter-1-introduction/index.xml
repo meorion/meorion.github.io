@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chapter 1: Introduction on meorion</title>
+    <link>https://meorion.github.io/health/chapter-1-introduction/</link>
+    <description>Recent content in Chapter 1: Introduction on meorion</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 28 May 2022 00:34:39 +0900</lastBuildDate>
+    
+        <atom:link href="https://meorion.github.io/health/chapter-1-introduction/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Introduction</title>
+        <link>https://meorion.github.io/health/chapter-1-introduction/intro/</link>
+        <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
+        
+        <guid>https://meorion.github.io/health/chapter-1-introduction/intro/</guid>
+        <description>Introduction</description>
+      </item>
+      
+      <item>
+        <title>Terms Used</title>
+        <link>https://meorion.github.io/health/chapter-1-introduction/terms/</link>
+        <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
+        
+        <guid>https://meorion.github.io/health/chapter-1-introduction/terms/</guid>
+        <description>terms</description>
+      </item>
+      
+    
+  </channel>
+</rss>

@@ -3,138 +3,63 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://meorion.github.io/updates/2019_may/</loc>
-    <lastmod>2020-01-28T00:10:51+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/updates/2019_may/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/updates/2019_may/"
-                />
+    <loc>https://meorion.github.io/health/chapter-1-introduction/</loc>
+    <lastmod>2022-05-28T00:34:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-2-considerations/</loc>
+    <lastmod>2022-05-28T00:34:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-3-research/</loc>
+    <lastmod>2022-05-28T00:34:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-4-technology/</loc>
+    <lastmod>2022-05-28T00:34:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-5-evolutionary/</loc>
+    <lastmod>2022-05-28T00:34:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-6-special/</loc>
+    <lastmod>2022-05-28T00:34:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-7-world/</loc>
+    <lastmod>2022-05-28T00:34:39+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://meorion.github.io/docs/gettingstarted/basicusage/</loc>
     <lastmod>2020-01-28T00:34:51+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/docs/gettingstarted/basicusage/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/docs/gettingstarted/basicusage/"
-                />
   </url>
   
   <url>
-    <loc>https://meorion.github.io/updates/2019_april/</loc>
-    <lastmod>2020-01-28T00:10:48+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/updates/2019_april/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/updates/2019_april/"
-                />
+    <loc>https://meorion.github.io/health/chapter-8-conclusion/</loc>
+    <lastmod>2022-05-28T00:34:39+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://meorion.github.io/docs/gettingstarted/configuration/</loc>
     <lastmod>2020-01-28T00:34:56+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/docs/gettingstarted/configuration/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/docs/gettingstarted/configuration/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/updates/2019_march/</loc>
-    <lastmod>2020-01-28T00:10:42+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/updates/2019_march/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/updates/2019_march/"
-                />
   </url>
   
   <url>
     <loc>https://meorion.github.io/docs/gettingstarted/installation/</loc>
     <lastmod>2020-01-28T00:34:13+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/docs/gettingstarted/installation/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/docs/gettingstarted/installation/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/updates/2019_february/</loc>
-    <lastmod>2020-01-28T00:10:37+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/updates/2019_february/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/updates/2019_february/"
-                />
   </url>
   
   <url>
     <loc>https://meorion.github.io/docs/gettingstarted/quickstart/</loc>
     <lastmod>2020-01-28T00:34:41+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/docs/gettingstarted/quickstart/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/docs/gettingstarted/quickstart/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/updates/2019_january/</loc>
-    <lastmod>2020-01-28T00:10:09+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/updates/2019_january/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/updates/2019_january/"
-                />
   </url>
   
   <url>
@@ -153,6 +78,36 @@
   </url>
   
   <url>
+    <loc>https://meorion.github.io/health/chapter-2-considerations/differences/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-5-evolutionary/biological/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-4-technology/impediments/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-1-introduction/intro/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-8-conclusion/scholarship/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-6-special/special/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://meorion.github.io/docs/depth1/test1/</loc>
     <lastmod>2020-01-30T00:38:25+09:00</lastmod>
   </url>
@@ -168,18 +123,48 @@
   </url>
   
   <url>
+    <loc>https://meorion.github.io/health/chapter-7-world/why/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://meorion.github.io/docs/gettingstarted/</loc>
     <lastmod>2020-01-28T00:34:39+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/docs/gettingstarted/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/docs/gettingstarted/"
-                />
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/references/</loc>
+    <lastmod>2020-01-28T00:10:51+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-5-evolutionary/psychological/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-6-special/disabilities/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-3-research/research/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-2-considerations/solutions/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-1-introduction/terms/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-8-conclusion/action/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
   </url>
   
   <url>
@@ -188,33 +173,158 @@
   </url>
   
   <url>
+    <loc>https://meorion.github.io/health/chapter-7-world/inequities/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://meorion.github.io/docs/contentmanagement/</loc>
     <lastmod>2020-01-28T00:36:39+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/docs/contentmanagement/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/docs/contentmanagement/"
-                />
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-3-research/culture/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-6-special/children/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-8-conclusion/skills/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-5-evolutionary/disorders/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-2-considerations/selection/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-7-world/world/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-3-research/analyses/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-2-considerations/ethics/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-6-special/women/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-5-evolutionary/cross/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-8-conclusion/models/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-3-research/classification/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-5-evolutionary/racism/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-7-world/solutions/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-2-considerations/insights/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-2-considerations/training/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-3-research/in-literature/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-3-research/misuse/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-8-conclusion/contributions/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-6-special/aging/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-2-considerations/skills/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-6-special/rural/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-6-special/middle-class/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-6-special/goals/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-4-technology/development/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-2-considerations/dynamics/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/chapter-8-conclusion/perspective/</loc>
+    <lastmod>2020-01-30T00:38:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/health/document-index/</loc>
+    <lastmod>2020-01-28T00:10:51+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://meorion.github.io/blog/</loc>
     <lastmod>2022-06-19T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/blog/"
-                />
   </url>
   
   <url>
@@ -248,348 +358,83 @@
   </url>
   
   <url>
-    <loc>https://meorion.github.io/blog/content/posts/mom/</loc>
+    <loc>https://meorion.github.io/blog/mom/</loc>
     <lastmod>2022-05-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://meorion.github.io/blog/content/posts/sera/</loc>
+    <loc>https://meorion.github.io/blog/sera/</loc>
     <lastmod>2022-05-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://meorion.github.io/blog/mom/</loc>
-    <lastmod>2022-05-15T00:00:00+00:00</lastmod>
+    <loc>https://meorion.github.io/docs/contentfortmats/</loc>
+    <lastmod>2022-01-28T00:38:51+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://meorion.github.io/docs/relatedcontent/</loc>
     <lastmod>2020-01-28T00:39:09+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/docs/relatedcontent/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/docs/relatedcontent/"
-                />
   </url>
   
   <url>
     <loc>https://meorion.github.io/docs/pageresources/</loc>
     <lastmod>2020-01-28T00:39:06+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/docs/pageresources/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/docs/pageresources/"
-                />
   </url>
   
   <url>
     <loc>https://meorion.github.io/docs/pagebundles/</loc>
     <lastmod>2020-01-28T00:38:59+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/docs/pagebundles/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/docs/pagebundles/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/docs/contentfortmats/</loc>
-    <lastmod>2020-01-28T00:38:51+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/docs/contentfortmats/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/docs/contentfortmats/"
-                />
   </url>
   
   <url>
     <loc>https://meorion.github.io/docs/imageprocessing/</loc>
     <lastmod>2020-01-28T00:38:48+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/docs/imageprocessing/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/docs/imageprocessing/"
-                />
   </url>
   
   <url>
     <loc>https://meorion.github.io/docs/contentmanagement/shortcodes/</loc>
     <lastmod>2020-01-28T00:36:19+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/docs/contentmanagement/shortcodes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/docs/contentmanagement/shortcodes/"
-                />
   </url>
   
   <url>
     <loc>https://meorion.github.io/docs/contentmanagement/frontmatter/</loc>
     <lastmod>2020-01-28T00:36:14+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/docs/contentmanagement/frontmatter/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/docs/contentmanagement/frontmatter/"
-                />
   </url>
   
   <url>
-    <loc>https://meorion.github.io/updates/</loc>
+    <loc>https://meorion.github.io/health/</loc>
     <lastmod>2020-01-28T00:08:29+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/updates/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/updates/"
-                />
   </url>
   
   <url>
     <loc>https://meorion.github.io/docs/</loc>
     <lastmod>2020-01-11T14:09:21+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/docs/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/docs/"
-                />
   </url>
   
   <url>
     <loc>https://meorion.github.io/tags/css/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/tags/css/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/tags/css/"
-                />
   </url>
   
   <url>
     <loc>https://meorion.github.io/tags/html/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/tags/html/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/tags/html/"
-                />
   </url>
   
   <url>
     <loc>https://meorion.github.io/tags/markdown/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/tags/markdown/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/tags/markdown/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/blog/markdown-syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/blog/markdown-syntax/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/blog/markdown-syntax/"
-                />
   </url>
   
   <url>
     <loc>https://meorion.github.io/docs/contentmanagement/sections/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/docs/contentmanagement/sections/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/docs/contentmanagement/sections/"
-                />
   </url>
   
   <url>
     <loc>https://meorion.github.io/tags/themes/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/tags/themes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/tags/themes/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/tags/privacy/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/tags/privacy/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/tags/privacy/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/blog/rich-content/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/blog/rich-content/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/blog/rich-content/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/tags/shortcodes/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/tags/shortcodes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/tags/shortcodes/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/blog/placeholder-text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/blog/placeholder-text/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/blog/placeholder-text/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/tags/text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/tags/text/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/tags/text/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/tags/emoji/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/tags/emoji/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/tags/emoji/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/blog/emoji-support/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://meorion.github.io/ko/blog/emoji-support/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://meorion.github.io/blog/emoji-support/"
-                />
   </url>
   
 </urlset>
