@@ -6,13 +6,26 @@
     <description>Recent content in Blog on meorion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 19 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <copyright>Orion Illovsky&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 24 Jun 2022 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://meorion.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>images within without orders</title>
+        <link>https://meorion.github.io/blog/racoon/</link>
+        <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://meorion.github.io/blog/racoon/</guid>
+        <description>tree top. our backyard in macomb. 
+ Figure 1: despite our best efforts
+  same racoon image with photo tools and effects 
+ Figure 2: star trek planet
+  H3 h4 </description>
+      </item>
       
       <item>
         <title>born</title>
@@ -39,6 +52,68 @@
         
         <guid>https://meorion.github.io/blog/sera/</guid>
         <description>Sera is a little girl who lives aboard a space station. She is one in a line of clones. Where in the line? She doesn&amp;rsquo;t know. When she was born. A few sleep cycles ago. She decided to keep a journal, so she could remember things more precisely. she thought she had a good memory, but was conflicted that if she didn&amp;rsquo;t remember she had a bad memory it would make the excercise futile.</description>
+      </item>
+      
+      <item>
+        <title>author at subtree level</title>
+        <link>https://meorion.github.io/blog/myothername/</link>
+        <pubDate>Tue, 22 Mar 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://meorion.github.io/blog/myothername/</guid>
+        <description>start
+   1 2     3 4    you can only choose four
+click
+
+ Figure 1: click me.
+  i am norgus</description>
+      </item>
+      
+      <item>
+        <title>author at file header</title>
+        <link>https://meorion.github.io/blog/myname/</link>
+        <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://meorion.github.io/blog/myname/</guid>
+        <description>headings and the like my name
+&amp;lt;br&amp;gt;
+hah
+no
+implied
+click
+
+ Figure 1: Don&amp;rsquo;t click this image &amp;ndash; It&amp;rsquo;s not a hyperlink
+  thanks for not</description>
+      </item>
+      
+      <item>
+        <title>Post 1</title>
+        <link>https://meorion.github.io/blog/post-1/</link>
+        <pubDate>Wed, 12 Jul 2017 17:31:56 -0400</pubDate>
+        
+        <guid>https://meorion.github.io/blog/post-1/</guid>
+        <description>Export this first post only by bringing point here and doing M-x org-hugo-export-wim-to-md.</description>
+      </item>
+      
+      <item>
+        <title>subtree heading is the hugo front-matter title</title>
+        <link>https://meorion.github.io/blog/makeuniqueeachtime/</link>
+        <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+        
+        <guid>https://meorion.github.io/blog/makeuniqueeachtime/</guid>
+        <description>EXPORT_DATE is the date that appears on the page
+heading NOT set to TODO, will set draft = false (i.e. set an item to TODO to mark it as a draft)
+can use:
+EXPORT_HUGO_WEIGHT (between colons)
+getting this information from https://ox-hugo.scripter.co/doc/org-meta-data-to-hugo-front-matter/</description>
+      </item>
+      
+      <item>
+        <title>My first post</title>
+        <link>https://meorion.github.io/blog/my-first-post/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://meorion.github.io/blog/my-first-post/</guid>
+        <description>This is my post body</description>
       </item>
       
     

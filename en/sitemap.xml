@@ -329,7 +329,17 @@
   
   <url>
     <loc>https://meorion.github.io/blog/</loc>
-    <lastmod>2022-06-19T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/blog/racoon/</loc>
+    <lastmod>2022-06-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/realtalk/</loc>
+    <lastmod>2022-06-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -370,6 +380,21 @@
   <url>
     <loc>https://meorion.github.io/blog/sera/</loc>
     <lastmod>2022-05-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/blog/myothername/</loc>
+    <lastmod>2022-03-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/example/</loc>
+    <lastmod>2022-03-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/blog/myname/</loc>
+    <lastmod>2022-02-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -435,6 +460,24 @@
   <url>
     <loc>https://meorion.github.io/tags/themes/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/blog/post-1/</loc>
+    <lastmod>2017-07-12T17:31:56-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/blog/makeuniqueeachtime/</loc>
+    <lastmod>2017-06-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/blog/my-first-post/</loc>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/tag1/</loc>
   </url>
   
 </urlset>

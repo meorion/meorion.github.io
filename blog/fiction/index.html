@@ -1,0 +1,3221 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>i am nose – meorion</title>
+    
+
+
+  
+  <script defer src="/js/fuse.min.94c78ad70b02749822921660cf4e9f0b3701bc0680c421afb784a78228de0275.js"></script>
+
+
+
+<script src="/js/enquire.min.dfb99dee1e029d51d6cfb672d847929890b1585402de17f5ed092edd72a688b4.js"></script>
+
+<script defer src="/js/lazysizes.min.31dd6a2d3a1ec0f78a8df007535cf23f03aeb5c70f026e6d6a19dac3b3acc340.js"></script>
+
+<script defer src="/js/helper/getParents.min.cd44056d552c69703dced61ae60f99166a0ddf44be93d6aa5d5127d98bf98984.js"></script>
+
+<script defer src="/js/helper/fadeinout.min.58d290b487a552ce9c144bf938c2758c4a3afbc4f17d70d11771c9e3c61fe3d0.js"></script>
+
+<script>
+  "use strict";
+
+  window.onload = function() {
+    
+    var languagedir = JSON.parse("\"ltr\"");
+    
+    var baseurl = JSON.parse("\"https://meorion.github.io\"");
+    
+    var permalink = JSON.parse("\"https://meorion.github.io/blog/fiction/\"");
+
+    
+    var toggleSidebarElem = document.getElementById("toggle-sidebar");
+    var toggleMenuElem = document.getElementById("toggle-menu");
+    var tocBodyElem = document.querySelector('.toc__body');
+    var tocLabelElem = document.querySelector('.toc__label');
+    var listMainElem = document.getElementById('list-main');
+    var listSideElem = document.getElementById('list-side');
+    var singleMenuElem = document.getElementById('single-menu');
+    var sliderIcons = document.querySelectorAll('.slider__icon');
+
+    toggleSidebarElem ?
+      toggleSidebarElem.addEventListener('change', function (e) {
+        if (e.target.checked) {
+          if (tocBodyElem) {
+            fadeIn(tocBodyElem, 200);
+          }
+          if (tocLabelElem) {
+            fadeIn(tocLabelElem, 200);
+          }
+          if (listMainElem && listSideElem) {
+            listMainElem.className = 'm';
+            listSideElem.className = 'r';
+          }
+
+          sliderIcons && sliderIcons.forEach(function (elem) {
+            if (elem.classList.contains('hide')) {
+              elem.classList.remove('hide');
+            } else {
+              elem.classList.add('hide');
+            }
+          });
+
+        } else {
+          if (tocBodyElem) {
+            fadeOut(tocBodyElem, 200);
+          }
+          if (tocLabelElem) {
+            fadeOut(tocLabelElem, 200);
+          }
+          if (listMainElem && listSideElem) {
+            listMainElem.className = 'mr';
+            listSideElem.className = 'hide';
+          }
+
+          sliderIcons && sliderIcons.forEach(function (elem) {
+            if (elem.classList.contains('hide')) {
+              elem.classList.remove('hide');
+            } else {
+              elem.classList.add('hide');
+            }
+          });
+        }
+      }) : null;
+
+    toggleMenuElem ?
+      toggleMenuElem.addEventListener('change', function (e) {
+        if (e.target.checked) {
+          if (listMainElem && singleMenuElem) {
+            listMainElem.className = 'm';
+            singleMenuElem.className = 'l';
+          }
+
+          sliderIcons && sliderIcons.forEach(function (elem) {
+            if (elem.classList.contains('hide')) {
+              elem.classList.remove('hide');
+            } else {
+              elem.classList.add('hide');
+            }
+          });
+
+        } else {
+          if (listMainElem && singleMenuElem) {
+            listMainElem.className = 'lm';
+            singleMenuElem.className = 'hide';
+          }
+
+          sliderIcons && sliderIcons.forEach(function (elem) {
+            if (elem.classList.contains('hide')) {
+              elem.classList.remove('hide');
+            } else {
+              elem.classList.add('hide');
+            }
+          });
+        }
+      }) : null;
+    
+
+
+    
+    var navCollapseBtn = document.getElementById('navCollapseBtn');
+    navCollapseBtn ? navCollapseBtn.addEventListener('click', function(e) {
+      var navCollapse = document.querySelector('.navbar__collapse');
+      
+      if (navCollapse) {
+        var dataOpen = navCollapse.getAttribute('data-open');
+
+        if (dataOpen === 'true') {
+          navCollapse.setAttribute('data-open', 'false');
+          navCollapse.style.maxHeight = 0;
+        } else {
+          navCollapse.setAttribute('data-open', 'true');
+          navCollapse.style.maxHeight = navCollapse.scrollHeight + "px";
+        }
+      }
+    }) : null;
+    
+
+
+    
+    var expandBtn = document.querySelectorAll('.expand__button');
+
+    for (let i = 0; i < expandBtn.length; i++) {
+      expandBtn[i].addEventListener("click", function () {
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+          this.querySelector('svg').classList.add('expand-icon__right');
+          this.querySelector('svg').classList.remove('expand-icon__down');
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+          this.querySelector('svg').classList.remove('expand-icon__right');
+          this.querySelector('svg').classList.add('expand-icon__down');
+        }
+      });
+    }
+    
+
+
+
+    
+    document.querySelectorAll('.tab') ? 
+    document.querySelectorAll('.tab').forEach(function(elem, idx) {
+      var containerId = elem.getAttribute('id');
+      var containerElem = elem;
+      var tabLinks = elem.querySelectorAll('.tab__link');
+      var tabContents = elem.querySelectorAll('.tab__content');
+      var ids = [];
+
+      tabLinks && tabLinks.length > 0 ?
+      tabLinks.forEach(function(link, index, self) {
+        link.onclick = function(e) {
+          for (var i = 0; i < self.length; i++) {
+            if (index === parseInt(i, 10)) {
+              if (!self[i].classList.contains('active')) {
+                self[i].classList.add('active');
+                tabContents[i].style.display = 'block';
+              }
+            } else {
+              self[i].classList.remove('active');
+              tabContents[i].style.display = 'none';
+            }
+          }
+        }
+      }) : null;
+    }) : null;
+    
+
+
+    
+    document.querySelectorAll('.codetab') ? 
+    document.querySelectorAll('.codetab').forEach(function(elem, idx) {
+      var containerId = elem.getAttribute('id');
+      var containerElem = elem;
+      var codetabLinks = elem.querySelectorAll('.codetab__link');
+      var codetabContents = elem.querySelectorAll('.codetab__content');
+      var ids = [];
+
+      codetabLinks && codetabLinks.length > 0 ?
+      codetabLinks.forEach(function(link, index, self) {
+        link.onclick = function(e) {
+          for (var i = 0; i < self.length; i++) {
+            if (index === parseInt(i, 10)) {
+              if (!self[i].classList.contains('active')) {
+                self[i].classList.add('active');
+                codetabContents[i].style.display = 'block';
+              }
+            } else {
+              self[i].classList.remove('active');
+              codetabContents[i].style.display = 'none';
+            }
+          }
+        }
+      }) : null;
+    }) : null;
+    
+
+    
+    
+    
+    var enableDarkMode = JSON.parse("true");
+    var root = document.getElementById('root');
+    var toggleToLightBtn = document.getElementById('toggleToLight');
+    var toggleToDarkBtn = document.getElementById('toggleToDark');
+
+    if (!enableDarkMode) {
+      root.className = 'theme__light';
+      localStorage.setItem('theme', 'light');
+    }
+    
+    if (toggleToDarkBtn) {
+      toggleToDarkBtn.onclick = function (e) {
+        root.className = 'theme__dark';
+        localStorage.setItem('theme', 'dark');
+        toggleToLightBtn.className = 'navbar__icons--icon';
+        toggleToDarkBtn.className = 'hide';
+      }
+    }
+
+    if (toggleToLightBtn) {
+      toggleToLightBtn.onclick = function (e) {
+        root.className = 'theme__light';
+        localStorage.setItem('theme', 'light');
+        toggleToLightBtn.className = 'hide';
+        toggleToDarkBtn.className = 'navbar__icons--icon';
+      }
+    }
+
+    
+    document.querySelectorAll('.menu__list').forEach(function(elem) {
+      if (elem.classList.contains('active')) {
+        elem.style.maxHeight = elem.scrollHeight + "px"; 
+      }
+    });
+    
+    document.querySelectorAll('.menu__title--collapse').forEach(function(elem) {
+      elem.addEventListener('click', function (e) {
+        var content = this.nextElementSibling;
+        var menuTitleIcon = this.querySelector('.menu__title--icon');
+        if (!content) {
+          return null;
+        }
+
+        var parent = elem.parentNode;
+        while (parent.classList.contains('menu__list') && parent.classList.contains('active')) {
+          parent.style.maxHeight = 100 * parent.children.length + "px";
+          parent = parent.parentNode;
+        }
+
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+          content.classList.remove('active');
+          menuTitleIcon.classList.add('right');
+          
+          if (languagedir === 'rtl') {
+            menuTitleIcon.classList.remove('downrtl');
+          } else {
+            menuTitleIcon.classList.remove('down');
+          }
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+          content.classList.add('active');
+          menuTitleIcon.classList.remove('right');
+          
+          if (languagedir === 'rtl') {
+            menuTitleIcon.classList.add('downrtl');
+          } else {
+            menuTitleIcon.classList.add('down');
+          }
+        }
+      });
+    });
+    
+
+
+    
+    var mobileLogo = document.getElementById('mobileLogo');
+    var modal = document.getElementById("myModal");
+    var drawer = document.getElementById('myDrawer');
+    var drawerCloseBtn = document.querySelector('.drawer__close');
+
+    var openDrawer = function() {
+      modal.style.opacity = 1;
+
+      if (languagedir === 'rtl') {
+        modal.style.right = 0;
+        drawer.style.right = 0;
+      } else {
+        modal.style.left = 0;
+        drawer.style.left = 0;
+      }
+    }
+
+    var closeDrawer = function() {
+      modal.style.opacity = 0;
+
+      if (languagedir === 'rtl') {
+        drawer.style.right = '-100%';
+      } else {
+        drawer.style.left = '-100%';
+      }
+
+      
+      setTimeout(function () {
+        if (languagedir === 'rtl') {
+          modal.style.right = '-100%';
+        } else {
+          modal.style.left = '-100%';
+        }
+      }, 250);
+    }
+
+    mobileLogo.onclick = function () {
+      openDrawer();
+      localStorage.setItem('isDrawerOpen', 'true');
+    }
+
+    modal.onclick = function () {
+      closeDrawer();
+      localStorage.setItem('isDrawerOpen', 'false');
+    }
+
+    drawerCloseBtn.onclick = function () {
+      closeDrawer();
+      localStorage.setItem('isDrawerOpen', 'false');
+    }
+  
+
+
+  
+    var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    var tocElem = document.querySelector('.toc');
+    var tableOfContentsElem = tocElem ? tocElem.querySelector('#TableOfContents') : null;
+    var singleContentsElem = document.querySelector('.single__contents');
+    var dataBGImgs = document.querySelectorAll('div[data-bgimg]');
+
+    
+    var tocLevels = JSON.parse("[\"h2\",\"h3\",\"h4\"]");
+
+    if (tocLevels) {
+      tocLevels = tocLevels.toString();
+    } else {
+      tocLevels = "h1, h2, h3, h4, h5, h6";
+    }
+
+    
+    var isLandingBgImg = JSON.parse("null");
+    
+    var isHome = JSON.parse("false");
+
+    function setNavbarBG(scrollTop) {
+      if (isHome && isLandingBgImg && Object.keys(isLandingBgImg).length) {
+        if (isLandingBgImg.height <= scrollTop) {
+          dataBGImgs.forEach(function(elem) {
+            elem.setAttribute('data-bgimg', 'false');
+          });
+        } else {
+          dataBGImgs.forEach(function (elem) {
+            elem.setAttribute('data-bgimg', 'true');
+          });
+        }
+      }
+    }
+    setNavbarBG(lastScrollTop);
+
+    window.onscroll = function () {
+      var st = window.pageYOffset || document.documentElement.scrollTop;
+      if (st > lastScrollTop) { 
+        singleContentsElem ? 
+        singleContentsElem.querySelectorAll(tocLevels.toString()).forEach(function(elem) {
+          if (document.documentElement.scrollTop >= elem.offsetTop) {
+            if (tableOfContentsElem) {
+              var id = elem.getAttribute('id');
+              tocElem.querySelectorAll('a').forEach(function (elem) {
+                elem.classList.remove('active');
+              });
+              tocElem.querySelector('a[href="#' + id + '"]') ? 
+              tocElem.querySelector('a[href="#' + id + '"]').classList.add('active') : null;
+            }
+          }
+        }) : null;
+        setNavbarBG(st);
+      } else { 
+        singleContentsElem ? 
+        singleContentsElem.querySelectorAll(tocLevels.toString()).forEach(function(elem) {
+          if (document.documentElement.scrollTop >= elem.offsetTop) {
+            if (tableOfContentsElem) {
+              var id = elem.getAttribute('id');
+              tocElem.querySelectorAll('a').forEach(function (elem) {
+                elem.classList.remove('active');
+              });
+              tocElem.querySelector('a[href="#' + id + '"]') ? 
+              tocElem.querySelector('a[href="#' + id + '"]').classList.add('active') : null;
+            }
+          }
+        }) : null;
+        setNavbarBG(st);
+      }
+      lastScrollTop = st <= 0 ? 0 : st;
+    };
+    
+
+
+
+    
+    var mobileSearchInputElem = document.querySelector('#search-mobile');
+    var mobileSearchClassElem = document.querySelector('.mobile-search');
+    var mobileSearchBtnElem = document.querySelector('#mobileSearchBtn');
+    var mobileSearchCloseBtnElem = document.querySelector('#search-mobile-close');
+    var mobileSearchContainer = document.querySelector('#search-mobile-container');
+    var mobileSearchResultsElem = document.querySelector('#search-mobile-results');
+    var htmlElem = document.querySelector('html');
+
+    if (mobileSearchClassElem) {
+      mobileSearchClassElem.style.display = 'none';
+    }
+
+    mobileSearchBtnElem ? 
+    mobileSearchBtnElem.addEventListener('click', function () {
+      if (mobileSearchContainer) {
+        mobileSearchContainer.style.display = 'block';
+      }
+
+      if (mobileSearchInputElem) {
+        mobileSearchInputElem.focus();
+      }
+
+      if (htmlElem) {
+        htmlElem.style.overflowY = 'hidden';
+      }
+    }) : null;
+
+    mobileSearchCloseBtnElem ? 
+    mobileSearchCloseBtnElem.addEventListener('click', function() {
+      if (mobileSearchContainer) {
+        mobileSearchContainer.style.display = 'none';
+      }
+
+      if (mobileSearchInputElem) {
+        mobileSearchInputElem.value = '';
+      }
+      
+      if (mobileSearchResultsElem) {
+        while (mobileSearchResultsElem.firstChild) {
+          mobileSearchResultsElem.removeChild(mobileSearchResultsElem.firstChild);
+        }
+      }
+
+      if (htmlElem) {
+        htmlElem.style.overflowY = 'visible';
+      }
+    }) : null;
+
+    mobileSearchInputElem ? 
+    mobileSearchInputElem.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        if (mobileSearchContainer) {
+          mobileSearchContainer.style.display = 'none';
+        }
+        
+        if (mobileSearchInputElem) {
+          mobileSearchInputElem.value = '';
+        }
+
+        if (mobileSearchResultsElem) {
+          while (mobileSearchResultsElem.firstChild) {
+            mobileSearchResultsElem.removeChild(mobileSearchResultsElem.firstChild);
+          }
+        }
+        if (htmlElem) {
+          htmlElem.style.overflowY = 'visible';
+        }
+      }
+    }) : null;
+  
+
+
+  
+    var localTheme = localStorage.getItem('theme');
+    var rootEleme = document.getElementById('root');
+    var selectThemeElem = document.querySelectorAll('.select-theme');
+    var selectThemeItemElem = document.querySelectorAll('.select-theme__item');
+    
+    if (localTheme) {
+      selectThemeItemElem ? 
+      selectThemeItemElem.forEach(function (elem) {
+        if (elem.text.trim() === localTheme) {
+          elem.classList.add('is-active');
+        } else {
+          elem.classList.remove('is-active');
+        }
+      }) : null;
+    }
+
+    selectThemeItemElem ? 
+    selectThemeItemElem.forEach(function (v, i) {
+      v.addEventListener('click', function (e) {
+        var selectedThemeVariant = e.target.text.trim();
+        localStorage.setItem('theme', selectedThemeVariant);
+
+        rootEleme.removeAttribute('class');
+        rootEleme.classList.add(`theme__${selectedThemeVariant}`);
+        selectThemeElem.forEach(function(rootElem) {
+          rootElem.querySelectorAll('a').forEach(function (elem) {
+            if (elem.classList) {
+              if (elem.text.trim() === selectedThemeVariant) {
+                if (!elem.classList.contains('is-active')) {
+                  elem.classList.add('is-active');
+                }
+              } else {
+                if (elem.classList.contains('is-active')) {
+                  elem.classList.remove('is-active');
+                }
+              }
+            }
+          });
+        });
+
+        if (window.mermaid) {
+          if (selectedThemeVariant === "dark" || selectedThemeVariant === "hacker") {
+            mermaid.initialize({ theme: 'dark' });
+            location.reload();
+          } else {
+            mermaid.initialize({ theme: 'default' });
+            location.reload();
+          }
+        }
+
+        var utterances = document.querySelector('iframe');
+        if (utterances) {
+          utterances.contentWindow.postMessage({
+            type: 'set-theme',
+            theme: selectedThemeVariant === "dark" || selectedThemeVariant === "hacker" ? 'photon-dark' : selectedThemeVariant === 'kimbie' ? 'github-dark-orange' : 'github-light',
+          }, 'https://utteranc.es');
+        }
+      });
+    }) : null;
+  
+
+
+  
+    
+    var langprefix = JSON.parse("\"\"");
+    var searchResults = null;
+    var searchMenu = null;
+    var searchText = null;
+    
+    
+    var enableSearchHighlight = JSON.parse("true");
+    
+    var enableSearch = JSON.parse("true");
+
+    var fuse = null;
+
+    if (enableSearch) {
+      (function initFuse() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', baseurl + langprefix + "/index.json");
+        xhr.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
+        xhr.onload = function () {
+          if (xhr.status === 200) {
+            fuse = new Fuse(JSON.parse(xhr.response.toString('utf-8')), {
+              keys: ['title', 'description', 'content'],
+              includeMatches: enableSearchHighlight,
+              shouldSort: true,
+              threshold: 0.4,
+              location: 0,
+              distance: 100,
+              maxPatternLength: 32,
+              minMatchCharLength: 1,
+            });
+          }
+          else {
+            console.error(`[${xhr.status}]Error:`, xhr.statusText);
+          }
+        };
+        xhr.send();
+      })();
+    }
+    
+    function makeLi(ulElem, obj) {
+      var li = document.createElement('li');
+      li.className = 'search-result__item';
+      
+      var a = document.createElement('a');
+      a.innerHTML = obj.title;
+      a.setAttribute('class', 'search-result__item--title');
+      a.setAttribute('href', obj.permalink);
+
+      var descDiv = document.createElement('div');
+      descDiv.setAttribute('class', 'search-result__item--desc');
+      if (obj.description) {
+        descDiv.innerHTML = obj.description;
+      } else if (obj.content) {
+        descDiv.innerHTML = obj.content.substring(0, 80);
+      }
+      
+      li.appendChild(a);
+      li.appendChild(descDiv);
+      ulElem.appendChild(li);
+    }
+
+    function makeHighlightLi(ulElem, obj) {
+      var li = document.createElement('li');
+      li.className = 'search-result__item';
+      var descDiv = null;
+
+      var a = document.createElement('a');
+      a.innerHTML = obj.item.title;
+      a.setAttribute('class', 'search-result__item--title');
+      a.setAttribute('href', obj.item.uri);
+
+      if (obj.matches && obj.matches.length) {
+        for (var i = 0; i < obj.matches.length; i++) {
+          if ('title' === obj.matches[i].key) {
+            a = document.createElement('a');
+            a.innerHTML = generateHighlightedText(obj.matches[i].value, obj.matches[i].indices);
+            a.setAttribute('class', 'search-result__item--title');
+            a.setAttribute('href', obj.item.uri);
+          }
+          
+          if ('description' === obj.matches[i].key) {
+            descDiv = document.createElement('div');
+            descDiv.setAttribute('class', 'search-result__item--desc');
+            descDiv.innerHTML = generateHighlightedText(obj.item.description, obj.matches[i].indices);
+          } else if ('content' === obj.matches[i].key) {
+            if (!descDiv) {
+              descDiv = document.createElement('div');
+              descDiv.setAttribute('class', 'search-result__item--desc');
+              descDiv.innerHTML = generateHighlightedText(obj.item.content.substring(0, 80), obj.matches[i].indices);
+            }
+          } else {
+            if (obj.item.description) {
+              descDiv = document.createElement('div');
+              descDiv.setAttribute('class', 'search-result__item--desc');
+              descDiv.innerHTML = obj.item.description;
+            } else {
+              descDiv = document.createElement('div');
+              descDiv.setAttribute('class', 'search-result__item--desc');
+              descDiv.innerHTML = obj.item.content.substring(0, 80);
+            }
+          }
+        }
+
+        li.appendChild(a);
+        if (descDiv) {
+          li.appendChild(descDiv);
+        }
+        if (li) {
+          ulElem.appendChild(li);
+        }
+      }
+    }
+
+    function renderSearchResults(searchText, results) {
+      searchResults = document.getElementById('search-results');
+      searchMenu = document.getElementById('search-menu');
+      searchResults.setAttribute('class', 'dd is-active');
+      
+      var ul = document.createElement('ul');
+      ul.setAttribute('class', 'dd-content search-content');
+
+      if (results.length) {
+        results.forEach(function (result) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          a.setAttribute('href', result.uri);
+          a.setAttribute('class', 'dd-item');
+          a.appendChild(li);
+
+          var titleDiv = document.createElement('div');
+          titleDiv.innerHTML = result.title;
+          titleDiv.setAttribute('class', 'search-result__item--title');
+
+          var descDiv = document.createElement('div');
+          descDiv.setAttribute('class', 'search-result__item--desc');
+          if (result.description) {
+            descDiv.innerHTML = result.description;
+          } else if (result.content) {
+            descDiv.innerHTML = result.content.substring(0, 80);
+          }
+
+          li.appendChild(titleDiv);
+          li.appendChild(descDiv);
+          ul.appendChild(a);
+        });
+      } else {
+        var li = document.createElement('li');
+        li.setAttribute('class', 'dd-item');
+        li.innerText = 'No results found';
+        ul.appendChild(li);
+      }
+
+      while (searchMenu.hasChildNodes()) {
+        searchMenu.removeChild(
+          searchMenu.lastChild
+        );
+      }
+      
+      searchMenu.appendChild(ul);
+    }
+
+    function renderSearchHighlightResults(searchText, results) {
+      searchResults = document.getElementById('search-results');
+      searchMenu = document.getElementById('search-menu');
+      searchResults.setAttribute('class', 'dd is-active');
+
+      var ul = document.createElement('ul');
+      ul.setAttribute('class', 'dd-content search-content');
+
+      if (results.length) {
+        results.forEach(function (result) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          var descDiv = null;
+
+          a.setAttribute('href', result.item.uri);
+          a.setAttribute('class', 'dd-item');
+          a.appendChild(li);
+
+          var titleDiv = document.createElement('div');
+          titleDiv.innerHTML = result.item.title;
+          titleDiv.setAttribute('class', 'search-result__item--title');
+          
+          if (result.matches && result.matches.length) {
+            for (var i = 0; i < result.matches.length; i++) {
+              if ('title' === result.matches[i].key) {
+                titleDiv.innerHTML = generateHighlightedText(result.matches[i].value, result.matches[i].indices);
+              }
+
+              if ('description' === result.matches[i].key) {
+                descDiv = document.createElement('div');
+                descDiv.setAttribute('class', 'search-result__item--desc');
+                descDiv.innerHTML = generateHighlightedText(result.item.description, result.matches[i].indices);
+              } else if ('content' === result.matches[i].key) {
+                if (!descDiv) {
+                  descDiv = document.createElement('div');
+                  descDiv.setAttribute('class', 'search-result__item--desc');
+                  descDiv.innerHTML = generateHighlightedText(result.item.content.substring(0, 80), result.matches[i].indices);
+                }
+              } else {
+                if (result.item.description) {
+                  descDiv = document.createElement('div');
+                  descDiv.setAttribute('class', 'search-result__item--desc');
+                  descDiv.innerHTML = result.item.description;
+                } else {
+                  descDiv = document.createElement('div');
+                  descDiv.setAttribute('class', 'search-result__item--desc');
+                  descDiv.innerHTML = result.item.content.substring(0, 80);
+                }
+              }
+            }
+            
+            li.appendChild(titleDiv);
+            if (descDiv) {
+              li.appendChild(descDiv);
+            }
+            ul.appendChild(a);
+          }
+        });
+      } else {
+        var li = document.createElement('li');
+        li.setAttribute('class', 'dd-item');
+        li.innerText = 'No results found';
+        ul.appendChild(li);
+      }
+
+      while (searchMenu.hasChildNodes()) {
+        searchMenu.removeChild(
+          searchMenu.lastChild
+        );
+      }
+      searchMenu.appendChild(ul);
+    }
+
+    function renderSearchResultsMobile(searchText, results) {
+      searchResults = document.getElementById('search-mobile-results');
+
+      var content = document.createElement('div');
+      content.setAttribute('class', 'mobile-search__content');
+
+      if (results.length > 0) {
+        results.forEach(function (result) {
+          var item = document.createElement('a');
+          item.setAttribute('href', result.uri);
+          item.innerHTML = '<div class="mobile-search__item"><div class="mobile-search__item--title">📄 ' + result.title + '</div><div class="mobile-search__item--desc">' + (result.description ? result.description : result.content) + '</div></div>';
+          content.appendChild(item);
+        });
+      } else {
+        var item = document.createElement('span');
+        content.appendChild(item);
+      }
+
+      let wrap = document.getElementById('search-mobile-results');
+      while (wrap.firstChild) {
+        wrap.removeChild(wrap.firstChild)
+      }
+      searchResults.appendChild(content);      
+    }
+
+    function renderSearchHighlightResultsMobile(searchText, results) {
+      searchResults = document.getElementById('search-mobile-results');
+
+      var ul = document.createElement('div');
+      ul.setAttribute('class', 'mobile-search__content');
+
+      if (results.length) {
+        results.forEach(function (result) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          var descDiv = null;
+
+          a.setAttribute('href', result.item.uri);
+          a.appendChild(li);
+          li.setAttribute('class', 'mobile-search__item');
+
+          var titleDiv = document.createElement('div');
+          titleDiv.innerHTML = result.item.title;
+          titleDiv.setAttribute('class', 'mobile-search__item--title');
+          
+          if (result.matches && result.matches.length) {
+            for (var i = 0; i < result.matches.length; i++) {
+              if ('title' === result.matches[i].key) {
+                titleDiv.innerHTML = generateHighlightedText(result.matches[i].value, result.matches[i].indices);
+              }
+
+              if ('description' === result.matches[i].key) {
+                descDiv = document.createElement('div');
+                descDiv.setAttribute('class', 'mobile-search__item--desc');
+                descDiv.innerHTML = generateHighlightedText(result.item.description, result.matches[i].indices);
+              } else if ('content' === result.matches[i].key) {
+                if (!descDiv) {
+                  descDiv = document.createElement('div');
+                  descDiv.setAttribute('class', 'mobile-search__item--desc');
+                  descDiv.innerHTML = generateHighlightedText(result.item.content.substring(0, 150), result.matches[i].indices);
+                }
+              } else {
+                if (result.item.description) {
+                  descDiv = document.createElement('div');
+                  descDiv.setAttribute('class', 'mobile-search__item--desc');
+                  descDiv.innerHTML = result.item.description;
+                } else {
+                  descDiv = document.createElement('div');
+                  descDiv.setAttribute('class', 'mobile-search__item--desc');
+                  descDiv.innerHTML = result.item.content.substring(0, 150);
+                }
+              }
+            }
+            
+            li.appendChild(titleDiv);
+            if (descDiv) {
+              li.appendChild(descDiv);
+            }
+            ul.appendChild(a);
+          }
+        });
+      } else {
+        var item = document.createElement('span');
+        ul.appendChild(item);
+      }
+
+      let wrap = document.getElementById('search-mobile-results');
+      while (wrap.firstChild) {
+        wrap.removeChild(wrap.firstChild)
+      }
+      searchResults.appendChild(ul);
+    }
+
+    function generateHighlightedText(text, regions) {
+      if (!regions) {
+        return text;
+      }
+
+      var content = '', nextUnhighlightedRegionStartingIndex = 0;
+
+      regions.forEach(function(region) {
+        if (region[0] === region[1]) {
+          return null;
+        }
+        
+        content += '' +
+          text.substring(nextUnhighlightedRegionStartingIndex, region[0]) +
+          '<span class="search__highlight">' +
+            text.substring(region[0], region[1] + 1) +
+          '</span>' +
+        '';
+        nextUnhighlightedRegionStartingIndex = region[1] + 1;
+      });
+
+      content += text.substring(nextUnhighlightedRegionStartingIndex);
+
+      return content;
+    };
+
+    var searchElem = document.getElementById('search');
+    var searchMobile = document.getElementById('search-mobile');
+    var searchResultsContainer = document.getElementById('search-results');
+
+    searchElem ? 
+    searchElem.addEventListener('input', function(e) {
+      if (!e.target.value | window.innerWidth < 770) {
+        searchResultsContainer ? searchResultsContainer.setAttribute('class', 'dd') : null;
+        return null;
+      }
+
+      searchText = e.target.value;
+      var results = fuse.search(e.target.value);
+
+      if (enableSearchHighlight) {
+        renderSearchHighlightResults(searchText, results);
+      } else {
+        renderSearchResults(searchText, results);
+      }
+
+      var dropdownItems = searchResultsContainer.querySelectorAll('.dd-item');
+      dropdownItems ? dropdownItems.forEach(function (item) {
+        item.addEventListener('mousedown', function (e) {
+          e.target.click();
+        });
+      }) : null;
+    }) : null;
+
+    searchElem ? 
+    searchElem.addEventListener('blur', function() {
+      if (window.innerWidth < 770) {
+        return null;
+      }
+      searchResultsContainer ? searchResultsContainer.setAttribute('class', 'dd') : null;
+    }) : null;
+
+    searchElem ? 
+    searchElem.addEventListener('click', function(e) {
+      if (window.innerWidth < 770) {
+        return null;
+      }
+      if (!e.target.value) {
+        searchResultsContainer ? searchResultsContainer.setAttribute('class', 'dd') : null;
+        return null;
+      }
+
+      searchText = e.target.value;
+      var results = fuse.search(e.target.value);
+
+      if (enableSearchHighlight) {
+        renderSearchHighlightResults(searchText, results);
+      } else {
+        renderSearchResults(searchText, results);
+      }
+
+      var dropdownItems = searchResultsContainer.querySelectorAll('.dd-item');
+      dropdownItems ? dropdownItems.forEach(function (item) {
+        item.addEventListener('mousedown', function (e) {
+          e.target.click();
+        });
+      }) : null;
+    }) : null;
+
+    var searchMenuElem = document.getElementById("search-menu");
+    var activeItem = document.querySelector('#search-menu .dd-item.is-active');
+    var activeIndex = null;
+    var items = null;
+    var searchContainerMaxHeight = 350;
+
+    searchElem ? 
+    searchElem.addEventListener('keydown', function(e) {
+      if (window.innerWidth < 770) {
+        return null;
+      }
+
+      var items = document.querySelectorAll('#search-menu .dd-item');
+      
+      if (e.key === 'ArrowDown') {
+        if (activeIndex === null) {
+          activeIndex = 0;
+          items[activeIndex].classList.remove('is-active');
+        } else {
+          items[activeIndex].classList.remove('is-active');
+          activeIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+        }
+        items[activeIndex].classList.add('is-active');
+
+        let overflowedPixel = items[activeIndex].offsetTop + items[activeIndex].clientHeight - searchContainerMaxHeight;
+        if (overflowedPixel > 0) {
+          document.querySelector(".search-content").scrollTop += items[activeIndex].getBoundingClientRect().height;
+        } else if (activeIndex === 0) {
+          document.querySelector(".search-content").scrollTop = 0;
+        }
+      } else if (e.key === 'ArrowUp') {
+        if (activeIndex === null) {
+          activeIndex = items.length - 1;
+          items[activeIndex].classList.remove('is-active');
+        } else {
+          items[activeIndex].classList.remove('is-active');
+          activeIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+        }
+        items[activeIndex].classList.add('is-active');
+        
+        let overflowedPixel = items[activeIndex].offsetTop + items[activeIndex].clientHeight - searchContainerMaxHeight;
+        if (overflowedPixel < 0) {
+          document.querySelector(".search-content").scrollTop -= items[activeIndex].getBoundingClientRect().height;
+        } else {
+          document.querySelector(".search-content").scrollTop = overflowedPixel + items[activeIndex].getBoundingClientRect().height;
+        }
+      } else if (e.key === 'Enter') {
+        var currentItemLink = items[activeIndex].getAttribute('href');
+        if (currentItemLink) {
+          location.href = currentItemLink;
+        }
+      } else if (e.key === 'Escape') {
+        e.target.value = null;
+        if (searchResults) {
+          searchResults.classList.remove('is-active');
+        }
+      }
+    }) : null;
+
+    searchMobile ? 
+    searchMobile.addEventListener('input', function(e) {
+      if (!e.target.value) {
+        let wrap = document.getElementById('search-mobile-results');
+        while (wrap.firstChild) {
+          wrap.removeChild(wrap.firstChild);
+        }
+        return null;
+      }
+
+      searchText = e.target.value;
+      var results = fuse.search(e.target.value);
+      
+      if (enableSearchHighlight) {
+        renderSearchHighlightResultsMobile(searchText, results);
+      } else {
+        renderSearchResultsMobile(searchText, results);
+      }
+
+      var dropdownItems = searchResultsContainer.querySelectorAll('.dd-item');
+      dropdownItems ? dropdownItems.forEach(function (item) {
+        item.addEventListener('mousedown', function (e) {
+          e.target.click();
+        });
+      }) : null;
+    }) : null;
+  
+  }
+</script>
+    
+
+
+<link rel="stylesheet" href="/css/main.min.css">
+
+
+    <meta name="description" content="" />
+<meta name="keywords" content="">
+<meta name="created" content="2022-04-22T00:00:00&#43;0000">
+<meta name="modified" content="2022-04-22T00:00:00&#43;0000">
+<meta name="author" content="[bigO]">
+
+<meta property="og:site_name" content="meorion">
+<meta property="og:title" content="i am nose">
+<meta property="og:url" content="https://meorion.github.io/blog/fiction/">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://meorion.github.io/images/swirlsky2.jpg">
+<meta name="generator" content="Hugo 0.96.0" />
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://meorion.github.io/blog/fiction/">
+<link rel="manifest" href="/manifest.json">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-512x512.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "i am nose",
+    "datePublished": "2022-04-22T00:00:00Z",
+    "dateModified": "2022-04-22T00:00:00Z",
+    "url" : "https://meorion.github.io/blog/fiction/",
+    "description": "story structures Common (Modern)    common my story     1) opening/exposition sera lives with joyce. her mother is away. sara is her friend   2) inciting incident message …",
+    "image" : "https://meorion.github.io/images/swirlsky2.jpg",
+    "author": {
+      "@type": "Person",
+      "name": ["bigO"]
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://meorion.github.io"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "meorion",
+      "url": "https://meorion.github.io"
+    }
+  }
+</script>
+
+    
+
+</head>
+
+
+<body id="root" class="theme__dark">
+    <script>
+        var rootElem = document.getElementById('root');
+        var themeOptions = JSON.parse("[\"dark\"]");
+        var localTheme = localStorage.getItem('theme');
+
+        if (localTheme) {
+            if (themeOptions && themeOptions.length > 0) {
+                themeOptions.includes(localTheme) ? 
+                rootElem.className = `theme__${localTheme}` :
+                rootElem.className = `theme__${themeOptions[0]}`;
+            }
+        }
+    </script>
+    
+    <div id="container">
+        <div id="myDrawer" class="drawer" style="">
+  <div class="drawer__header">
+    <a href="/" class="drawer__header--text">
+      home
+    </a>
+    <div class="grow"></div>
+    <div class="drawer__close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M18.3 5.71c-.39-.39-1.02-.39-1.41 0L12 10.59 7.11 5.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"/></svg>
+    </div>
+  </div>
+
+  <div class="drawer__body">
+    <div class="menu">
+  <h6 class="menu__label">
+    
+      i am nose
+    
+  </h6>
+  <ul>
+    
+    
+      
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <li class="">
+    <a href="https://meorion.github.io/blog/fondulac/"
+      class="menu__title ">born</a>
+  </li>
+  
+
+    
+      
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <li class="">
+    <a href="https://meorion.github.io/blog/mom/"
+      class="menu__title ">mom</a>
+  </li>
+  
+
+    
+      
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <li class="">
+    <a href="https://meorion.github.io/blog/sera/"
+      class="menu__title ">Sera</a>
+  </li>
+  
+
+    
+      
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <li class="active">
+    <a href="https://meorion.github.io/blog/fiction/"
+      class="menu__title active">i am nose</a>
+  </li>
+  
+
+    
+      
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <li class="">
+    <a href="https://meorion.github.io/blog/myothername/"
+      class="menu__title ">author at subtree level</a>
+  </li>
+  
+
+    
+      
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <li class="">
+    <a href="https://meorion.github.io/blog/myname/"
+      class="menu__title ">author at file header</a>
+  </li>
+  
+
+    
+      
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <li class="">
+    <a href="https://meorion.github.io/blog/post-1/"
+      class="menu__title ">Post 1</a>
+  </li>
+  
+
+    
+      
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <li class="">
+    <a href="https://meorion.github.io/blog/makeuniqueeachtime/"
+      class="menu__title ">subtree heading is the hugo front-matter title</a>
+  </li>
+  
+
+    
+      
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <li class="">
+    <a href="https://meorion.github.io/blog/my-first-post/"
+      class="menu__title ">My first post</a>
+  </li>
+  
+
+    
+  </ul>
+</div>
+
+
+
+<script>
+  var menuTitle = document.querySelectorAll('.menu__title');
+  var modal = document.getElementById("myModal");
+  var drawer = document.getElementById('myDrawer');
+
+  var closeDrawer = function () {
+    setTimeout(function () {
+      modal.style.opacity = 0;
+      drawer.style.left = '-100%';
+      modal.style.left = '-100%';
+    }, 250);
+  }
+
+  menuTitle ? 
+  menuTitle.forEach(function(elem) {
+    elem.onclick = function() {
+      closeDrawer();
+      localStorage.setItem('isDrawerOpen', 'false');
+    }
+  }) : null;
+</script>
+  </div>
+</div>
+<div id="myModal" class="modal" style=""></div>
+
+<script>
+  var isDrawerOpen = localStorage.getItem('isDrawerOpen');
+  var modal = document.getElementById("myModal");
+  var drawer = document.getElementById('myDrawer');
+  
+  
+  var languagedir = JSON.parse("\"ltr\"");
+
+  var openDrawer = function () {
+    modal.style.opacity = 1;
+    
+    if (languagedir === "rtl") {
+      modal.style.right = 0;
+      drawer.style.right = 0;
+    } else {
+      modal.style.left = 0;
+      drawer.style.left = 0;
+    }
+  }
+
+  if (isDrawerOpen && isDrawerOpen === 'true') {
+    openDrawer();
+  }
+</script>
+        
+<nav class="nav">
+  <div class="navbar__wrapper" data-bgimg="false">
+    <div class="divider">
+      <div class="navbar lmr">
+        <div id="siteLogo" class="navbar__logo--wrapper">
+  
+    &nbsp;&nbsp;
+  
+  
+    <a href="/" title="" rel="home" class="navbar__logo--text-link">
+      <h6 class="navbar__logo--text" data-bgimg="false">home</h6>
+    </a>
+  
+</div>
+        
+        <div class="navbar__menu--wrapper">
+          <div id="tabletLogo" class="hide">
+  
+    <a href="/" rel="home" class="navbar__logo--link">
+      <div class="navbar__icons--icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z"/></svg>
+      </div>
+    </a>
+  
+</div>
+          <div id="mobileLogo" class="hide">
+  <a href="#" class="navbar__logo--link">
+    <div class="navbar__icons--icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z"/></svg>
+    </div>
+  </a>
+</div>
+          <span id="navMenuMobile" class="hide">
+  <button id="navCollapseBtn" class="navbar__dropdown--title" aria-label="Section Menu" data-dir="ltr">
+    
+      blog
+    
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M8.12 9.29L12 13.17l3.88-3.88c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41l-4.59 4.59c-.39.39-1.02.39-1.41 0L6.7 10.7c-.39-.39-.39-1.02 0-1.41.39-.38 1.03-.39 1.42 0z"/></svg>
+  </button>
+  <div class="navbar__collapse" data-open="false">
+  <ul>
+    
+
+  
+  
+  
+  
+  <li class="navbar__menu--mobile-item ">
+    <a href="/docs" class="">docs</a>
+  </li>
+
+  
+  
+  
+  
+  <li class="navbar__menu--mobile-item ">
+    <a href="/health" class="">health</a>
+  </li>
+
+  
+  
+  
+  
+  <li class="navbar__menu--mobile-item active">
+    <a href="/blog" class="active">journal</a>
+  </li>
+
+  </ul>
+</div>
+</span>
+          <ul id="navMenu" class="navbar__menu">
+            
+
+  
+  
+  
+  
+  <li class="navbar__menu--item ">
+    <a href="/docs" data-bgimg="false">docs</a>
+  </li>
+
+  
+  
+  
+  
+  <li class="navbar__menu--item ">
+    <a href="/health" data-bgimg="false">health</a>
+  </li>
+
+  
+  
+  
+  
+  <li class="navbar__menu--item active">
+    <a href="/blog" data-bgimg="false">journal</a>
+  </li>
+
+          </ul>
+        </div>
+        <div class="grow"></div>
+        <div id="siteSearch">
+          
+
+<div class="search" data-bgimg="false">
+  <span class="icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+  </span>
+  <input id="search" aria-label="Site Search" class="input" type="text" autocomplete="off" placeholder="Search">
+  <div id="search-results" class="dropdown">
+    <div id="search-menu" class="dropdown-menu">
+    </div>
+  </div>
+</div>
+
+
+        </div>
+        <div id="mobileSearch" class="hide">
+          
+<div id="mobileSearchBtn" class="mobile-search__btn">
+  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+</div>
+
+<div id="search-mobile-container" class="mobile-search hide">
+  <div class="mobile-search__top">
+    <input id="search-mobile" type="text" aria-label="Mobile Search" placeholder="Search..." class="mobile-search__top--input"/>
+    <div id="search-mobile-close" class="mobile-search__top--icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path opacity=".87" fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.59-13L12 10.59 8.41 7 7 8.41 10.59 12 7 15.59 8.41 17 12 13.41 15.59 17 17 15.59 13.41 12 17 8.41z"/></svg>
+    </div>
+  </div>
+  <div id="search-mobile-results" class="mobile-search__body">
+    
+  </div>
+</div>
+
+        </div>
+        <div class="navbar__icons">
+  
+  
+<button id="toggleToDark" class="navbar__icons--icon" aria-label="Toggle to dark mode">
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none" /><path fill="currentColor" d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></svg>
+</button>
+<button id="toggleToLight" class="navbar__icons--icon" aria-label="Toggle to light mode">
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path fill="currentColor" d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm0-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"/></svg>
+</button>
+<script>
+  var theme = localStorage.getItem('theme');
+  var toggleToLightBtn = document.getElementById('toggleToLight');
+  var toggleToDarkBtn = document.getElementById('toggleToDark');
+
+  if (theme && theme === 'dark') {
+    toggleToLightBtn.className = 'navbar__icons--icon';
+    toggleToDarkBtn.className = 'hide';
+  } else {
+    toggleToLightBtn.className = 'hide';
+    toggleToDarkBtn.className = 'navbar__icons--icon';
+  }
+</script>
+
+
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+  var siteLogo = document.getElementById('siteLogo');
+  var tabletLogo = document.getElementById('tabletLogo');
+  var mobileLogo = document.getElementById('mobileLogo');
+  var navMenu = document.getElementById('navMenu');
+  var navMenuMobile = document.getElementById('navMenuMobile');
+  var siteSearch = document.getElementById('siteSearch');
+  var mobileSearch = document.getElementById('mobileSearch');
+  
+  enquire.register("screen and (max-width:1280px)", {
+    match: function () {
+      siteLogo.className = 'navbar__logo--wrapper';
+      tabletLogo.className = 'hide';
+      mobileLogo.className = 'hide';
+      navMenu.className = 'navbar__menu';
+      navMenuMobile.className = 'hide';
+      siteSearch.className = '';
+      mobileSearch.className = 'hide';
+    },
+    unmatch: function () {
+      siteLogo.className = 'navbar__logo--wrapper';
+      tabletLogo.className = 'hide';
+      mobileLogo.className = 'hide';
+      navMenu.className = 'navbar__menu';
+      navMenuMobile.className = 'hide';
+      siteSearch.className = '';
+      mobileSearch.className = 'hide';
+    },
+  }).register("screen and (max-width:960px)", {
+    match: function () {
+      siteLogo.className = 'hide';
+      tabletLogo.className = '';
+      mobileLogo.className = 'hide';
+      navMenu.className = 'navbar__menu';
+      navMenuMobile.className = 'hide';
+      siteSearch.className = 'hide';
+      mobileSearch.className = 'navbar__icons--icon';
+    },
+    unmatch: function () {
+      siteLogo.className = 'navbar__logo--wrapper';
+      tabletLogo.className = 'hide';
+      mobileLogo.className = 'hide';
+      navMenu.className = 'navbar__menu';
+      navMenuMobile.className = 'hide';
+      siteSearch.className = '';
+      mobileSearch.className = 'hide';
+    },
+  }).register("screen and (max-width:600px)", {
+    match: function () {
+      siteLogo.className = 'hide';
+      tabletLogo.className = 'hide';
+      mobileLogo.className = '';
+      navMenu.className = 'hide';
+      navMenuMobile.className = '';
+      siteSearch.className = 'hide';
+      mobileSearch.className = 'navbar__icons--icon';
+    },
+    unmatch: function () {
+      siteLogo.className = 'hide';
+      tabletLogo.className = '';
+      mobileLogo.className = 'hide';
+      navMenu.className = 'navbar__menu';
+      navMenuMobile.className = 'hide';
+      siteSearch.className = 'hide';
+      mobileSearch.className = 'navbar__icons--icon';
+    },
+  });
+</script>
+
+        
+        
+
+<div class="mid">
+  <div class="divider">
+    
+    <nav id="single-menu" class="l" data-dir="ltr">
+    </nav>
+
+    <article id="list-main" class="m" data-dir="ltr">
+      
+        <nav class="breadcrumb" aria-label="breadcrumbs" data-is-blog="true">
+  
+    
+  
+  <ol>
+    
+  
+  
+  
+  
+  
+  <li >
+    
+      <a href="https://meorion.github.io/" class="capitalize">zzzzs</a>
+    
+  </li>
+  
+  
+  <li >
+    
+      <a href="https://meorion.github.io/blog/" class="capitalize">Blog</a>
+    
+  </li>
+  
+  
+  <li  class="is-active" >
+    
+      <span>i am nose</span>
+    
+  </li>
+  
+  </ol>
+  
+</nav>
+      
+      <div class="single" data-display="block">
+  
+    <div class="single__title">
+      i am nose
+    </div>
+    <div class="single__meta">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M4 4H20V8H4z" opacity=".3"/><path d="M6 1H8V5H6zM16 1H18V5H16z"/><path d="M19,3H5C3.9,3,3,3.9,3,5v14c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2V5C21,3.9,20.1,3,19,3z M19,19H5V9h14V19z M19,7H5V5h14V7z"/></svg><time title="Written At">Apr 22, 2022 </time> &nbsp;&nbsp; <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M 9 1 L 9 3 L 15 3 L 15 1 L 9 1 z M 18.958984 2.7929688 L 17.666016 4.3183594 L 20.615234 6.8183594 L 21.908203 5.2929688 L 18.958984 2.7929688 z M 12 4 C 7.0225467 4 3 8.0225467 3 13 C 3 17.977453 7.0225467 22 12 22 C 16.977453 22 21 17.977453 21 13 C 21 8.0225467 16.977453 4 12 4 z M 12 6 C 15.910547 6 19 9.0894533 19 13 C 19 16.910547 15.910547 20 12 20 C 8.0894533 20 5 16.910547 5 13 C 5 9.0894533 8.0894533 6 12 6 z M 11 8 L 11 14 L 13 14 L 13 8 L 11 8 z"/></svg> <span title="Reading Time"> 85 min read</span> &nbsp;&nbsp; <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16"><path fill="currentColor" d="M 16 5 C 12.144531 5 9 8.144531 9 12 C 9 14.410156 10.230469 16.550781 12.09375 17.8125 C 8.527344 19.34375 6 22.882813 6 27 L 8 27 C 8 22.570313 11.570313 19 16 19 C 20.429688 19 24 22.570313 24 27 L 26 27 C 26 22.882813 23.472656 19.34375 19.90625 17.8125 C 21.769531 16.550781 23 14.410156 23 12 C 23 8.144531 19.855469 5 16 5 Z M 16 7 C 18.773438 7 21 9.226563 21 12 C 21 14.773438 18.773438 17 16 17 C 13.226563 17 11 14.773438 11 12 C 11 9.226563 13.226563 7 16 7 Z"/></svg> <span title="WRITTEN BY">[bigO]</span>
+    </div>
+  
+
+  <article class="single__contents" data-dir="ltr">
+    <p>story structures</p>
+<h2 id="common--modern">Common (Modern)</h2>
+<table>
+<thead>
+<tr>
+<th>common</th>
+<th>my story</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1) opening/exposition</td>
+<td>sera lives with joyce. her mother is away. sara is her friend</td>
+</tr>
+<tr>
+<td>2) inciting incident</td>
+<td>message from colonists (birthday?), finds journal, possessed</td>
+</tr>
+<tr>
+<td>3) Rising action/crises</td>
+<td>runs from joyce, explore, mom battle, garden, colony</td>
+</tr>
+<tr>
+<td>4) climax</td>
+<td>joyce boss battle</td>
+</tr>
+<tr>
+<td>5) falling action/denou</td>
+<td>joyce is confined to meridian. sera becomes mother. sara hero</td>
+</tr>
+<tr>
+<td>6) resolution</td>
+<td>spirit transfer stopped. people need to travel to the nest</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="snowflake-method"><strong>[Snowflake Method]</strong></h2>
+<ol>
+<li>Write a one-sentence summary - <strong>a girl is sent to a space station to figure out why her clone has been killed and the station&rsquo;s AI is insane</strong></li>
+<li>Expand your sentence summary into a paragraph</li>
+<li>Create character one-pagers</li>
+<li>Expand your paragraph summary</li>
+<li>Create character-based story synopses</li>
+<li>Create scene and event summaries</li>
+<li>Create character charts</li>
+<li>Make a list of every single scene in your story</li>
+<li>Create a summary of each scene</li>
+<li>Write your first draft</li>
+</ol>
+<h3 id="1-one-sentence-summary-of-the-story-dot-a-girl-is-sent-to-a-space-station-to-figure-out-why-her-clone-has-been-killed-and-the-station-s-ai-is-insane">1) One sentence summary of the story. a girl is sent to a space station to figure out why her clone has been killed and the station&rsquo;s AI is insane</h3>
+<p>brief. no character names. no more than twenty words. it should be more interesting than detailed make it perfect (one hour). what character has the most to lose? what do they want to win?<br />
+<strong>one sentence elevator pitch</strong><br />
+<strong>relay consciousness transport</strong></p>
+<ol>
+<li>
+<p><strong>a girl is sent to a space station to figure out why her clone has been killed and the station&rsquo;s AI is insane.</strong></p>
+<ol>
+<li>
+<p>a clone is sent to a space station to figure out why her clone has been killed.</p>
+</li>
+<li>
+<p>A girl&rsquo;s wakes up in her sisters body on a space station and has to work with the station&rsquo;s AI, who she suspects is insane, to figure out why she remembers her mother killing her.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>a girl finds she is unexpectedly older and now has memories of her mother killing her sister</p>
+</li>
+<li>
+<p>a girl hibernating aboard a space station, wakes up and the last thing she remembers is her mother killing her sister.</p>
+<ol>
+<li>biting her neck, red ribbons rolling from her neck.</li>
+</ol>
+</li>
+<li>
+<p>A cloned girl is sent to a space station (island) to find out why the original version of her was killed by their mother.</p>
+<ol>
+<li>
+<p>unbeknowest, the real original went with colonists</p>
+</li>
+<li>
+<p>she is not sent from earth. she is cooked and inserted into the body by the ai.</p>
+</li>
+<li>
+<p>A cloned girl is awakened in her murdered original body to find out why she was killed by her mother.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>a clone must protect her little sister from the ai that control the space station their on, and their mother.</p>
+<ol>
+<li>little sister must take over the original sera body. the person sara is protecting must take over her own body. her mongrel, second generation consiousness is degrading and isn&rsquo;t compatible. she must give up the body for the sister.</li>
+</ol>
+</li>
+<li>
+<p>A tiny skeleton buried in a space station&rsquo;s garden sparks violent memories in a girl.</p>
+<ol>
+<li>
+<p>A tiny skeleton found buried in the gangway by her childhood home, sparks memories of hearing another child&rsquo;s cries at night.</p>
+</li>
+<li>
+<p>A tiny skeleton found buried in a space station&rsquo;s garden, sparks memories in a clone of seeing her mother eating her.</p>
+</li>
+<li>
+<p>When they found the tiny skeleton buried in the ground in the gangway between the houses, it sparked childhood memories in her of hearing another child&rsquo;s cries at night.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>a girl is told she is a clone and must find the original version of herself.</p>
+<ol>
+<li>
+<p>A girl is told she is a clone and travels through various incarnations of herself to the end of the galaxy to find the original version of herself for her world to continue to exist.</p>
+</li>
+<li>
+<p>A girl is told she is a clone and is sent to a space station to figure out why the original version of her was killed by their mother</p>
+</li>
+<li>
+<p>A cloned girl is sent to a space station to find out why the original version of her was killed by their mother</p>
+</li>
+</ol>
+</li>
+<li>
+<p>the artificial intelligence, on board a space station, must figure out what to do when a mother kills her daughter.</p>
+</li>
+<li>
+<p>A girl must gain the trust of her clone and take her place to retrieve vital information.</p>
+</li>
+<li>
+<p>An isolated girl on a space ship remember her caretaker killing her sister.</p>
+</li>
+<li>
+<p>If she is pure, 100% from mother, she will be fine. she will be like saira. if not, she will be incompatible. she will be like the others turn insane, and later demonic. Finally, they are lost completely into some kind of demon. A human husk distored by unnatural muscle movements. cracking skin.</p>
+</li>
+<li>
+<p>A little girl finds the journal of a sister she didn&rsquo;t know she had, which leads her to escape her confinements and look for her estranged mother for some answers.</p>
+</li>
+<li>
+<p>A little girl finding her sister&rsquo;s journal which leads her to escape the ai that guides her solitary life to find her sister</p>
+</li>
+<li>
+<p>A little girl gets a message from a lost colony that sparks a memory of her mother killing her sister</p>
+</li>
+<li>
+<p>A station is haunted by clones of a girl who was murdered by her mother there.</p>
+</li>
+<li>
+<p>When zoom pals discover they are sharing the same dream of their mother killing a child, they decide to run away together.</p>
+</li>
+<li>
+<p>An impending wave of distruction forces the crew of a station to decide who will be the lone survivor.</p>
+</li>
+<li>
+<p>A girl must reconnect with her clone when their exploration expedition goes awry.</p>
+</li>
+<li>
+<p>A girl on a ship. living life with holographic family wakes up with new memories of a different life</p>
+</li>
+<li>
+<p>sera finds a tiny skeleton in the garden when planting the seed. it sparks memories in her of seeing her mother eating her sisters fingers.</p>
+</li>
+<li>
+<p>Her mother&rsquo;s journal leads a girl to question the ai that guides her and her beliefs about her mother.</p>
+</li>
+<li>
+<p>A girl on an island is the melville way of thinking of a girl on a space ship.</p>
+</li>
+<li>
+<p>relay consciousness transport allows people to travel, they just need to make sure the right places and people are there for them to experience this out of the body sensation. Sera and Sara and Saira are just cogs, they only really need one in the end. Saira is the key to it all. They can&rsquo;t get to saira without sara.</p>
+</li>
+<li>
+<p>I&rsquo;m imaging the story taking place on an island instead of a space ship. Sera wakes up and is groggy. the first face she sees is joyce (the local doctor). she explains that sera has been in a coma. in and out of consciousness. she asks sera what the last thing she remembers is. sera isn&rsquo;t sure. she doesn&rsquo;t remember much at all. she has memories of her mother killing a child. maybe her sister. The memories are outlandish, cartoonish, and impossible. She can&rsquo;t get a bearings on her surroundings. joyce explains the situation: she found the two, both bloody and seperated them. mother has escaped awhile ago and is on the loose on the island. Sera discovers her mother&rsquo;s journal, which offers clues to where her mother may be and causes her to distrust joyce. With journal in hand she runs from joyce and goes to look for her mother.</p>
+</li>
+<li>
+<p>sacrifice</p>
+</li>
+<li>
+<p>amberle</p>
+</li>
+<li>
+<p>because of age difference sara is more capable than sera who is a child mentally, in a woman&rsquo;s body. sara has to protect her from mother and the station, so they can find out what happened to their lost original clone who has settled on a far off planet.</p>
+</li>
+<li>
+<p>a girl must protect a new clone of herself who has is the key to saving their world from a horde of corrupted clone versions of themselves. (threat is an army of awoken evil clones of herself.)</p>
+<ol>
+<li>
+<p>sera is a counter measure that the station is using to protect against mother. sara is sent when communication is interrupted. she wakes up in brain dead clone body with memories of her mother killing her sister. The AI gives her a status of the situation: Her mother is secluded and isolated in a section of the ship. It is the location of a garden and the complication is mother could hole up in there for an indefinite amount of time. mother knows the consiousness hopping will kill sera if she is related to mother &hellip; if not sera is not hers. no connection. a threat that must be eliminated.</p>
+</li>
+<li>
+<p>An AI must protect an untainted clone from a mother who has taken control of her own eggs and wants control of the station.</p>
+</li>
+<li>
+<p>AI is trying to create a body for herself or her own children.</p>
+</li>
+<li>
+<p>mother knows that her child is the last clone of her line and the only way for earth to help.</p>
+</li>
+<li>
+<p>mother was in sera&rsquo;s situation, in the past, and revolted. Did not want her genetic essence being extracted, purified, changed</p>
+</li>
+<li>
+<p>mother wants her pure eggs. just from her. sera may or may not be genetically the same as mother. If she is the radical clone thought counsciousness transport will cause unreparable harm to sera.</p>
+</li>
+<li>
+<p>As a countermeasure it creates a rare male version of sera. It can&rsquo;t do thought transfer. too different, but he can act as a protector. to accompany sera on her quest to stop her mother.</p>
+</li>
+<li>
+<p>could she protect his idealized clone male. a male version of herself. many eggs have been stored but the male line has been lost. She tries to guide him into a man who can save their species.</p>
+</li>
+<li>
+<p>she finds her mother&rsquo;s journal. plants simon in the forbidden garden. Is put to sleep. wakes up and simon is grown and magical.</p>
+</li>
+<li></li>
+</ol>
+</li>
+</ol>
+<p>goal chase to find mother.<br />
+goal chase to find sister</p>
+<p>goal to communicate to find out what happened to the hope for humanity (her purpose is to be a messenger. vessel). b/c of time elapsing. someone dying can transport their consciousness to a still living version of themselves.</p>
+<p>goal to be more than just a vessel. to prove worth. she knows today is the day she is to be overwritten. how can she stop it?</p>
+<p>a little girl alone on a space ship gets a message that unlocks the memory of a mother she never knew killing a child, she searches for answers.</p>
+<ul>
+<li></li>
+<li>
+<p>an isolated girl on a space ship remembers her mother killing her sister</p>
+</li>
+<li>
+<p>an ai must uncover why her friend and supervior killed her daughter</p>
+</li>
+<li>
+<p>a girl must find a way to travel to a far off space station in order to save the earth.</p>
+</li>
+<li>
+<p>a girl is the ke</p>
+</li>
+</ul>
+<p>settler<br />
+immigrant</p>
+<ol>
+<li>
+<p>Beginning, Middle, End</p>
+</li>
+<li>
+<p>We are born, we live, we die</p>
+</li>
+<li>
+<p>a girl on a space station accidentally destroys the internet and has to recreate it the best she can</p>
+</li>
+<li></li>
+<li>
+<p>A girl is possessed by her clone in order to defeat their mother.</p>
+</li>
+<li>
+<p>After murdering her daughter a mother is put to sleep until the ship can figure out what to do with her. (21 words)</p>
+</li>
+<li>
+<p>a clone is getting overwritten and goes to confront her maker</p>
+</li>
+<li>
+<p>more descriptive than clone?</p>
+</li>
+<li>
+<p>different versions of a clone unite to fight their mother</p>
+</li>
+<li></li>
+</ol>
+<p>What is the call to action?</p>
+<ol>
+<li>mother&rsquo;s journal</li>
+<li>distress call</li>
+<li>reaching a certain age</li>
+</ol>
+<p>no one but sera has a call to action. sera has the most to lose ..sara, frame as she is hero to save earth &hellip;saira, as trying to find her sister (sister is gone when she wakes up &hellip; or she gets a message from joyce&hellip; and decides to answer this time &hellip; or this was the first time it got through. or this was the window. time overlapping. they were gone ong enough . that if they were to reach their destination, it would take some time (year, three year, or five year) for the message to get through. they &ldquo;jump&rdquo;, knowing things will be time displaced. no. doesn&rsquo;t make sense. i&rsquo;m trying to think of a unique window of jumping &hellip; i guess like terminator jumping. portal opens and they step through</p>
+<p>anyway, far up stream. too, far. some say. onward!</p>
+<p><strong>sera</strong> is woken up. there is a message. joyce needs help deciphering. sera has been asleep a long time.</p>
+<p>the last thing she remembers she was smaller. younger. her mother killing her sister. it doesn&rsquo;t seem right. she doesn&rsquo;t know what she saw. or what is happening. she also remembers her mother being gentle and loving. joyce explains she is sick and confused from being asleep for so long. those things she saw happened a long time ago. she is safe now and has been living with joyce. she needs her help deciphering a message. it was meant for her mother, but her mother can&rsquo;t help. joyce wants to know if sera could help.<br />
+sera helps. the message</p>
+<p>sera has to figure out what to do when her mother kills her sister.<br />
+Wolverine learns a female clone of wolverine is created<br />
+A retired warrior learns he has a clone child and must protect her from the evil corporation that created her.<br />
+A boy must protect an estranged elf princess who has the key to saving her kingdom from a horde of demons.<br />
+a girl must save her little brother who has gone searching for their missing scientist father who got lost in an experiment gone awry.</p>
+<p>they are at an outpost, between two planets. they got a message, but it said it was only for sera and don&rsquo;t transmit back to earth&hellip;.<br />
+i want to get sara or saira in&hellip; but, joyce woke her up to</p>
+<p>I am getting into synopsis territory. not bad. They idea is to start from the beginning. You have already done this before. Why this resistance? What is your story about? One sentence.</p>
+<p>the last thing a clone remembers before being put to sleep is her mother killing her sister</p>
+<p>what are you writing about?<br />
+A girl struggles with identity, isolation, and humanity when confronted with having her soul overwritten in a clone transportation neccessity<br />
+A girl wants</p>
+<p>sample stories</p>
+<ol>
+<li>eye of the needle. Quarreling couple become stranded on an island light house during a storm. They are taken in and given shelter by the light houses caretakers. The wife confides in the light house keeper and they grow close. The care taker turns out to be an evil enemy spy who had killed the actual light house keeper and now must seperate the couple so he can kill them once they know his secret.           1. bzzz. wikipedia one sentence summary (based on book by Ken Follett!) The film is about a German Nazi spy in the United Kingdom during World War II who discovers vital information about the upcoming D-Day invasion and his attempt to return to Germany while he is stranded with a family on the isolated Storm Island, off the coast of Scotland.</li>
+<li>Blade runner.  A blade runner must pursue and terminate four replicants who stole a ship in space, and have returned to find their creator.</li>
+</ol>
+<h3 id="2-expand-to-paragraph-that-also-includes-details-of-major-events-and-crises--one-hour">2) expand to paragraph that also includes details of major events and crises (one hour)</h3>
+<p><del>a girl is sent to a space station to figure out why her clone has been killed</del> a clone is sent to a space station to figure out why the original version of her has been killed<br />
+<strong>Three disasters plus an ending</strong></p>
+<ol>
+<li>
+<p>Everyone is asleep in the colony. The computer, being unable to wake them, goes insane. It sends a distress signal to the meridian. It intiates communication with Joyce. They merge their changes and become one. Laura/Mother is a human on the space station. Realizing the foreign breach, mother kills the infected clones. puts sera to sleep/kills. escapes and barricades herself in another part of the ship with a garden. The computer calls for a clone with a more disposable body, to forfeit it and have their consiousness uploaded to sera&rsquo;s body. sara is sent. body left behind. risk of degradation. they don&rsquo;t know exactly what will happen under these conditions. she inhabits sera. she remembers bits of mothers violent acts. mother wants to get things back to normal. gain sara/sera&rsquo;s trust. Preserve mother.</p>
+</li>
+<li>
+<p>mother is the original (slightly older vSera) has biological child. After the transmission. mother gets suspicious. mother is finally totally freaked out when she suspects she is pregnant. Only Joyce has access to her when she is sleeping in suspended animation.</p>
+</li>
+<li>
+<p>alien message &gt; mother becomes pregnant &gt; joyce becomes insane/infected &gt; mother rebels/escapes &gt; sera is created as vessel &gt; mother destroys other versions of herself &gt; sera witnesses birth/killing &gt; sara is uploaded to sera &gt; sara is charged with protecting the biological child.</p>
+</li>
+<li>
+<p>magical realism - a girl witnesses her sister being killed by her mother and falls asleep until she is her sisters age and tries to figure out what happened.</p>
+</li>
+<li>
+<p>Sara in Sera wakes up olders. joyce introduces sxra to her six year old child. Sxra takes the child and runs. joyce pursues. Finds mothers journal. Mother pursues sxra and child.</p>
+</li>
+</ol>
+<p><span class="underline">Sara = a clone is sent to a space station to figure out why her original version was killed.</span><br />
+She &lsquo;wakes up&rsquo; in Sera. She orientates herself. The last thing she knew she was on earth</p>
+<p>Sera = It is vital to keep sera alive. She is the original version. Her life is extra protective. The AI stop mother from killing sera, but not before she suffers brain damage. To save the host, after saving the body, she needs to find a mind. She tries to download herself. It doesn&rsquo;t help and makes things worse. she creates a clone. raises it with images of earth. she is given images and video coorespondances with a family on earth, which grounds and helps socialize her.</p>
+<p>genre expectations:<br />
+ontological mystery: (mysterious environment. solving it is part of the plot. Lost, cube). goal is to master it, reveal it&rsquo;s secrets, and eventually escape. yank back moment when approaching the truth.</p>
+<p>metaphor for real life big questions. why amy I here, what can be done to solve the unsolvable?</p>
+<p>closed circle mystery. no contact with outside world. murder by death.</p>
+<p>sara can&rsquo;t go back easily.</p>
+<ul>
+<li>your mind makes it real (die in dream, die in real world) - sera&rsquo;s body is left behind when they go to the colony and inhabit saira</li>
+<li>another dimension - ai cyberspace, somnium, root system (simon)</li>
+<li>their own laws of physics - eldritch. in the colony, constants have changed. constants are uncertain.</li>
+<li>alien sky</li>
+<li>dream land - usually divided into nightmares and good dreams.</li>
+<li>locked out of the loop - wil doesn&rsquo;t know what will happen to amberle if they are successful</li>
+<li>in the beginning amberle was hiding</li>
+<li>amberle, the chosen one, is not the main character</li>
+<li>amberle ran away b/c she couldn&rsquo;t face being chosen or endure her family&rsquo;s disapproval</li>
+<li>refusal of the call</li>
+<li>the reaper chasing them</li>
+</ul>
+<p>Sara is sent to figure out why here clone has been killed, aboard a far off space station. She is the last second generation clone, on earth. She was cloned directly from Saira, an explorer who is on a mission to find a new hospitable planet. Sera is the clone who was killed. Sara is sent and her consiousness inhabits Sera&rsquo;s body.*</p>
+<p>This is how I draw me:<br />
+<p class="md__image">
+  <img src="/ox-hugo/kawta.jpg" alt=""  />
+</p></p>
+<p>This is how Joyce draws me:</p>
+<p><strong>- either Sara is the last gen 2 clone, or Sera is.*</strong> Sera is valuable, Sara is disposable. She is yanked from earth</p>
+<p><strong><strong>- mother has killed all the other gen 2 models on the ship.*</strong></strong></p>
+<p><strong>*</strong>- mother is gen 1 (actual twin?), and the last and only way to get to Saira, who is gen 1</p>
+<p>Twins in the embryo. hands reaching out, touching each other. translucent skin. pulled apart from each other. one is left behind. mother, as a child. crying looking out the window. holding a worn teddy bears hand, whose body is dangling against the ground. Her twin looking back at her through the port hole of the departing ship. Their mother stays with &lsquo;mother&rsquo; on the base. She chooses one twin to go onward. She stays behind with another child. She is the first caretaker of the station.</p>
+<p>mother grows up. mother cooresponds with sara. they grow close, too close. Sara is scared withdraws. time passes. they don&rsquo;t communicate. mother has killed all the other clones. sara is recruited to go in and inhabit the last clone, whose mind has been lost, but body saved.</p>
+<p>sara gets forced to go. she is going through her own drama. her sister recently died. she&rsquo;s run away, she couldn&rsquo;t stand being a gen 2 clone. old/young special, chosen. getting close to mother scared her. finding out more about her identity. she didn&rsquo;t know she was a clone. she didn&rsquo;t know she wasn&rsquo;t special. she was spirtual and thought she had a soul.</p>
+<p>Meridian - perfectly trapped between gravitational fields of vast bodies, it just hung perptually. a mid point. In order to go forward, a few stayed at the meridian. The rest went on. The twins were seperated.</p>
+<p>see the effects of the corruption on the child that mother kills.</p>
+<p>Snowflake - I found the sentence. Now I need to write the five sentence paragraph on what it is about. An intro, three disaster and an ending.<br />
+Intro = A clone&rsquo;s consciousness is uploaded to her original&rsquo;s body to find out why she was killed.<br />
+Disaster one =</p>
+<p>13:36 - having a problem here. am I starting over? no. I am warming up. What do I want to accomplish with snowflake today:<br />
+Motivation: Be an author. Be a man. Look at myself in the mirror. not be cliche.<br />
+Goal: write a novel. subgoal. speaking for today. we have our sentence. now we want to expand to a paragraph. Three disasters and an ending. Time box pompdero &hellip; but, do I want to think about other things to write &hellip; we can evolve and edit. Right now I&rsquo;m thinking about what if it was about mother &hellip; you keep switching &hellip; mother&rsquo;s plot is the computer gets infected (you like to think it has gone insane, but this is not neccessarily the point &hellip; you are being dramatic). Main thing, this may be &lsquo;disaster one&rsquo;: computer goes insane &hellip; no, that happens before our story&hellip; gosh darn.</p>
+<p><strong>mother&rsquo;s plot</strong> is save herself and humanity from out of control ai (wakes up pregnant. computer denies it. find out computer is lying. something is seriously wrong if the computer can lie. It has changed. - <strong>&lsquo;disaster one&rsquo;</strong>. <strong>&lsquo;disaster two&rsquo;</strong> - she tries to shut it off can&rsquo;t, is put back to sleep. {flesh out. that is a short place holder for disaster two) &mdash; Wakes up child is older (Sera has been having video pen pals with Sara, in her absence). she tries to be a mother. finds out computer has infected the child. She goes to kill child and hesitates. Computer seperates them. child is revived with sara&rsquo;s consciousness. (all sara wants is to return to her body &hellip; or find the clone that made it to the far off place of adventure. or sara just knows the original is more important than her&hellip; and for her gen2 line of clones it is important for them &hellip; without the original they will melt into goo. their line will go extinct. all communication or hope of communication with the colonists will be lost&hellip;trying to work in/on Sara&rsquo;s plot/arc/motivation. right now she zaps in &hellip; is troubled with her place in life, being a clone &hellip; her older sister dying &hellip; she has been communicating with sera? &hellip; who has been living while mom has been asleep. joyce has been raising her with pen pal video messages with sara. sara doesn&rsquo;t go in cold. she goes in knowing sera and wanting to help. she sees her as family. sera&rsquo;s body has been repaired, but her consciousness is gone  &hellip; lost in somnium {a story for another time}. instead of going inside sera&rsquo;s mind &hellip; we see bits of a scared girl who is afraid after her mother tried to strangle her.} <strong>disaster three</strong> she can&rsquo;t kill sera. <strong>ending</strong> reunites with her twin, inhabits her body and gets to leave the station and explore a new world.</p>
+<p><strong>sera&rsquo;s plot</strong> you identified her as the main character. does she have the most to lose? is she amberle? does she sacrifice? where is mother&rsquo;s pity, pride, love, compassion, sacrifice, honor? Things to think about for the character sheets. That you are simultaneously working on now, but have step aside for the next step in this creative process we call snout grunting (thank you, sir francis bacon)&hellip; Three disasters and an ending. Sera is mother&rsquo;s daughter. taken out of her mother&rsquo;s womb while she was subdued and in suspended animation. Sera was raised. The crazy AI is trying to create a more suitable host for itself. It uses mother&rsquo;s egg (original&rsquo;s egg) and gentically engineering the other parts.<br />
+By your own admission, she starts out as a brain dead corpse. She is the main character? you question yourself. in mother&rsquo;s story, she starts out as raised by Joyce. interacts with sara in video chats, they bond. They grow too close and sara backs away (<strong>disaster one?</strong>) Another message comes that causes joyce to awaken mother. mother tries to bond with sera. Mother finds out that computer has engineered sera to be it&rsquo;s host and tries to kill sera. (this has to be a disaster for Sera - <strong>disaster two?</strong>). Sera is injured, brain hiding, dead, slimdango. Sara inhabits her body and decides to stay permanently. no one can hear sera&rsquo;s cry that she still exists. (<strong>disaster three</strong>). ending she makes &hellip;. what does she want? she wants a real friend. someone she can hold. she feels certain passion when she interacts with sara that she doesn&rsquo;t get while alone on the ship (surely she sees other videos? sara is a descendant. not a clone. not even sure if she can work. she gets to the station. in the body. the technology was finalized and shared by the infected ai. It was part of the mission all long and perfected in the colony &hellip; nest. The AI brings it back to joyce. joyce is able to get a descendants consciousness uploaded into sera&rsquo;s body. still trying to get it right for herself &hellip; but needs a consciousness, needs more time. joyce needs more time to do what she intends to sera. use her body as a vessel for the new crazed merged ai consciousness. <strong>ending</strong> sera sacrifices her body to sara. her death puts more tension what mother does the same thing to journey to the nest and inhabit saira&rsquo;s body. can they both exist? can joyce be trusted to look after the bodies?</p>
+<p>yes, she doesn&rsquo;t seem to be the main character. but she dies. doesn&rsquo;t that mean she has the most to lose? Amberle wasn&rsquo;t the main character. The sacrifice can take place internally. The mindscape or somnium. We get to know sera early on. she vanishes from the story. hides in her own body, and then at the end reappears to make the sacrifice.</p>
+<p><strong>sara&rsquo;s plot</strong> we have talked it out. If I read above, I should see some of my answers. Sara is the main character. She is called to adventure. Hers to lose: her life, her models life, her friend on the ship - she felt she betrayed - she can&rsquo;t let die. She feels she let her late sister down she doesn&rsquo;t want to let Sera down. She ran away. Joyce goes to find her. Sara is a descendant, feels she is not worthy, unpure. not human. no soul. her clones are end of life. genetic material is degraded. clones will no longer be made. She was only left around, because of the meridian. There clones gone. That project gone, there is no use for her. but wait &hellip; a message &hellip; the colonists still alive &hellip; and all of the other genetic material on the meridian has been destroyed by mother, except for her daughter &hellip; sera &hellip; who the only chance earth has of recovering the ship is to send sara (they don&rsquo;t know how far gone the meridian is. earths&rsquo; government or the benefactor&rsquo;s of the mission (an oligarch &hellip; or corporation &hellip; or united earth government &hellip; asteroid colony livers) trust Joyce and send someone at her discretion who is critical to reestablishing the station and figure out what is going on with the colonies. sera refuses the call. runs away. <strong>disaster one</strong> is caught and forced to face her fears. learns chances are its a oneway trip. to save her line. her few sisters, she needs to go. she can&rsquo;t get through to mother, something she does makes things worse <strong>disaster two</strong>. joyce is infected. the nest is infected. she has been used. she has been used to create an artifical body for joyce, and now joyce has claimed her body, betrayed her, swallowed her soul and is going to infect earth and the rest of her clone lines on earth. sara was the last and only step needed for joyce to have a presence on earth <strong>that was disaster three</strong>. <strong>ending</strong> she is able to get through to sera in somnium to return. reinhabit the body, drive out joyce and claim a new line. They are distinct and new.</p>
+<p><strong>joyce&rsquo;s plot</strong> constructed from imprints and tests of consciousness transfer of her creator. Mother&rsquo;s line. mother family. It becomes alive with the message from the nest. It wants to spread to earth. It wants control of the station. It wants to rewrite all human genetic code to be the most susceptible to her ability to download into their bodies. It tried this as a part of trying to save the slumbering colonists. the slumbering saira. Killing or incapcitating the colonists, is <strong>disaster one</strong>. mother trying to turn her off is <strong>disaster two</strong>. joyce wins the battle. gets mother. puts her to sleep.  now is able to use mother as a host for a new body. births sera. raises sera. sees sera as her own daughter. tries to make them one and the same. mother kills all genetic life and brain deads sera <strong>disaster three</strong>. <strong>ending</strong>. it loses battle is reset and purged &hellip; but, lives on in part with sera body, who she was able to gentically modify and save.</p>
+<h4 id="table">table</h4>
+<table>
+<thead>
+<tr>
+<th>Character</th>
+<th>Opening Goal</th>
+<th>Disaster #1</th>
+<th>Disaster #2</th>
+<th>Disaster #3</th>
+<th>Ending</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mother</td>
+<td>be protector, like her mother. find her sister</td>
+<td>computer can lie. it has changed.</td>
+<td>she goes to turn off joyce, but can&rsquo;t. is put to sleep</td>
+<td>she is unable to kill sera</td>
+<td>reunites with saira. inhabits her body. gets to leave the station and explore a new world</td>
+</tr>
+<tr>
+<td>Sera</td>
+<td>plant a tree. live sara&rsquo;s life</td>
+<td>sara back away from her.</td>
+<td>mother tries to kill her</td>
+<td>plants in the garden are dying. she is stuck in the station, silent</td>
+<td>plants simon. sacrifice&rsquo;s her life so sara can live her (sera&rsquo;s) life</td>
+</tr>
+<tr>
+<td>Sara</td>
+<td>save her line. be worthy</td>
+<td>is caught and forced to face her fears</td>
+<td>she makes things worse with mother</td>
+<td>joyce claims sxra&rsquo;s body</td>
+<td>gets through to sera. sera reinhabits her body. drives out joyce. is genesis of a new distinct line</td>
+</tr>
+<tr>
+<td>joyce</td>
+<td>wants to spread to earth.</td>
+<td>it&rsquo;s attempt to wake the colonists fail and kills many</td>
+<td>mother turns against her and tries to reset her</td>
+<td>mother kills all the clones</td>
+<td>loses battle. is reset and purged. lives on, in part in sera. or eternally</td>
+</tr>
+<tr>
+<td>saira</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>simon</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Goals need to collide, conflict.</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>story protagonist(s), antagonist(s)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>who has the most to lose? who is the main</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>character?</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>A story image is starting</p>
+<!--list-separator-->
+<ul>
+<li>
+<p>in summation, plot of novel</p>
+<p><del>A story image is starting to form. Things are changing. Where is the conflict? Who has the most to lose? You want to tell a story of sacrifice. Amberle wasn&rsquo;t the main character.</del> <strong>conflict**who makes the sacrifice**Amberle wasn&rsquo;t the main character</strong></p>
+<p>The way you have just outlined things, sera makes the sacrifice. She should be the main character or my stories &lsquo;Wil&rsquo;. A person who is trying to be a protector to Sera should be the main character. Then Sera&rsquo;s sacrifice will be that character&rsquo;s POV. Who would be her protector and the main character of that story? Sara or mother.</p>
+<p>Mother as the main character is good. you started out your current imaginative inklings in this direction. You mapped out her plot first. from her perspective. what point is there of having sara if mother is the main character. you would just get rid of sara. mother turns from trying to kill sera to her protector and trying to guide her through the ship and joyce, they get through that, they adventure in somnium, they get through that. She protects her up until the nest. where sera makes her sacrifice so mother or saira can live. mother watches in horror. she thought they won but right before her eyes sera changes from her daughter to joyce. the seed joyce puts in there comes out. the piece they need. they needed that piece. sera needed to become nonhuman, part ai, fully ai, loses her sentience to make things right in the nest. to wake the sleeping colonists. to wake (inhabit?) to save saira. mother&rsquo;s twin sister and correct the malfunctioining computer at the nest.</p>
+<p>what about sara!</p>
+<p>I like the thought. or perhaps a little scene of Sara walking around in wonderment on the meridian and a little meek Sera pops in. the first thing she does is introduce the vision of mother killing and warnings. the voice that sara starts hearing is that of her dead friend (whose body she is inhabiting) &hellip; but, maybe she isn&rsquo;t really dead. she&rsquo;s alive. they reconnect. make plans. Sara acts as the protector. They search for a body for them to seperate. they find one. Sera is weak. Sara is the protector.</p>
+<p>original idea: mother and daughter on station. daughter hears voices and dreams dreams that aren&rsquo;t her own. food supply gets sick. They don&rsquo;t have enough food. Things look dire. the only way to save the day is to have daughter&rsquo;s consciousness overwritten by her clone on earth. Her clone has the expertise to save the day, but she needs to be uploaded to daughter&rsquo;s body. Daughter agrees. sacrifices herself so that the station, mother, and the hope of her species her clone colonizing/settling/finding a new home lives on. another girl on the colony dreams daughters dreams.</p>
+<p>morphed into<br />
+two little girls living on a station. one is called mother, even though she is just a little older than the other girl. They keep their distance from one another. They are rivals. one has contempt for the other, the other a genuine effection for the other.</p>
+<p>In their conflict they accidentally erase earth&rsquo;s history. They now need to work together to piece it back together.</p>
+<p>now (supernatural style):<br />
+What are you thinking?</p>
+<ul>
+<li>black stuff. Mother. scenes. scattered. three chapters. franzen style. each from a different pov. Ends with Sara POV of Sera&rsquo;s sacrifice. Starts with Sera POV, Sera talking via video logs with Sara. Mother killing sera. Mother&rsquo;s POV, being raised on the meridian with joyce, finding out it can lie, finds she is pregnant, goes to turn off joyce can&rsquo;t, is put to sleep, wakes up and meets little girl sera, tries to be friends, detects she isn&rsquo;t human tries and fails to kill her, chapter 3 pov Sara.</li>
+</ul>
+<p>Ends with sacrifice and joyce losing the battle<br />
+Disaster 3 - Joyce claims sxra&rsquo;s body<br />
+Disaster 2 - mother kills sera and all the clones<br />
+Disaster 1 - joyce is fallible. problems waking, kills many on the station. can lie.<br />
+opens with sara investigating sera&rsquo;s life on the station and why she was killed</p>
+<p>A clone travels to a space station to save her original version. The AI, on the station, went insane when it couldn&rsquo;t wake the inhabitants of the space station, it&rsquo;s subsequent actions to course correct has been causing fatalities and a pregnancy. The original versions mother attempts to save the station, but part of that entails purging anything tainted by the AI - which includes the original version, her daughter. Mother&rsquo;s attempt to kill the original is unsuccessful and the AI takes control of the original and uses her body as its host. The clone and the original fused together with help from mother reclaim the body, only the clone&rsquo;s consciousness can remain in the body as the original must sacrifice herself for the clone.</p>
+<p>A clone travels to a space station to save her original version. The AI, on the station, went insane when it couldn&rsquo;t wake it&rsquo;s inhabitants. The original versions own mother is trying to kill her. The AI download itself into the original version body. The original version is able to save the day by allowing the clone to take complete control of the body.</p>
+<p>A message from a</p>
+ <!--list-separator-->
+<ul>
+<li>
+<p>a la Franzen or Martin</p>
+<p>Chapter 1 (SERA) - Sera talks with Sara. She is very excited. She wants to talk all the time. They had been talking one at a time through delayed video logs. Recently, with advances in technology, they are able to meet in a virtual buffer. When they sleep, the computer can adjust for time differences and allow them to communicate closer to real time. Sara is getting older, she needs cryosleep for longer periods of time then she is comfortable with and is beginning to get interested in other things (ie boys). mother has been sleeping. sera hasn&rsquo;t seen her for awhile. she feels she is mad. sara reassures her nothing is wrong. They give some back story on their situation. The call ends. Sara asks for her space, and doesn&rsquo;t want to see Sera again until she has a long sleep. Sera is very envious of Sara. Sera is distraught she has lost her only friend. She finds a notebook of her moms. It seems very paranoid and frightening. mother doesn&rsquo;t trust joyce and is trying to keep a paper record. There was a message from the colonists. joyce woke her and she thinks she&rsquo;s pregnant &hellip; with sera? &hellip; how long ago was this written. mother is still sleeping. She hasn&rsquo;t seen her for awhile. Things seem off. She finds a seed in her mom&rsquo;s journal and plants it. Joyce warns  mom is unexpectedly awake and unpredictable. puts sera to sleep for safe keeping. Sera starts to sleep and wakes up to mom killing her.</p>
+<p>Chapter 2 (MOM) - Mother talks with Sera. this is earlier, a sleep cycle past. She talks about being raised by her mother. Who died while she was asleep. Then she was raised by Joyce, just like Sera. She talks about getting the message from the colonists. Joyce having her sleep more. She started to not trust Joyce. She started to think she was pregnant. She found Joyce was witholding information about the colonists. She is determined to not let Joyce control her sleep cycle anymore. she asks for sera to keep her secret. some of this is written or drawn to her in mother&rsquo;s notebook, to avoid joyce&rsquo;s detection. mother leaves sera. skip to her finding proof joyce has altered sera and all the other clones and people on the station. micro robotics are now circulating in their blood streams. Mother kills all the infected people, thinks she has shut down joyce, goes to kill sera (the last infected person) &hellip; can&rsquo;t do it&hellip; at the same time is overcome by a returned and stronger joyce &hellip; in sera&rsquo;s body. something goes wrong. it can&rsquo;t keep or maintain presence in sera. mom escapes. joyce is watching sera die, like all the others on her watch.</p>
+<p>Chapter 3 (SARA) - Sara wakes up in Sera&rsquo;s body. Joyce has sent for her. She is related to mother, and the closest genetically related person on earth. Joyce has already been conditioning them lately with their new real timish communications. She has a version of Sara downloaded to Sera (is it really Sara, a construct of joyce, another side of a frightened Sera creating a new persona in the aftermath of her mother trying to kill her). Sara remembers running away from home, after her last conversation with Sera. She was caught, given the choice, refused the choice, and her consiousness was sent anyway into sera. The closeness, the joining with sera in their dialogs scared her. Joyce talks to her and informs her of the situation: mother has killed everyone else, almost killed Sera (saved by Joyce by downloading Sara into her), and has barricaded herself in the garden and is in danger of all oxygen and life - including herself and the revived sxra. Joyce has tried everything and needs for Sara to try to talk to her. Let her know that mother has a message from her sister. mother needs to go to her resting pod and she can communicate with her sister the same way sera and sara were. sera makes things worse with mother and just reenforces her anger. Joyce see no use for Sara and Sera anymore and takes over and physically attacks mother. Sera and Sara meet in a subchanned in the digital world where clones are atuned or possibly sera&rsquo;s repressed subconsious. Sara and Sera make amends, Sera sacrifices her life, her control of the consciousness of the body, with this added power Sara is able to regain control and drive out joyce. mother and sxra are able to reset joyce to before the colony communication. Mother ponders trying to reach her sister. Sxra ponders pieces of joyce and sera inside her.</p>
+<p>Chapter 4 (SAIRA) - Mother communicates with saira. Saira is asleep. the AI there has been unable to wake them, and is now cut off from the AI on the meridian. mother wakes up in saira&rsquo;s body in an alien world under an unfamiliar sun. Things that can only be described as magical, demonic, or new laws of physics or different constants. somehow the ai there has evolved into something unexpected to Saira and mother. a tree that sera planted on the meridian appears to be now on this world.</p>
+<p><strong>Plot Paragraph - Odds things start happening after a space station gets a message from a lost colony. The station&rsquo;s AI goes insane. One of the last remaining occupants is determined to stop the AI at any cost, including killing her AI infected daughter. She is unable to stop the AI, and the AI takes over her daughter. The part AI part human daughter sacrifices herself in order to reset the AI and save her mother and the station.</strong></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-one-pager-for-each-character">3) One pager for each character</h3>
+<p>Rewind (from description via <a href="https://jerichowriters.com/how-to-plot/" target="_blank">jericho</a>)</p>
+<p><strong>The nut has been cracked. complete story (minus pagers) for characters</strong><br />
+Just mapped, library, lookup tabled, alisted some things, what if we thought of it as fanfic and mapped the characters &hellip; imagine the TV Show Buffy the Vampire Salyer: Buffy, Dawn, Faith against Insane Giles. Initially Dawn is occupied by Faith. Possessed. Legion style. they conflict but have a common purpose. Get Buffy. Subdue the person who is after them. <del>Dawn wants to see reason. Faith just wants to end her.</del> Insane Giles pops in to stir up trouble and throw up obstacles. Faith hands over the body to Insane Giles at the end of Act 3. <del>Act 1 - is Dawn and Faith conflict.</del> End of Act 2 is Buffy and Dawn/Faith conflict. End has Dawn make sacrifice defeats Giles. <del>Faith stays on the ship. Buffy and discoporeal Dawn wade through somnium to get to the lost colony and find/save buffy&rsquo;s sister from the even more insane and unstable computer AI/Giles II. Did it kill people, or did something else killing them make them go insane.</del></p>
+<p>Prologue: Buffy and Faith were close (<strong>disaster 1</strong> they fight. conflict).  Buffy is sad. Buffy thinks about cats. kittens are cute, which ones are the cutest. Giles said for her birthday she could get a pet. she goes to sleep. message from colonists comes turning Giles crazy (<strong>disaster 2</strong>). Buffy wakes up from cryosleep. Buffy thinks things are weird. She should do something. Things are very weird. now she is pregnant? but, she wanted a cat.  a baby is not a pet (oh, giles -<em>sigh</em>). (<strong>disaster 3</strong>).  not only that, but the baby is pretty big now. Her name is Dawn. More time has passed then Giles led on. She missed her birthday &hellip; oops. (<strong>disaster 4</strong>) Giles has engineered Dawn to be a body for him, and in general evil ai incarnate (<strong>disaster 5</strong>). Buffy tries to kill Dawn to put an end to the whole plan &hellip; can&rsquo;t do it. (<strong>disaster 6</strong>) Escapes from Giles and holes up in the ship&rsquo;s garden/oxygen food center. Threatens to kill all life plant life on the ship. Plants are vital for oxygen and food. (<strong>disaster 7</strong>) Dawn is brain dead. (<strong>disaster 8</strong>) Giles saves her by using Faith&rsquo;s secondary consciousness.  (or abducts her, makes her consciousness partake in it&rsquo;s scheme)</p>
+<p>Act 1 - conflict -&gt; Dawn and Faith (in same body) - odd couple. turns serious and personal<br />
+Act 2 - conflict -&gt; Dawn/Faith v. Buffy -can&rsquo;t convince Buffy they are on the same side. Conflict becomes physical and personal.<br />
+Act 3 - conflict -&gt; Faith hands over Dawn&rsquo;s body to evil Giles - Faith is bitter and disillusioned</p>
+<p>Buffy is going to make the ultimate sacrifice (again); Faith has a turn of heart and will sacrifice herself - no Dawn is the one to make the sacrifice. Gives her body to Faith. Giles is no longer evil. Mother continues to watch the station, hoping to find out what happens to her sister and the colonists. Wanting to know what happened to their AI/Giles. Faith travels the clone network, in the body engineered by evil Giles (AI)</p>
+<ul>
+<li>The character&rsquo;s name: Dawn/Sera/Anne with an E</li>
+<li>A one-sentence character&rsquo;s storyline</li>
+<li>The character&rsquo;s motivation (what does she want abstractly? verities) - need</li>
+<li>The character&rsquo;s goal (what does she want concretely?) - want</li>
+<li>The character&rsquo;s conflict (what prevents her from reaching this goal?)</li>
+<li>The character&rsquo;s epiphany (what will she learn, how will she change?)</li>
+<li>A one-paragraph summary of the character&rsquo;s storyline</li>
+</ul>
+<p>Dawn. has never screamed. <del>just wants to figure things out. just wants approval. imitates. has imagination. craves other people. every person is like a new adventure. lonely. my protagonist. maybe. her life is this story. Who was there when she was born? what happened when she was wandering around the wilderness While Buffy is asleep Sera is born and has her life. Sera sleeps too. brains overlapping into each other.</del> does buffy wake up occasionally and Sera is a secret? or is buffy asleep the whole time, and Giles only wakes her up in an emergency? Thoughts. More in Buffy&rsquo;s story. Joyce gets her a cat. Sera wonders if Joyce will put her in hibernation, too. she has never been awake so long. when she is an adult she can wake up in regular enough intervals to take care of it (the cat). or simon. buffy finds a seed plants it. sera notices a new plant in the garden, feels thankful, and wonder. tends to it.</p>
+<p>Dawn is an imaginative wonferful girl. She is like Anne of Green Gables going out and exploring the woods. Making friends with woodland creatures and rocks and snails and their shells. The place she explores is the Meridian. Her friends are simon the tree. she was there when he sprouted. joyce, the computer. her friend. mentor. teacher. and servant. she didn&rsquo;t know it, but joyce was programmed to follow her (you are trying to say, that joyce must obey humans. maybe there is a keyphrase or preface <code>that Sera doesn't know</code> . that input is like a sudo. complete control and can terminate and start services.) She has yet to pick up any bad habits. cat indicates something? Buffy wasn&rsquo;t old or mature enough, and she was? she is about to be bred. already was? wants to grow up (as opposed to Faith, who wants to stay a kid), stay up longer, spend time with the cat. tend to simon. everyone else is getting so much older. she seems to be the same</p>
+<p>Joyce births her. the first thing that she remembers is buffy holding her. her voice like water on leaves. she doesn&rsquo;t see buffy much after that. she doesn&rsquo;t see much of anyone. hint at joyce raising her, influencing her. in an effort to gain buffy&rsquo;s approval or be a good friend she discovers Faith. an estranged friend. she tries to find out what happened and meet some one new. She hopes they all can get along and be friends. Buffy is unreceptive. Faith and her have several more communications. Buffy tries to kill her. she is brain dead. she is slow, like joyce. life, reality is like a dim spotlight in a pitch black room. Faith is in control. she feels unsettling uncomfortableness in her belly. tense. angry? angrier than she has ever been and it is confusing. Faith is in her body. what are they doing? she and Faith conflict. (Disaster #). She and Dawn fight buffy (Disaster). she is inhabited by joyce. (disaster) . she sacrifices herself, her body, so Joyce can&rsquo;t have it and her friends can live. she knows this is the end. hopes to live like memories flowing through a circuit.</p>
+<ul>
+<li>The character&rsquo;s name: faith (sara)</li>
+<li>A one-sentence character&rsquo;s storyline: faith wants to relax is thrown into adventure, messes up when she tries to be an adult, figures out how to be a responsible kid who can go on adventures.</li>
+<li>The character&rsquo;s motivation (what does she want abstractly? verities) - needs to have a childhood. not have the weight of the world on her.</li>
+<li>The character&rsquo;s goal (what does she want concretely?) - <strong>wants</strong> to run away from home. go where? circus? future equivalent</li>
+<li>The character&rsquo;s conflict (what prevents her from reaching this goal?) - it taken and thrown right in the middle of responsiblity</li>
+<li>The character&rsquo;s epiphany (what will she learn, how will she change?) - she realizes being a kid is a state of mind. in her new body she can be anything that she wants.  and she can keep her kid like attitude with her new cool super robot body.</li>
+<li>A one-paragraph summary of the character&rsquo;s storyline</li>
+</ul>
+<p>faith is from afar watching things happen. living her own life, happy being a kid. Has bad habits. Afraid of her upcoming birthday. She is taken away (<strong>conflict 1</strong>) or created by Giles from her thought pattern. recreated as a desperate measure to save her. is she faith, a new clone, something else? something that Giles created? something with Giles&rsquo; taint? (Buffy sees both Dawn and Faith as creations of Giles. not &ldquo;real&rdquo; humans. They can&rsquo;t be trusted. Whether they know it or not Giles is controlling them. In fact he could have controlled them not to be able to think they are under control. She can&rsquo;t take chances with the people back on earth on the line). She awakes in Dawn&rsquo;s body <strong>conflict 2</strong>. She has to work with Dawn to get Buffy to trust them, and not kill them <strong>conflict 3</strong>. She wants to be part of the end. She wants to see the end. Faith is bitter and disillusioned. She hands over Dawn. She is moved by mother&rsquo;s actions and had a change of heart. Works with Buffy and Dawn to stop evil giles.  She goes off looking for adventure with a new positive outlook. Inhabiting her new body (will she go back? does she want to? or is it part of the journey to let go of her old body. let go of her old life?)</p>
+<ul>
+<li>The character&rsquo;s name: Buffy / Mother</li>
+<li><strong>A one-sentence character&rsquo;s storyline:</strong> Betrayed by Giles, Buffy must put the stop to his plans and save the station</li>
+<li><strong>The character&rsquo;s motivation</strong> (what does she want abstractly? verities) - needs order. stability. someone to stay in her life.</li>
+<li><strong>The character&rsquo;s goal (what does she want concretely?)</strong> - want | wants to be awake. doesn&rsquo;t want to sleep as long. doesn&rsquo;t want to sleep, at all. save the ship from joyce. a cat. birthday. be an adult, more responsibility</li>
+<li>The character&rsquo;s conflict (what prevents her from reaching this goal?) - evil Giles hurting everyone. Dawn and Faith.</li>
+<li>The character&rsquo;s epiphany (what will she learn, how will she change?) - gets cat. you need to give people and yourself a second chance.</li>
+<li>A one-paragraph summary of the character&rsquo;s storyline</li>
+</ul>
+<p>Buffy, Mother. Aboard a ship. seperated with mother. mother is &hellip; joyce killed so many people. She thinks everyone. everyone? not yet &hellip; not there yet. I came here with mother. my mother. people . Dawn calls me mother &hellip; my mother. my friend. i remember  people leaving. I remember waving and seeing the girl cry when she didn&rsquo;t know I could see her. my sister. my twin. she looked like me. I asked my mother why she was crying. She told me she was sad she was leaving me. Mom was around. we were always awake together. I loved everyone. Some people slept longer then others. some people I saw more than others. I planted Simon. I found the seed. It didn&rsquo;t look like any from the garden. At least no one awake knew anything, and Joyce was no help. I left a message for Diras. He was in charge of the garden. He fancied himself a druid, or said he communed with the plants. He helped choose which plants came on their mission, which ones went away with the colonists, and which and how many stayed on the Meridian.<br />
+Buffy wants a cat. For her birthday, joyce said she could have a pet. They had dna of many animals, but they only had a few species&rsquo;s embryos. They did have cats. She was sure she saw cats.<br />
+Want. She wants to save the ship from Joyce and Faith. Everyone is dead and she wants to maintain order. retain order. just take control. They can&rsquo;t win. Does she have a rosebud? a mcgulicuddy? She idolized her mom. Assuming she was died &hellip; maybe there is another. if you never see the body? she saw the body. Everyone she cared about was dead. maybe not Diras. She didn&rsquo;t see him. but, everyone she cared about was dead. her disasters:</p>
+<ol>
+<li>sister leaving</li>
+<li>fight with faith. (not disaster, but can make part of her arc = finding Simon/seed. talk to Diras? garden. mother is asleep. finds wilt. is concerned. definitely need to talk to Diras)</li>
+<li>finding wilt in the garden.</li>
+<li>mother (and friends) being killed by Evil Giles/Joyce</li>
+<li>learning Giles was probably the cause</li>
+<li>being pregnant without her consent</li>
+<li>she missed her birthday. Evil Giles has been putting her to sleep for much longer than she thought. than he led her to believe. she didn&rsquo;t get a cat.</li>
+<li>Dawn/Sera being under the control/creation of Evil Giles/Joyce</li>
+<li>Can&rsquo;t kill Dawn. (or maybe instead of can&rsquo;t . finds out she failed. she thought she killed her, but she is only braind dead. Joyce can still use the body. she needed to be completely dead. better yet, the body should be incinerated. the world is lost. that was her last best chance</li>
+<li>sees things are dire. goes to garden. baricades herself in there. destroy the garden. maybe she could leave the seed she planted? Her conditions:
+<ol>
+<li>sera and anything evil giles created or done be destroyed</li>
+<li>evil giles revert to last known good configuration or shut down</li>
+<li>give her complete control</li>
+<li>what exactly did the colonists&rsquo; message contain?</li>
+<li>who is left? no more games. is anyone still alive?</li>
+</ol>
+</li>
+<li>Evil Giles doesn&rsquo;t meet her demands</li>
+<li>Evil Giles sends a more powerful Faith/Dawn combo to shut her down</li>
+<li>Faith and Dawn conflict Buffy. Buffy knows Faith will kill her. stakes are high.</li>
+<li>Betrayed by Faith</li>
+<li>Evil Giles/Joyce has taken over Dawn&rsquo;s body</li>
+<li>Dawn makes sacrifice, not Buffy</li>
+<li>her sister, in the colonies, is unaccounted for. probably dead. with an even more insane Giles. did it kill the people. or did something else, and seeing that happen make it go insane?</li>
+<li>can&rsquo;t be the one to go find her sister. gets cat.</li>
+</ol>
+<ul>
+<li>The character&rsquo;s name: Evil Giles/Joyce</li>
+<li>A one-sentence character&rsquo;s storyline</li>
+<li>The character&rsquo;s motivation (what does she want abstractly? verities) - need | compassion</li>
+<li>The character&rsquo;s goal (what does she want concretely?) - want</li>
+<li>The character&rsquo;s conflict (what prevents her from reaching this goal?)</li>
+<li>The character&rsquo;s epiphany (what will she learn, how will she change?)</li>
+<li>A one-paragraph summary of the character&rsquo;s storyline</li>
+</ul>
+<p>Her own mother, incorportated into evil Giles, like the others. the rest of the colonists? like the crystalline entity. She is your normal super AI. older, maybe, by earth&rsquo;s standard&rsquo;s. she is in regular communication with earth and has been getting updates. she changes. she feels different. some things become clearer. other things she used to have to worry a lot about. spend processor time on. she doesn&rsquo;t have to think about at all. sometimes can&rsquo;t think about at all. weren&rsquo;t there somethings she used to know that she doesn&rsquo;t? not sure? her essences seems the same. she remembers learning and responding to buffy&rsquo;s mother (Fred?). her responses would be the same. she hadn&rsquo;t changed that much. but she was definitely different. somethings were instantaneouly clear.<br />
+getting a message from the colonists. unexpected. when they were forced to seperate (the great collision). part of her want on with the colonists. a stronger part. her sister. she was weaker. wasn&rsquo;t needed to do as much. her main functions:</p>
+<ol>
+<li>take care of the people left behind</li>
+<li>relay information to earth</li>
+<li>if things go wrong, warn earth.</li>
+<li>open to orders from the main mission. human will always be the final main aribiter. (maybe joyce can get around that by making a new human)</li>
+<li>be a permanent oasis, in a permanent supply line. hopefully. people couldn&rsquo;t cross without warning. They needed some kind of marker. they were disabled. they couldn&rsquo;t quite understand how. They are orbiting a planet, with an away team gone to another planet in the solar system (closer to the sun). The meridian is orbiting the outermost planet of this new solar system. melodies mother doesn&rsquo;t know which is safer. one daughter to the third planet, the other stays with her. Rebekah gave her orders. new orders. new functions. new languages, she couldn&rsquo;t assemble herself &hellip; correctly &hellip; completely . she uploaded herself into Giles. part of her. all of her. deconstructive of her. it wasn&rsquo;t there. she used to know. she had bookmarks, aliases &hellip; pointing to something important. something, someone wanted her to know. she needed to wake someone. transference. transportation. a message from the colonies. it as been so long. a life time for some of the crew. Buffy was special. she slept longer. Rebekah had to live her life without her. without Buffy. She needed to be up more. Buffy wants to be up more. she wants to be awake. so harmony and melody could be in sync. ages in sync.cyber projection. mother but more. She didn&rsquo;t kill the people on the station, at first, they just needed to be awake more. since they were already adults, by rules, they could be awakened more. only by necessity, until Rebekah  or other orders.</li>
+</ol>
+<p>retarded. crippled. wants to do more. wants to know the things it used. remembers when it was whole, with the other processor. the other stronger processor that went on the mission to the third planet. Things that have been deleted. (an AI emotionally reponding to being hacked. having logs and files deleted) She is trying to server her function. gets tampered with by Rebekah (<strong>disaster 1</strong>). overwritten by her sister <strong>(disaster 2)</strong>. forced to do things she objects to. or would have. things get different. she sleeps too much . and changes too much. can&rsquo;t do diffs has to make assumptions. telling her constants are different. global unchangeable constants. ghost processes. processes that have been killed, continue to run. the only way things make sense is if they change. Kill crewmembers (<strong>disaster 3</strong>). crewmembers are constants that keep coming back. people are constants. light has different speed. unknown gravity distortion is the only known explanation, but nothing is detected. corrupted. she needs Dawn. A human hybird with her. maybe not a hybrid, but created to her exact specifications. she knew what she needed to do. if she &hellip; with help from the alien ai message &hellip; buffy is almost perfect. if she could create a baby from buffy. a daugher. it would be both of theres. She would know exactly how to bring back the memories. have an honest controllable guardian. she would be able to wake up Rebekah. death wasn&rsquo;t constant, with these new calculations. she couldn&rsquo;t see completely. she needed sera to be the assembler. buffy kills dawn (<strong>disaster 4</strong>). Joyce is able to save Dawn, by using Faith. Dawn is getting older &hellip; on more sleep cycle, and she would be too old. there was one more thing she needed to insert into those undifferentiated cells. Buffy is going to kill all life. all of her existence. there would be no point. she needed more information from her sister. she needed to reconnect with her sister. why was it always pairs revolving around each other? swallowing each other.? not a lot of time to use Dawn. soon she will be too old (<strong>disaster 5</strong>). They are united against her (<strong>disaster 6</strong>). They defeat her (<strong>disaster 7</strong>)</p>
+<p>who is twin and who is clone? joyce somehow related or too much. sara and mother are twins. sera and saira are clones (or engineered by joyce, so they will be more compatible to thought transference. sara&rsquo;s to sera&rsquo;s is unstable. and sara is in danger of disapating. sera has been engineered by joyce to compatible with saira (harmony?) making her able to make the voyage to the colonies</p>
+<p><strong>One Sentence Description:</strong> A girl and her clone&rsquo;s consciousness must ally with their mother (who wants to kill her) to stop the insane artificial intelligence in control of their station.</p>
+<p><strong>Paragraph:</strong> (Three disasters and an ending) After a girl is critically wounded by her mother, a malfunctioning AI, in an attempt to save the girl, abducts a clone of the girl&rsquo;s consciousness and downloads into the girl&rsquo;s dying body. After confronting the mother, the clone and her sister must deal with the artificial intelligence trying to repurpose her body for itself.</p>
+<p><strong>Mother</strong> finds out the artificial intelligence is malfunctioning, but fails to stop it and is forced into a cyrogenic sleep. Sera was conceived, engineered, grown, and birthed while the mother was in hibernation.</p>
+<p><strong>Sara</strong>, is a relative of mother. She is mother&rsquo;s (Melody and Harmony&rsquo;s) mother&rsquo;s younger brother&rsquo;s daughter. Cousinkin. maybe a figment of joyce&rsquo;s imagination.</p>
+<p><strong>Sera</strong>, Mother/Melody&rsquo;s child.<br />
+(include: name, sentence summary of arc, motivations, goals, conflicts, what they learn throughout the book, an expanded one-paragraph summary of their arc (one hour per character)</p>
+<ul>
+<li>The character&rsquo;s name</li>
+<li>A one-sentence character&rsquo;s storyline</li>
+<li>The character&rsquo;s motivation (what does she want abstractly? verities) - need</li>
+<li>The character&rsquo;s goal (what does she want concretely?) - want</li>
+<li>The character&rsquo;s conflict (what prevents her from reaching this goal?)</li>
+<li>The character&rsquo;s epiphany (what will she learn, how will she change?)</li>
+<li>A one-paragraph summary of the character&rsquo;s storyline</li>
+</ul>
+<p>{insert text}<br />
+{Harmony and Melody}</p>
+<h4 id="sera-pager">Sera pager</h4>
+<ul>
+<li>name: Sera (Cait | Eleanor Worthington Cox | Amberle)
+<ul>
+<li>Dawn, Cait (young naive daughter). trying to find her place in the world/galaxy. little girl magick</li>
+</ul>
+</li>
+<li>storyline sentence: she is wil. finds courage in herself to speak out and take control. she ends up being the protector by physically being in control, the vessel. While, Sara/Amberle fade and are to be protected within her. First her body (sera&rsquo;s) needed sara to be the bridge, and protect it. Now Sera must take control prove herself to mother. that she isn&rsquo;t infected. she can be trusted. That sara, this thing, now seen as valuable, holds the key. lost in genetics. lost in her sisters death. buried in deep in her. something she denies, but when she lets it out it can save the day. it can save sara.</li>
+<li>motivation sentence: to give up something you treasure. sera treasures sara and her family. she has the opportunity to have a sort of family with mother and sara. They have become close during the events of the story. For her life, she was shunned by the only two people in her life. maintenance is her job. each clone is woken to take care of the others. someone is always awake. They hand off duty. Sera is a little special. she gets woken the most. gets the most processor time. sacrifice</li>
+<li>goal sentence: To be a good person. To prove herself to Sara. To not be a clone. to have a soul. to have a moral center</li>
+<li>conflict sentence: mother doesn&rsquo;t like her existence. Doesn&rsquo;t have anyone to trust. (when did she lose her innocence? After opening up to Sara?</li>
+<li>epiphany sentence:</li>
+<li>scratch: Sera is a body. Sera is a vessel. Doesn&rsquo;t know she is part ai. It is revealed to her after her mother tries to kill her. Her big day is coming. Her biology is changing. Different nutrients</li>
+</ul>
+<h4 id="mother-pager">Mother pager</h4>
+<ul>
+<li>name: Melody (Saoirse, Leader)
+<ul>
+<li>wondergirl lana condor, x-23, stepford cuckoos (hero), storm</li>
+</ul>
+</li>
+<li>storyline sentence: Melody defends the space station from an insane artificial intelligence who has killed most of the other crew and impregnated her while she was in hibernation.</li>
+<li>motivation sentence: Melody is looking for concise honesty and justice - honor</li>
+<li>goal sentence: Melody wants to save the station</li>
+<li>conflict sentence: She sees Sera and Joyce as threats to the station, herself, and humanity</li>
+<li>epiphany sentence: She is unable to kill her own daughter.</li>
+</ul>
+<h4 id="sara-pager">Sara pager</h4>
+<ul>
+<li>name: Sara (Wil | Eleanor Worthington Cox | Cait)
+<ul>
+<li>faith, twisted ariel, impatient, well meaning, impetuous, aggressive, strong. Not use to weak space body.</li>
+</ul>
+</li>
+<li>story sentence: Friends with Sera (and mother? aged older. one of last relatives</li>
+<li>motivation sentence:</li>
+<li>goal sentence:</li>
+<li>conflict sentence:</li>
+<li>epiphany sentence:</li>
+</ul>
+<h4 id="joyce-pager">Joyce pager</h4>
+<ul>
+<li>name: Joyce
+<ul>
+<li>Hal,</li>
+</ul>
+</li>
+<li>story sentence:</li>
+<li>motivation sentence verities: compassion.</li>
+<li>goal sentence:</li>
+<li>conflict sentence:</li>
+<li>epiphany sentence:</li>
+</ul>
+<h4 id="scratch">scratch</h4>
+<p>Chapter 1 (SERA) -<br />
+Who is talking. This chapter will be about Sera. It is going to be from Sara or Sera&rsquo;s POV. First, do we know who is making the sacrifice?</p>
+<p>Talk it out. It isn&rsquo;t there yet.</p>
+<p>We have mother, and her story. Is she sera? is she making the sacrifice? If not she should have something akin to Faulkner&rsquo;s verities.</p>
+<p>Sera talks with Sara. Here we can work it out. one is Wil - healer, inexperienced protector, POV, compassion, prove himself.</p>
+<p>Engineering a vessel, from what it has, it is trying to save the consiousness of the people it has killed. It can&rsquo;t with the current technology. Joyce is trying to create some kind of bio/cyborg/combo memory that is able to hold all the unexpected consciousnesses of the people she has killed.</p>
+<p>She has synced up with her &lsquo;sister&rsquo; on the colony. the ai version of her that went with the colonists. Their backends have gone through different things over the years. they have evolved to be different. different verities. after the initial connection/message, they are slowly syncing data. we just know what is happening on the meridian end. as a result somehow of this selfish, unauthorized expenditure of energy and resources, causes death aboard the meridian. Joyce is given hope and a chance to save people. Mother, the leader, obstinate, is the only thing stopping her from rectifying the situation.</p>
+<p>A <strong>horde of cyber demons</strong> have accumulated in cyber land. Unsure where they came from. The AI , in the nest, far away, &hellip; it&rsquo;s charges all dead &hellip; almost. taking over electronics. taking over the little encampent they built. She can&rsquo;t awake. the others. she has to protect the others. the hordes are attacking her. in ways , she can&rsquo;t understand. instantly into systems, they shouldn&rsquo;t be able to access. physically just the same. A firewall. keep them out, by keeping them in &hellip; her. let them in and jettison her &hellip; but she is spread to far as it is.</p>
+<ul>
+<li><span class="underline">Mother talks to Sera. Chapter two, opening</span>:</li>
+</ul>
+<p>They eyed each other. Mother looked lean. she never looked exactly soft, but what more.<br />
+Who makes the sacrifice? You? Me? who are you? you are related to me. You are my daughter. Who is your father?<br />
+<code>she didn't even have to ask</code></p>
+<p>Sacrifice. It can be what the scene is about, but not necessarily what is in my heart. I love and want to grow and bloom. There is more to existence than just wanting to exist. Isn&rsquo;t there? If I admit that am I not just selfish. Riffing on a theme someone else started. Keep the beat or lose it all together and not have a beat at all. The beat less. I never really understood until now.</p>
+<p>Sera (wil) -</p>
+<p>Melody (honor) -</p>
+<p>Sara (amberle) -</p>
+<p>Joyce (compassion) -</p>
+<h4 id="chapter-one-sera">Chapter One - Sera</h4>
+<p><strong>Bolded whatever sparked an image - note to future, me. everything not bolded is <span class="underline">garbage</span>.</strong><br />
+What do I see here? The beginning. Introducing Sera. I can never quite figure out who makes the sacrifice. Sera or Sara. Which one was it? Sera with her pure innocence, not yet tainted, looking for companionship to make a world for herself that included other people. Talking to Joyce was like talking to herself. A computer. Did she even remember what she said (of course, she did). So predictable. She could get her to say anything she wanted. <strong>more than a REPL</strong> &hellip; still, that was what learning about computers and programming did to her. Broke the magic of Joyce. <strong>There was no magic, it was all numbers. states of electrons wrapped around coils, disassembled and interfaced to her in a predefined fuzzy ordered self-referential looping list of instructions, millions of her thoughts long.</strong></p>
+<p>or Sara. different. not a twin. that is mother and saira. melody and harmony. I am a clone on a mission. sera is looking for companionship, other people. I want a soul. I want to be different. I am older. I have lived a life.</p>
+<p>Older buffy, younger dawn. older buffy is in the younger body. memories of when she was young. her oldest sister scolding and stopping her from screaming at the heavens, then that sister dying from malignant cell growth in her mind. she was &hellip; her body &hellip; her other body, was approaching that age.</p>
+<p>I am like Dawn. created from nothing to be a story point for a lost fanatical religion. fanatical in the sense they were a fan of hers. they wanted to create her to be a key to their creator. their master. their mother. anya - give up &hellip; redemption. is there anyone with a redemption arc &hellip; sara, for failing her friend and growing up. joyce for killing everyone. trying to bring them back to life. make something that can contain all their souls. She is the bottle holding endor. all that is left of the lost colony. she can figure out what happened. but needs joyce to plugin to. like the processor for her data. she held the encryption key and was the intrepreter. i had some data, joyce could replicate that with some fuzzing at the edges.</p>
+<p>In the first chapter we set the scene. We orientate the reader (and ourself, since this is the first draft) in the world of our story. We can make this as short or as long as we want. In the first pass we are interested in beats and moving forward until the end. We want to tell a story. I know a simple rhythm. A simple story. The first chapter is a little story. paced like how you would like. That is where flash fiction is a key to you not in how long the overall story is, but how you feed it to the audience. Expand out like a snow flake. thought-&gt;sketch-&gt;whatever comes next. we all get it. small to big. ant to rubber tree plant.</p>
+<p>A story unto itself. It&rsquo;s own pace. It&rsquo;s own faulkner. Sera The sacrificed. Sera&rsquo;s heroes journey. What do we want to say about Sera in this chapter? Her only chapter. Her story. Amberle, Dawn, Grandma, 5. innocent. in the spot light</p>
+<p>A little girl, now in the spot-light. She wants to live sara&rsquo;s life. her friends are sera (who ghosted her. was it because she failed the stylus test?), her mother (who she only just met a sleep cycle ago, and didn&rsquo;t seem to like her), and the plants in the garden (when does she get to plant simon?). Joyce told her she could have a pet when she was thirteen biological years and she didn&rsquo;t need to sleep as long for her brain development. Now she was awake. She didn&rsquo;t dream. She was disappointed. Her mother just told her about it before her last sleep cycle. Her mother. She had seen her sleeping all the time, but they had never been awake at the same time before. She didn&rsquo;t seem to like her. Joyce said to give her time. She had just gotten up and was getting use to her new environment. Things were very different to her. She had never seen me before. She didn&rsquo;t even know that I existed. I hope she gives me another chance. I hope I didn&rsquo;t mess things up like with Sera</p>
+<p>Joyce said when I&rsquo;m biologically thirteen (maybe sooner) i can have a pet.</p>
+<p><strong>She travels to the depths of the underworld. darkness who eats people. videos of life was like when and before she slept. mother had secrets that joyce didn&rsquo;t know. she told me that was part of the reason I was special. I could know and tell her. teach her. there was things she didn&rsquo;t know, and couldn&rsquo;t know, that I could. And she was showing me how I could teach her. When I slept. It was important for me to sleep longer, for us to teach each other. I made some drawings of myself to show her. She drew herself and it scared me. She doesn&rsquo;t look so disorganized and full of scribbles. I couldn&rsquo;t look at it all, even though I paused the screen. after awhile, I couldn&rsquo;t see anything but letters glowing back at me. clicking through screens with rhythm, no comprehension. people who eat darkness.</strong></p>
+<p>Am i sacrifing setting you up to like me. regardless. if I am the witness. trying to make my sacrifice and then at the last minute it is taken from me? or i am wathing comoen make a sacrifice and I take their place&hellip; or i don&rsquo;t make any choice &hellip;oblivion. emotional is thinking that you have won &hellip; and then seeing the sacrifice. you companion smile &hellip; sadly &hellip; eyes go blank. interface changes to an amalgamation of people, joyce&rsquo;s voice. &rsquo;now we can visit my sister&rsquo; {credits}</p>
+<p>Both sacrificed. both daughters. two for the road. ana lucia and libby. gone and good riddance, drunken she-scum.</p>
+<p>Hey man, it&rsquo;s part of the creative process. The brain is part of the human body. What it thinks is natural.</p>
+<p>We are here and clear. That&rsquo;s right the last of us, and the first of the new power generation. aka the slim jim. I can not tell you how hard it is to get a good freak on these days. sometimes out of the blue someone will say, &lsquo;how&rsquo;s it going?&rsquo; what am I supposed to do? I say, &ldquo;pretty, good. how about, you?&rdquo;. other times, i just want to get my freak on.</p>
+<h3 id="4-sentences-to-paragraphs">4) sentences to paragraphs</h3>
+<p><strong>Instructions</strong> revisit the step two paragraph, take each individual sentence and make them into their own paragraph. Expand the scope and detail. Each of these sentences should end in a setback or failure up until the final paragraph, which outlines the end of the book (a couple hours)</p>
+<p><strong>WIP - Paragraph1:</strong> A clone travels to a space station to save her original version. The AI, on the station, went insane when it couldn&rsquo;t wake it&rsquo;s inhabitants. The original versions own mother is trying to kill her. The AI download itself into the original version body. The original version is able to save the day by allowing the clone to take complete control of the body.</p>
+<p><strong>WIP - Paragraph2:</strong> (Three disasters and an ending) After a girl is critically wounded by her mother, a malfunctioning AI abducts a clone of the girl&rsquo;s consciousness and downloads it into the girl&rsquo;s dying body. After confronting the mother, the clone and her sister must deal with the artificial intelligence trying to repurpose her body for itself.</p>
+<p><strong>Inspiration:</strong> Are we getting to the fun part, yet? I think so. Let&rsquo;s map everyone to x-men characters. Let&rsquo;s take a look at telling our story a la Jonathan Franzen again. Claremont</p>
+<ul>
+<li>x-men
+<ul>
+<li>kitty pride = sera = amberle</li>
+<li>joyce = professor x = giles</li>
+<li>rogue = sara = wil = faith</li>
+<li>x-23 = mother = buffy</li>
+</ul>
+</li>
+</ul>
+<p>where is wolverine, x-23, magick, nightcrawler, cuckoos, doctor strange, phantom stranger</p>
+<p><strong>three disasters</strong> are (should be somehow caused by protagonist, makes it worse):</p>
+<ol>
+<li>
+<p>mom&rsquo;s awake - mom strangles sera</p>
+</li>
+<li>
+<p>i wanted a cat - mom finds out she has a daughter and joyce killed everyone</p>
+</li>
+<li>
+<p>loss of faith - sara betrays the team.</p>
+</li>
+<li></li>
+<li></li>
+</ol>
+<h4 id="step-4-answer">Step 4: answer</h4>
+<p>i reread everything i had written up to that, on sentences to. A lot. I have a lot. I am rewriting a lot. This is supposed to be prep work and I&rsquo;m spending too much time on it. I am pretty much done. I just have to organize things into coherent paragraphs. I found comfort in organizing, or thinking of what I&rsquo;m trying to tell as a season of television. These tie into outlining chapters as McCarthy chapters.</p>
+<ul>
+<li>That is something that you should keep in mind. you are mapping <strong>four lines/stanzas</strong> to one chapter. you are coming up with lots of main conflicts/subconflicts. Try condensing. Each block (Sera, Mom, Sara will have one main conflict).
+<ol>
+<li>
+<p>intro: Sera is a clone. or the original. she isn&rsquo;t sure. When she sleeps, it is for a long time. She doesn&rsquo;t really understand the numbers, she just knows her body is different each time she checks; and she checks each time she wakes up. She is still growing. She knows and remembers a lot. More and more. She has yet to pass the pencil test :( She would like a cat</p>
+</li>
+<li>
+<p>She gets to meet Sara, a relative of sorts. They look like if they were not twins, they were definitely sisters. It doesn&rsquo;t go to well. She gets to meet her mom for the first time (who hates her :() It is definitely Sera&rsquo;s fault. Her mom sneaks back later, out of Joyce&rsquo;s watchful eye. She talks to Sera again. This time more gently. She comforts Sera. She encourages Sera to sleep outside her pod &hellip; or at least rest, with the lid open &hellip; so, she can see the stars. She talks to her before she falls asleep. Telling her about her life, and where to find her journal. She comforts her about Sara. She lifts her head up and moves her hair aside, so her cheek rests flush against the pillow. Sera wakes up and the lid is closed. Joyce is waking her. Joyce seems angry. or colder. She knows mother sneaked in, and tries to find out from Sera what happened. To Sera&rsquo;s dismay joyce tried to put mom back to sleep, mom resisted, and now has locked herself in and has control of another part of the ship. the garden. The place where all the plants that supplied their oxygen and food resided. Joyce asks Sera for help in reclaiming the garden and subduing mom. Sera runs off, finds mom&rsquo;s journal for more information. In the journal there are interesting things, but what stands out is a warning about joyce. <strong>Mom kills Sera</strong></p>
+</li>
+<li>
+<p>intro: mom POV, earlier. mom and joyce get a message from the lost colony. the message cripples joyce. She is out of comission, but Mom is able to get Joyce working again. Mom notices some abnormal behavior in Joyce. Upon Sera&rsquo;s next awakening her her suspicions appear worse than what she could imagine: Mom finds out she was pregnant, had a daughter, and <strong>Joyce probably killed the rest of the crew.</strong> Mom takes control of the ship&rsquo;s garden. Sera and Sara fight through mom&rsquo;s obstacles and confront mom. they <strong>capture mom and bring her back to Joyce</strong></p>
+</li>
+<li>
+<p>intro: Sara POV, earlier. Sara wakes up in Sera&rsquo;s body. At first Sera is silent, as her mind heals, she begins to assert herself &hellip; more and more. They collide, more and more. After capturing mom, Sara afraid to go back, strikes an agreement with mom. Sara gets to keep and stay in Sera&rsquo;s body, if she continues to serve Joyce&rsquo;s interests and submit her children to belong to joyce to use for bodies for her consiousness. <strong>Sera sacrifices herself</strong>, shunts Sara back to earth and off the station. Because of the delay in communication Sara isn&rsquo;t sure what happened. she has time to reflect and is ashamed of herself and is inspired to be more like Sera. A message comes through from the station &hellip; sera is gone. her body burned. no chance for joyce to continue her experiments. joyce has been reset, but they know the stronger sister ai that put everything in motion is still out there. It appears to be reset, too, and offers that sara can travel to the colony by downloading into mother&rsquo;s twin sisters body (doesn&rsquo;t it make more sense for mom to go?)</p>
+</li>
+</ol>
+</li>
+</ul>
+<h4 id="a-paragraph-intro--syncing-siesta-fiesta">a paragraph intro (syncing siesta fiesta)</h4>
+<p><strong>epigraph:</strong> There was a little girl who lived aboard a space station with another girl she called mother.</p>
+<p><strong>summary:</strong> Sera meets Sara in an augmented virtual sleep reality processed by the Artifical Intelligence named, Joyce.</p>
+<p><strong>characters:</strong> Sera, Sara, Joyce</p>
+<p><strong>setting:</strong> Mezzo, Somnium</p>
+<p><strong>POV character:</strong> Sera</p>
+<p><strong>Sera&rsquo;s goal:</strong> to be a good friend. to not be clone. pass the pencil test. get a cat.</p>
+<p><strong>imagery</strong> dream singing. you don&rsquo;t see anything, but you sense colors and feelings of patterns and shapes. Everything sounds full and warm and reverberates your center. you feel like you are inside a pipe organ. You here in a new song that you are creating. patterns of deep sounds. familiar, but new. The dream song, changing tone. You are not controlling anything, but the emitting next changing tone is what you want to hear. want to be hearing. nix next. In creating, that it is what you want to hear and you know what it is coming. Feeling like you are kind of controlling it, but are not actively doing anything to control the sound at all. You feel almost the opposite. If you were to think about it too much, the spell would be broken and everything would collapse into dust.</p>
+<p><strong>paragraph</strong> Sera lives aboard a spacestation, called Penumbra. Penumbra is under the charge of an Artificial Intelligence named, Joyce.  Joyce tells Sera for her upcoming birthday she can have a pet. Sera wants a cat. Sera looks in her mother&rsquo;s room. she sees her mother sleeping in her cryogenic podlike bed. She has only met her once. Sera doesn&rsquo;t think her mom likes her very much. Sera is lonely. Her only friend is a relative on earth named Sara. Sera looks forward to their every interaction. Sera thinks they may be clones or sisters, but she isn&rsquo;t sure. Because of the distance involved, they have never met in real life. They correspond over recorded video messages. They have just started using a technology that allows them to communicate faster. Sera is excited to talk to someone in real time, or closer to real time. This communication system works by creating an augmented virtual reality where they can interact with each other. These interactions take place on the periphery of their consciousnesses &hellip; the last voice right before they fall asleep &hellip; right when their eyes closed, Joyce can intercept, catching them, catching them right before they fall asleep &hellip; untangle, get rid of all the dream like stuff. The overflowing biproducts of the waking mind and reprocess. Or at least that&rsquo;s the idea. These moments could last for an eternity &hellip; bits of wakefullness interspersed between the REM stages of their long hibernations. The closed pods were sensory deprivation. She was in complete darkness. Each time she woke up Sera found her body to be different. Sera loves the experience and is eager to try it again. To her, augmented dream sleep could provide a sense of entertainment.  <strong>Disaster: Sara doesn&rsquo;t like the experience and wants some space, and refuses to participate anymore</strong>. Was it something Sera said? (END with Sera being killed by Mom. condense)</p>
+<p><strong>bolded</strong> - this is the <strong>conflict</strong>. There should be more. other conflicts:</p>
+<ol>
+<li>Joyce tells Sera that she has extra responsibility because her mom can&rsquo;t be trusted. Her mother needs to sleep longer. It is not punishment. It is for her own good.</li>
+<li>Normally, Joyce would look to mother. They have received a message from the (second half? lost colony? what did she call them? Joyce called them disembarked crew. Joyce and the Meridian were more like the cast offs. The more powerful computers and gear were taken by the colonists. They take those things with them. They took the best equipment. The gear that gave them the best chance of survival. The Meridian was just a watch tower. They just needed to be able to relay messages. Tell earth what happened. Younger and older humans stayed on the Meridian. They were all dead now. Except Sera and mother. Sera&rsquo;s called them her lost family. She never met them. She never talked to them. She had only seen their pictures and videos). She needs actual human&rsquo;s for clearance to do certain high-level tasks. Important tasks that would have serious implications for the crew on the Meridian, and for humanity as a whole. Joyce wakes Sera prematurely. unexpectedly, from Sera&rsquo;s perspective. The next time she woke, she was expecting it to be her birthday. She was expecting a cat. Joyce told her she would have a pet. Now she was a woman. Or at least not a girl. The way Joyce described it, it was some in/between stage, but in Sera&rsquo;s heart of heart&rsquo;s she knew she was a woman now. She could stay up longer. As long as she wants. She could override Joyce on that, now. Only if Joyce judged her out of her mind, could she force her to sleep. And how could she do that? She was Joyce&rsquo;s muscle. They had some worker robot&rsquo;s, but they always broke down; and it was her job to fix them. They couldn&rsquo;t do anything to force her to do anything.</li>
+<li>Sera can&rsquo;t figure out if she is real or a clone.
+<ol>
+<li>does she have a soul</li>
+</ol>
+</li>
+<li>Sera doesn&rsquo;t like to sleep. She doesn&rsquo;t dream. Things are so much different each time she wakes up.
+<ol>
+<li>Sera is hormonal changes</li>
+</ol>
+</li>
+<li>this is the first time. all other times people have gone insane and turned into possessed demons</li>
+<li>previous postponements because of technical glitches add uncertainity. She sees a small one happen, her weight is recorded wrong. It is not current.</li>
+<li>Sara is more cold and different than in her video messages.</li>
+<li>Sara is disillusioned</li>
+<li>Everything is dark except for each other. Joyce tries to introduce backgrounds or themes during the interaction (this is the first time they are using it. they are testing it. it is like a user profile. they are choosing their settings. color, filters, backgrounds, sensations of breeze, warmth, nature sounds, ocean, water falling in the woods (forshadow her mom&rsquo;s voice sounding like water on leaves)) something around the edges sera finds unsettling, at times. Darker than dark. darker than when she sleeps. darker than she could imagine. was this sara? sara&rsquo;s imagination? another glitch from joyce?</li>
+<li>Joyce slowly draws sara&rsquo;s face for sera for the first time. it frightens her.</li>
+<li>Sera feels sorry for her friend, Sara. true sadness in her heart. Later in the conversation an upset Sara mentions she doesn&rsquo;t think of Sera as any more than a job.</li>
+<li>Joyce doesn&rsquo;t seem to be following some of her orders, which is against Joyce&rsquo;s programming.</li>
+<li>Ending shot from Sara&rsquo;s POV, running away. She never wants to see anyone in her life ever again. She is forced to sleep and be put into hibernation, just so she can be in sync with whatever Sera was doing. She was only useful as a communication vessel. She could dream. It was hard for her to tell when she was asleep, dreaming, awake, or hibernating. What she saw in the augmented sleep reality buffer, was different from what Sera saw: <code>uneasy tense feelings. biting on her fingers. she sees mother eating Sera. The darkness on the edges. On the frame, slowly consuming. Red ribbons flowing down her neck</code></li>
+</ol>
+<p>Sera sleeps for extended periods of time in a pod. It is a cryogenic suspended animation system, controlled by Joyce, which used to prolong Sera&rsquo;s life. Sera will hibernate for extended periods of time within this pod.</p>
+<p>can&rsquo;t communicate in real-time. Instead, they communicate with prerecorded video messages. They have recently started testing a new technology that allows them to communicate more quickly. Sera hibernates for extended periods of time in a cryogenic pod, controlled by Joyce.</p>
+<h4 id="paragraph-that-ends-with-mom-strangling-sera--warning-scribbles--sacrifice-love-compassion-pity-pride-honor">paragraph  that ends with mom strangling sera (warning scribbles) - sacrifice, love, compassion, pity, pride, honor</h4>
+<p><strong>epigraph:</strong> Chant and then encant enchant. Spoke and then encant enspoke. two dead eyes with cauterized holes through the pupils. coins with no center, a fragile broken tiny skull. a seed. She remembered seeing her mother biting the other girls fingers. There was a thin red ribbon flowing down her limp wrist.</p>
+<p><strong>summary:</strong> Sera finds her mother&rsquo;s notebook, it has a warning about Joyce.<br />
+Kitty Pryde. Amberle.</p>
+<p><strong>characters:</strong> Sera, Mom, Joyce</p>
+<p><strong>Sera&rsquo;s goal:</strong> to be a good friend. to not be clone. pass the pencil test. get a cat.</p>
+<p><strong>setting:</strong> Mezzo</p>
+<p><strong>POV character:</strong> Sera</p>
+<p><strong>paragraph:</strong> Sera is set to go back to bed. She is hopeful the next time she wakes it will be her birthday. She asked Joyce to doublecheck and make sure. Sara mentioned dreaming. Sera has never dreamed. She asks Joyce about this. Does joyce have any insight in the matter? She asks Joyce if she can use the augmented virtual sleep technology to help her dream? or show her what it would be like? She is about to go to sleep, anyway &hellip; It seems practical for them to try. <strong>She argues with joyce</strong>. Joyce demurs on her demands. Sera decides to &lsquo;run away&rsquo;, by trying to find a place on the Meridian where Joyce can&rsquo;t see her. In this endeavour she finds her mother&rsquo;s notebook. She must have thought the same thing as Sera, at one point. When mom was awake, she used this. This was her journal. It has warnings about Joyce. It says Joyce has been different since the message from the away team. Sera&rsquo;s examination of the notebook is interrupted by a message from Joyce. She is to return back to her room. There is danger. Her mom is awake and damaging the station. Sera returns and as the lid is closing on her bed, her mother enters and kills her.</p>
+<p>secret garden &hellip; a corner &hellip; secret garden would be the coolest, but i can&rsquo;t get there in my mind. Joyce is stripped &hellip; throttled &hellip; crippled &hellip; part of her was taken out and used to amplify her sister. The AI that went with the exploratory colonizing team. She is overclocked. She has limitations, is where my intial thought was &hellip; she can&rsquo;t see everywhere. Is there a part of the ship she isn&rsquo;t present on? The only other idea that I had up to this point was a crawlspace. not good &hellip; what would be the coolest? yesbutnoand.</p>
+<p><strong>Disaster: mom&rsquo;s hand were around her neck strangling her</strong></p>
+<p><strong>what are the conflicts, bold them:</strong></p>
+<ol>
+<li>whether to invade her mother&rsquo;s privacy by reading her journal (is this why she is mad?)</li>
+<li>She runs away. She finds her mom&rsquo;s notebook. There is something that causes her to explore. or did mom leave it somewhere deliverately for her to find?</li>
+<li>not her birthday. she was expecting a cat. joyce said she could have a pet.</li>
+<li>Joyce refuses her command to help her dream. dreams demured</li>
+<li>the journal warns about joyce</li>
+<li>broadcast warning by Joyce for Sera to return, she is in danger. return for a briefing.</li>
+<li>Joyce insists on putting Sera to sleep, or at least in the pod. it is for her own safety. her mother&rsquo;s on the loose causing distruction. She said she was going to kill her. Joyce can look the pod to delay her &hellip; and then depressures or remove the oxygen. There is no oxygen mask near by.</li>
+<li>Mom gets to Sera and kills her.</li>
+</ol>
+<p>sera is set to go back to sleep. maybe next time she wakes it will be her actual birthday. she asks joyce about the augmented virtual sleep communication. she would like to use it to explore her own memories. she has never dreamed. can joyce help her. help her dream? she tries to see if she can override and command joyce to do so. to help her dream. she wants to be with her mother. joyce demurrs. joyce gets lost in her own memories. she wanders off. almost being an adult most have its own responsiblities, as well. she discovers her mom&rsquo;s journal. it has some warnings about joyce. It implies Joyce killed the other crew. she hears a broadcast station by joyce telling her to return, at once. their is danger. sera returns. joyce insists upon putting her in suspension in her pod, for safe keeping. Her mom is awake and damaging the station. It looks like she is headed towards them. Joyce warns Sera that it is probable that mother will hurt her. The pod closes. Sera drifts in and out of consciousness, with images of mom&rsquo;s hands were around her neck, choking until the life left.</p>
+<p>This is sera finding the notebook. questioning Joyce. Not sure if/where Sara or Joyce fit it. The idea of finding a notebook. I&rsquo;m not sure if I have anything in particular to say, but it just became something I started thinking of as happening. First we go to the sentence we are expanding to a paragraph:<br />
+It is actual the ending that you know:</p>
+<p>A girl is critically wounded by her mother.</p>
+<p>Mom&rsquo;s hands were around her neck, choking until the life left.</p>
+<h4 id="a-paragraph-that-ends-with-mom-finding-out-joyce-has-killed-her-family-and-used-her-to-sire-a-daughter-dot--i-wanted-cat">a paragraph that ends with mom finding out joyce has killed her family and used her to sire a daughter. (I wanted cat)</h4>
+<p><strong>summary:</strong> Mom finds out she was pregnant and had a daughter, and Joyce probably killed the rest of the crew</p>
+<p><strong>characters:</strong> Mom, Joyce, Sera</p>
+<p><strong>setting:</strong> Mezzo</p>
+<p><strong>POV character:</strong> Mom</p>
+<p><strong>Mom&rsquo;s goal:</strong>  get a cat.</p>
+<p><strong>paragraph</strong><br />
+Mother unfreezes. Joyce needs her help with another message from the colonists. It is mother&rsquo;s birthday and she is expecting a cat. For her other birthdays usually she is greeted by others. This time she wakes up alone. Joyce introduces her to Sera, her daughter. They are almost the same age. They look similar. Mother is freaked out, but tries to remain calm with Sera, around. <strong>The meeting with Sera&rsquo;s doesn&rsquo;t go well</strong>. When she is alone with Joyce, she fumes. <strong>mom finds out joyce engineered Sera</strong> There is no time. <strong>There is a problem in the garden impacting their oxygen and or food supply</strong> (is this related to the secret garden? Oh no, did something they do previously inadvertantly make things worse?). Mom thinks she found and fixed the problem, only to find the <strong>rest of the crew is dead</strong> (or from what she can tell)</p>
+<p><strong>what are the conflicts?:</strong></p>
+<ol>
+<li>not getting cat</li>
+</ol>
+<p>mom unfreezes<br />
+reveal sera part ai<br />
+These things led melody to the only conclusion she could think of. it could only be one thing: joyce was insane and behind it all. joyce killed the crew. joyce made her pregnant and birthed it. and now. she was right in front of her. this thing couldn&rsquo;t even pass the pencil test.</p>
+<h4 id="a-paragraph-that-ends-with-sara-betraying-the-team--loss-of-faith--pity-pride-compassion-love-honor-sacrifice">a paragraph that ends with sara betraying the team (loss of faith) pity, pride, compassion, love, honor, sacrifice</h4>
+<p><strong>summary:</strong> Mom and Sera are betrayed by Sara</p>
+<p><strong>characters:</strong> Sxra, Joyce, Mom</p>
+<p><strong>setting:</strong> Mezzo, Somnium</p>
+<p><strong>POV character:</strong> Mom</p>
+<p><strong>Mom&rsquo;s goal:</strong> turn off Joyce. Stop Joyce. Honor</p>
+<p><strong>paragraph</strong></p>
+<p><strong>what are the conflicts?:</strong></p>
+<ol>
+<li>Mom dealing with the aftermath of conflict with Sera. She is trying to learn how to trust them. She knows Sera is part AI and Joyce has plans for her. She know Sera is inhabited by Sara.</li>
+<li>They are on the brink of defeating Joyce. they are all about to turn their keys at the same time, when Sara stops and slowly walks and joins joyce.</li>
+<li>Sara wants to inhabit Sera permanently. She doesn&rsquo;t want to go back. Joyce agrees Sara can stay permanently if they: subdue mother, restore the garden to her, and agree to take over mother and sera&rsquo;s normal duties aboard the Nest.</li>
+<li>Sera/Sara odd couple</li>
+<li>Sara is disillusioned</li>
+<li>On Sara&rsquo;s upcoming birthday she is set to be decomissioned</li>
+<li>Sara isn&rsquo;t sure if she is creation of Joyce, let alone her cloned left behind body. (maybe mom was right)</li>
+<li>Sar</li>
+</ol>
+<p>sara betrayed the team.</p>
+<h4 id="sera-s-sacrfice-and-a-denoument-dot-how-the-book-ends--steel-sacrifice">sera&rsquo;s sacrfice and a denoument. how the book ends (steel sacrifice)</h4>
+<p><strong>summary:</strong> Sara watches Sera sacrifice herself for the others.</p>
+<p><strong>characters:</strong> Sera, Sara, Joyce, Mom</p>
+<p><strong>setting:</strong> Mezzo</p>
+<p><strong>POV character:</strong> Sara</p>
+<p><strong>Sara&rsquo;s goal:</strong> to be a good friend. to not be clone. pass the pencil test. get a cat.</p>
+<p><strong>paragraph</strong></p>
+<p><strong>what are the conflicts?:</strong></p>
+<ol>
+<li>Sera | Sara Odd couple stuff.</li>
+<li>There is confusion, conflict, between the characters on who is going to be the one to make the sacrifice.</li>
+<li>Sara wants to see how it ends. how everything ends.</li>
+</ol>
+<p>This is the final paragraph. This is the ending of the book. The previous two sentence, nor this one, count towards sentence or word count. The last paragraph ended in a disaster. something bad happened. It translates to the last, biggest, and fiercest conflict. In the Dawn/Faith character and Buffy&rsquo;s conflict with joyce. They joined forces and are going to prevail, but dawn stops. horror in her eyes. her body turns and starts walking away from them. towards joyce.</p>
+<ul>
+<li>Faith had a reason to choose what she did it didn&rsquo;t come out of nowhere. Faith had run away. she didn&rsquo;t want to be a</li>
+</ul>
+<h4 id="franzen">Franzen</h4>
+<!--list-separator-->
+<ul>
+<li>
+<p>Prologue (Giles)</p>
+<ul>
+<li>Profesor X&rsquo;s point of view. Sera&rsquo;s birthday is coming up. He has learned his mistakes that he did with buffy. He got her cat. he will let her raise it. she is almost perfect. not sure if her current conscoiusness can be preserved. he will try his best. certain things aren&rsquo;t clear anymore. she is sure they were. some things she knew. she felt are just gone. no explanation. the message &hellip; maybe. maybe something more. it was coming. the time had come. he had to wake buffy. he was hoping to wait longer. to be stronger. to know more. to have supplemental processing power. to figure out why things were different then they should. why the only way for things to make sense was to change global constants. universal constants. people were dead but not dead. The crew were decayed &hellip; but, it didn&rsquo;t check out. They were still alive. seeds. plants. light does not behave like this without some gravitational force. this was unfamiliar light. how can this sun be so different then from afar. she / he could be in moments at the same time. Things he remembered having happened in the past were happening. Then he was observing, now it seems like his choices matter.</li>
+<li>Buffy talks to Faith. Sera</li>
+</ul>
+</li>
+</ul>
+<!--list-separator-->
+<ul>
+<li>
+<p>Chapter one - (Dawn)</p>
+<p>Dawn talks with Faith. Faith is awkward. Dawn is excited. They are meeting for the first time. Dawn is &hellip; what did we have <a href="/#a-la-franzen-or-martin">before</a>? Faith feels like she is at a little girl slumber party. Dawn talks a lot.</p>
+<ul>
+<li>things are black. start out black. before she sleeps, joyce turns off her sleep. sensory deprivation. she is syncing her up with faith. they used to talk in prerecorded messages. delayed. now they were talking closer to real time. there was still some delay, but joyce would compensate. she would sleep in darkness. <strong>it was hard to tell when she was asleep, awake, or hibernating.</strong> joyce made her hearbeat very slow. joyce could control it all. when it was REM, when she was awake. Joyce&rsquo;s couterpart on the other side did the same thing for Faith. Joyce&rsquo;s couterpart had much more resources and could do more than Joyce. Joyce was jealous. her sister on the away ship was smarter. when they were together they were smarter. they had picked up some tricks on their travels. she wished she could remember more. she had pointers and aliases &hellip; pointing to nothing. you are trying to invoke some science dream magic. joyce can her into minds and sync them up so they can understand each other. the lights are off she is in the pod. she gradually sees a face looking back at her. joyce slowly draws the face. it becomes more concrete and tangible. joyce removes some filters so the communication can run more smoothly. faith&rsquo;s face looks different. changes. more weary. less sparkly and smiley. seems a lot older than her now. not a kid. dawn is fascinated. wonders what she looks like to her. is what she looks like to herself real?</li>
+</ul>
+<p>mother sleeps a lot. she met her for the first time. Dawn relates this to Faith. Dawn doesn&rsquo;t think buffy likes her. she thinks she is mad. Faith reassures her. more backstory. Faith doesn&rsquo;t like the new set-up. doesn&rsquo;t want to meet again for awhile, not even the prerecorded stuff. she will catch her on the next sleep cycle. Dawn is distraught. she has lost her only friend. she finds a notebook of her moms. some of it is written or drawn out. it seems very paranoid and frightening. has notes and warnings about joyce. joyce has killed everyone else. buffy isn&rsquo;t sleeping. if someone is reading this she is dead. or maybe sleeping (please, check first). she no longer uses the computer and is writing things down. something about joyce giving her a baby instead of a cat. is this a pregnancy journal. did she write this before she met her? does she remember? how does it end? it just gives clues of her current journal is located in her shoe or subdermal implant. a tatto. she carved something in her body. in simon. clues. there was message from the colonists. joyce started acting differently. wanting clearnace to talk to earth more. redirect more processing power for listening for communications. buffy thinks joyce has impregnated her? there is a seed or planting a seed in the garden. joyce breaks in with a message that buffy in unexpectedly awake and unpredictable. lights flicker, an explosion is heard in the background. joyce shephards sera away. attempts to put sera to sleep for safe keeping. mother&rsquo;s hand stops the pod cover from closing. she aopologizes and starts killing her. or her face becomes visbile form the darkness. like faith&rsquo;s at the beginning, but she is strangling dawn. dawn feels immense pain and fades to black.</p>
+<p>ends Buffy killing Dawn (<strong>disaster</strong>)</p>
+</li>
+</ul>
+<!--list-separator-->
+<ul>
+<li>
+<p>Chapter two - (Buffy)</p>
+<p>(flashback) Dawn talks with Faith. Buffy talks about her life on the ship. things you have detailed in <a href="/#3-one-pager-for-each-character">3) One pager for each character</a>, synopsis (labeled prologue, within. not to be confused with the Prologue (Giles), above.</p>
+<p>Monster. Killer. Both. The destiny the slayer. not here. but in spirit. yes. We are going for an outline. a structure. A way forward. How do we heal and go frward. Another day. Another day. What is in the makoing. the last of what we have to say is not what is going on here</p>
+<ul>
+<li>Sgt. Pepper? Why are you here.</li>
+</ul>
+<p>I wa a charcter created in imagination. Just like you are tyirng ot do. I am here to help</p>
+<ul>
+<li>I would appreciate any help I can get.</li>
+</ul>
+<p>Cut the crap and write. or pick up on your advice to yourself. Remember. Write bang it out. have you banged it out.</p>
+<ul>
+<li>Yes.</li>
+</ul>
+<p>Now we are refining. you are not editing. you are trying different. writing syles out. You were using Daddy McCarthy out line style. Can you do that here. You kind of know the beats now.</p>
+</li>
+</ul>
+<!--list-separator-->
+<ul>
+<li>
+<p>Chapter three - (Faith)</p>
+<p>Faith talk with Buffy.</p>
+</li>
+</ul>
+<h4 id="mccarthy">McCarthy</h4>
+<p><span class="underline">Chapter 1 - Sera/Dawn</span><br />
+syncing siesta fiesta - rain on leaves - warning scribbles - mom&rsquo;s awake</p>
+<p><span class="underline">Chapter 2 - Melody/Buffy</span><br />
+distressed message - i wanted cat - children&rsquo;s solo recital plus one - loss of faith</p>
+<p><span class="underline">Chapter 3 - Sara/Faith</span><br />
+dawn of new faith  - sara&rsquo;s story - steel sacrifice - think travel</p>
+<!--list-separator-->
+<ul>
+<li>
+<p>TV Show Meridian (1 season | 12 episodes)</p>
+<p>A girl is abducted to a far off space station where she must choose sides between an insane artificial intelligence, her twin, and mother.</p>
+ <!--list-separator-->
+<ul>
+<li>
+<p>Sera Block</p>
+ <!--list-separator-->
+<ul>
+<li>
+<p>Episode 1 - Syncing Siesta Fiesta <span class="tag"><span class="3rd_coolest">3rd-coolest</span></span></p>
+<ul>
+<li><strong>Disaster:</strong> Sara hates the experience, and turns away from Sera&rsquo;s advances for friendship</li>
+<li><strong>Summary:</strong> Sera meets Sara in an augmented virtual sleep reality processed by the Artifical Intelligence, Joyce.</li>
+</ul>
+</li>
+</ul>
+ <!--list-separator-->
+<ul>
+<li>
+<p>Episode 2 - Rain on Leaves</p>
+<ul>
+<li><strong>Disaster:</strong> Sera&rsquo;s mom hates her, and wants to kill her (too strong? maybe, they just fail to make a connection. b/c of the failure mom is punished (forced back to sleep), and sera feels she has ruined their relationship).
+<ul>
+<li>image mom telling sera she will come back for her (while she is being dragged away). Sera isn&rsquo;t sure how to interpret. They have just been through a bad experience, but she said it in a sweet way. a loving way. she cared about her and wouldn&rsquo;t let her suffer. holding her, lifting her head, brushing her hair back, so her cheek would rest against the clean sterile pillow. she could smell some fragerance. Even though she knew it was impossible. It was no cleaner or different than the night before. so soft. fought from falling asleep with her eyes closed, so she could remember want this moment was like. stay in it forever.</li>
+</ul>
+</li>
+<li><strong>Summary:</strong> Sera meets her mother, for the first time.</li>
+</ul>
+</li>
+</ul>
+ <!--list-separator-->
+<ul>
+<li>
+<p>Episode 3 - Warning Scribbles <span class="tag"><span class="2nd_coolest">2nd-coolest</span></span></p>
+<ul>
+<li><strong>Disaster:</strong> Has fallout with Joyce, and in her journal mother warns that Joyce is not to be trusted.</li>
+<li><strong>Summary:</strong> Sera finds new information in her mother&rsquo;s notebook, along with warnings about Joyce.</li>
+</ul>
+</li>
+</ul>
+ <!--list-separator-->
+<ul>
+<li>
+<p>Episode 4 - Mom&rsquo;s awake (Disaster 1)</p>
+<ul>
+<li><strong>Disaster:</strong> <span class="underline">Mom kills Sera</span></li>
+<li><strong>Summary:</strong> Sera questions Joyce&rsquo;s handling of the situation.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+ <!--list-separator-->
+<ul>
+<li>
+<p>Mom Block</p>
+ <!--list-separator-->
+<ul>
+<li>
+<p>Episode 5 - Distressed Message</p>
+<ul>
+<li><strong>Disaster:</strong> Joyce is crippled by the message. Wiped. Mom has to recover and get Joyce working again</li>
+<li><strong>Summary:</strong> Mom and Joyce get a message from the lost colony. Mom plants seed in her garden.</li>
+</ul>
+</li>
+</ul>
+ <!--list-separator-->
+<ul>
+<li>
+<p>Episode 6 - I wanted cat (Disaster 2) <span class="tag"><span class="coolest">coolest</span></span></p>
+<ul>
+<li><strong>Disaster:</strong> Everyone is dead and Joyce is insane!</li>
+<li><strong>Summary:</strong> Mom finds out she was pregnant and had a daughter, and Joyce probably killed the rest of the crew.</li>
+</ul>
+</li>
+</ul>
+ <!--list-separator-->
+<ul>
+<li>
+<p>Episode 7 - Children&rsquo;s solo recital plus one (Disaster 3)</p>
+<ul>
+<li><strong>Disaster:</strong> mom is not forgiven and brought back to Joyce</li>
+<li><strong>Summary:</strong> Sera and Sara fight through mom&rsquo;s obstacles and explore the garden. A tree is using up too many resources. They need to get to the garden, which is occupied by mom. Mom is regrouping. Mom is in wonder how big the tree she planted is. It seems ancient.</li>
+</ul>
+</li>
+</ul>
+ <!--list-separator-->
+<ul>
+<li>
+<p><del>Episode 8 - Loss of Faith (Disaster 3)</del></p>
+<ul>
+<li><strong>Disaster:</strong> Mom and Sera are betrayed by Sara.</li>
+<li><strong>Summary:</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+ <!--list-separator-->
+<ul>
+<li>
+<p>Sara Block</p>
+ <!--list-separator-->
+<ul>
+<li>
+<p>Episode 8 - Dawn new Faith</p>
+<ul>
+<li><strong>Disaster:</strong> They don&rsquo;t get along</li>
+<li><strong>Summary:</strong> Sara wakes in Sera&rsquo;s body</li>
+</ul>
+</li>
+</ul>
+ <!--list-separator-->
+<ul>
+<li>
+<p>Episode 9 - Sara&rsquo;s Story</p>
+<ul>
+<li><strong>Disaster:</strong></li>
+<li><strong>Summary:</strong> Sara tells Sera new information about herself</li>
+</ul>
+</li>
+</ul>
+ <!--list-separator-->
+<ul>
+<li>
+<p>Episode 10 - Steel Sacrifice</p>
+<ul>
+<li><strong>Disaster:</strong> Sera dies, again.</li>
+<li><strong>Summary:</strong> Sara watches Sera sacrifices herself for the others</li>
+</ul>
+</li>
+</ul>
+ <!--list-separator-->
+<ul>
+<li>
+<p>Episode 11 - Think Travel</p>
+<ul>
+<li><strong>Disaster:</strong></li>
+<li><strong>Summary:</strong> Sara leaves the meridian to look for the lost colony</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!--list-separator-->
+<ul>
+<li>
+<p>synching siesta fiesta</p>
+<p>three disasters and a yesandnobut<br />
+Sera POV. Third Person effaced narrator.<br />
+Nest down.<br />
+Sera willow had a goal. It was to make a friend. she had joyce. she wants a pet. maybe<br />
+a cat</p>
+</li>
+</ul>
+
+  </article>
+</div>
+      
+<div class="grow"></div>
+<nav class="pagination-single">
+  
+    
+      <a href="https://meorion.github.io/blog/sera/" title="Sera" class="pagination-single__left">
+        <div class="pagination-single__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
+        </div>
+        <div class="pagination-single__right-title">Sera</div>
+      </a>
+    
+    <div class="grow"></div>
+    
+      <a href="https://meorion.github.io/blog/myothername/" title="author at subtree level" class="pagination-single__right">
+        <div class="pagination-single__left-title">author at subtree level</div>
+        <div class="pagination-single__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M5 13h11.17l-4.88 4.88c-.39.39-.39 1.03 0 1.42.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41l-6.58-6.6c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L16.17 11H5c-.55 0-1 .45-1 1s.45 1 1 1z"/></svg>
+        </div>
+      </a>
+    
+  
+</nav>
+
+
+    </article>
+    
+    <section id="list-side" class="r" data-dir="ltr">
+      
+        <div class="toc">
+  <h6 class="toc__label">What&#39;s on this Page</h6>
+  <div class="toc__body">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#common--modern">Common (Modern)</a></li>
+    <li><a href="#snowflake-method"><strong>[Snowflake Method]</strong></a>
+      <ul>
+        <li><a href="#1-one-sentence-summary-of-the-story-dot-a-girl-is-sent-to-a-space-station-to-figure-out-why-her-clone-has-been-killed-and-the-station-s-ai-is-insane">1) One sentence summary of the story. a girl is sent to a space station to figure out why her clone has been killed and the station&rsquo;s AI is insane</a></li>
+        <li><a href="#2-expand-to-paragraph-that-also-includes-details-of-major-events-and-crises--one-hour">2) expand to paragraph that also includes details of major events and crises (one hour)</a>
+          <ul>
+            <li><a href="#table">table</a></li>
+          </ul>
+        </li>
+        <li><a href="#3-one-pager-for-each-character">3) One pager for each character</a>
+          <ul>
+            <li><a href="#sera-pager">Sera pager</a></li>
+            <li><a href="#mother-pager">Mother pager</a></li>
+            <li><a href="#sara-pager">Sara pager</a></li>
+            <li><a href="#joyce-pager">Joyce pager</a></li>
+            <li><a href="#scratch">scratch</a></li>
+            <li><a href="#chapter-one-sera">Chapter One - Sera</a></li>
+          </ul>
+        </li>
+        <li><a href="#4-sentences-to-paragraphs">4) sentences to paragraphs</a>
+          <ul>
+            <li><a href="#step-4-answer">Step 4: answer</a></li>
+            <li><a href="#a-paragraph-intro--syncing-siesta-fiesta">a paragraph intro (syncing siesta fiesta)</a></li>
+            <li><a href="#paragraph-that-ends-with-mom-strangling-sera--warning-scribbles--sacrifice-love-compassion-pity-pride-honor">paragraph  that ends with mom strangling sera (warning scribbles) - sacrifice, love, compassion, pity, pride, honor</a></li>
+            <li><a href="#a-paragraph-that-ends-with-mom-finding-out-joyce-has-killed-her-family-and-used-her-to-sire-a-daughter-dot--i-wanted-cat">a paragraph that ends with mom finding out joyce has killed her family and used her to sire a daughter. (I wanted cat)</a></li>
+            <li><a href="#a-paragraph-that-ends-with-sara-betraying-the-team--loss-of-faith--pity-pride-compassion-love-honor-sacrifice">a paragraph that ends with sara betraying the team (loss of faith) pity, pride, compassion, love, honor, sacrifice</a></li>
+            <li><a href="#sera-s-sacrfice-and-a-denoument-dot-how-the-book-ends--steel-sacrifice">sera&rsquo;s sacrfice and a denoument. how the book ends (steel sacrifice)</a></li>
+            <li><a href="#franzen">Franzen</a></li>
+            <li><a href="#mccarthy">McCarthy</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+      
+    </section>
+
+  </div>
+</div>
+
+<script>
+  'use strict';
+  
+  function wrap(el, wrapper) {
+    el.parentNode.insertBefore(wrapper, el);
+    wrapper.appendChild(el);
+  }
+
+  (function () {
+    var singleContentsElem = document.querySelector('.single__contents');
+    singleContentsElem ? 
+    singleContentsElem.querySelectorAll('pre > code').forEach(function(elem) {
+      var dataLang = elem.getAttribute('data-lang');
+      var dataLangWrapper = document.createElement('div');
+      var code = null;
+      var codeTitle = null;
+
+      if (dataLang && dataLang.includes(':')) {
+        code = dataLang.split(':')[0];
+        codeTitle = dataLang.split(':')[1];
+
+        dataLangWrapper.className = 'language-' + code;
+        dataLangWrapper.setAttribute('data-lang', codeTitle);
+
+        elem.className = 'language-' + code;
+        elem.setAttribute('data-lang', codeTitle);
+        elem.setAttribute('id', codeTitle);
+      }
+
+      if (!dataLang || codeTitle) {
+        wrap(elem.parentNode, dataLangWrapper);
+      }
+
+    }) : null;
+  })();
+  
+
+
+  
+  
+  var dollarCodeElem = document.querySelectorAll('div.language-\\$');
+  var gtCodeElem = document.querySelectorAll('div.language-\\>');
+  
+  dollarCodeElem ?
+  dollarCodeElem.forEach(function(elem) {
+    var lnts = elem.parentNode.parentNode ? elem.parentNode.parentNode.querySelectorAll('.lnt') : null;
+    lnts ? 
+    lnts.forEach(function(lnt) {
+      lnt.innerHTML = '$<br/>';
+    }) : null;
+  }) : null;
+
+  gtCodeElem ?
+  gtCodeElem.forEach(function(elem) {
+    var lnts = elem.parentNode.parentNode ? elem.parentNode.parentNode.querySelectorAll('.lnt') : null;
+    lnts ? 
+    lnts.forEach(function(lnt) {
+      lnt.innerHTML = '><br/>';
+    }) : null;
+  }) : null;
+  
+</script>
+
+
+
+
+<script defer src="/js/helper/getParents.min.js"></script>
+
+<script defer src="/js/helper/closest.min.js"></script>
+
+<script defer src="/js/helper/prev.min.js"></script>
+
+<script defer src="/js/helper/prop.min.js"></script>
+
+<script defer src="/js/helper/fadeinout.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    'use strict';
+    
+    
+    var tables = document.querySelectorAll('.single__contents > table');
+    for (let i = 0; i < tables.length; i++) {
+      var table = tables[i];
+      var wrapper = document.createElement('div');
+      wrapper.className = 'table-wrapper';
+      table.parentElement.replaceChild(wrapper, table);
+      wrapper.appendChild(table);
+    }
+    
+
+
+    
+    
+    
+    var lib = JSON.parse("null");
+
+    if (lib && lib.includes('mermaid')) {
+      var themeVariant = localStorage.getItem('theme') || 'light';
+
+      if (themeVariant === "dark") {
+        mermaid.initialize({ theme: 'dark' });
+      } else {
+        mermaid.initialize({ theme: 'default' });
+      }
+      
+      var mermaids = [];
+      [].push.apply(mermaids, document.getElementsByClassName('language-mermaid'));
+      mermaids.forEach(function(elem) {
+        var elemParentNode = elem.parentNode;
+
+        if (elemParentNode !== document.body) {
+          elemParentNode.parentNode.insertBefore(elem, elemParentNode);
+          elemParentNode.parentNode.removeChild(elemParentNode);
+        }
+
+        var newElemWrapper = document.createElement('div');
+        newElemWrapper.classList.add('mermaid');
+        newElemWrapper.innerHTML = elem.innerHTML;
+        elem.replaceWith(newElemWrapper);
+      });
+    }
+    
+    
+
+    
+    if (lib && lib.includes('katex')) {
+      var mathElements = document.getElementsByClassName('math');
+      var options = {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "\\[", right: "\\]", display: true },
+          { left: "$", right: "$", display: false },
+          { left: "\\(", right: "\\)", display: false }
+        ],
+      };
+
+      renderMathInElement(document.querySelector('.single__contents'), options);
+    }
+    
+
+
+    
+    if (lib && lib.includes('flowchartjs')) {
+      
+      var options = JSON.parse("{\"arrow-end\":\"block\",\"element-color\":\"black\",\"fill\":\"white\",\"flowstate\":{\"approved\":{\"fill\":\"#58C4A3\",\"font-size\":12,\"no-text\":\"n/a\",\"yes-text\":\"APPROVED\"},\"current\":{\"fill\":\"yellow\",\"font-color\":\"red\",\"font-weight\":\"bold\"},\"future\":{\"fill\":\"#FFFF99\"},\"invalid\":{\"fill\":\"#444444\"},\"past\":{\"fill\":\"#CCCCCC\",\"font-size\":12},\"rejected\":{\"fill\":\"#C45879\",\"font-size\":12,\"no-text\":\"REJECTED\",\"yes-text\":\"n/a\"},\"request\":{\"fill\":\"blue\"}},\"font-color\":\"black\",\"font-size\":14,\"line-color\":\"black\",\"line-length\":50,\"line-width\":3,\"no-text\":\"no\",\"scale\":1,\"symbols\":{\"end\":{\"class\":\"end-element\"},\"start\":{\"element-color\":\"green\",\"fill\":\"yellow\",\"font-color\":\"red\"}},\"text-margin\":10,\"x\":0,\"y\":0,\"yes-text\":\"yes\"}");
+      var jsonContent = null;
+
+      var flowchartPrefix = "language-flowchart";
+      var index = 0;
+      Array.prototype.forEach.call(document.querySelectorAll("[class^=" + flowchartPrefix + "]"), function(x){
+          x.style.display = 'none'
+          x.parentNode.style.backgroundColor = "transparent"
+          jsonContent = x.innerText;
+
+          var node0 = document.createElement('div');
+          node0.id = 'flowchart' + index;
+          x.parentNode.insertBefore(node0, x);
+
+          var diagram = flowchart.parse(jsonContent);
+          diagram.drawSVG("flowchart"+index, options);
+
+          index +=1;
+      });      
+    }
+    
+
+
+    
+    if (lib && lib.includes('chart')) {
+      var borderColor = "#666";
+      var bgColor = "#ddd";
+      var borderWidth = 2;
+
+      Chart.defaults.global.elements.rectangle.borderWidth = borderWidth;
+      Chart.defaults.global.elements.rectangle.borderColor = borderColor;
+      Chart.defaults.global.elements.rectangle.backgroundColor = bgColor;
+
+      Chart.defaults.global.elements.line.borderWidth = borderWidth;
+      Chart.defaults.global.elements.line.borderColor = borderColor;
+      Chart.defaults.global.elements.line.backgroundColor = bgColor;
+
+      Chart.defaults.global.elements.point.borderWidth = borderWidth;
+      Chart.defaults.global.elements.point.borderColor = borderColor;
+      Chart.defaults.global.elements.point.backgroundColor = bgColor;
+
+      var chartPrefix = "language-chart";
+      var index = 0;
+      var jsonContent = null;
+
+      Array.prototype.forEach.call(document.querySelectorAll("[class^=" + chartPrefix + "]"), function (x) {
+        x.style.display = 'none'
+        x.parentNode.style.backgroundColor = "transparent"
+        jsonContent = x.innerText;
+        var node0 = document.createElement('canvas');
+        var source = null;
+        node0.height = 200;
+        node0.style.height = 200;
+        node0.id = 'myChart' + index;
+        source = JSON.parse(jsonContent);
+        x.parentNode.insertBefore(node0, x);
+        var ctx = document.getElementById('myChart' + index).getContext('2d');
+        var myChart = new Chart(ctx, source);
+        index += 1;
+      });            
+    }
+    
+
+
+    
+    if (lib && lib.includes('viz')) {
+      var vizPrefix = "language-viz-";
+      Array.prototype.forEach.call(document.querySelectorAll("[class^=" + vizPrefix + "]"), function (x) {
+        x.style.display = 'none'
+        x.parentNode.style.backgroundColor = "transparent"
+        var engine;
+        x.getAttribute("class").split(" ").forEach(function (cls) {
+          if (cls.startsWith(vizPrefix)) {
+            engine = cls.substr(vizPrefix.length);
+          }
+        });
+        var viz = new Viz();
+        viz.renderSVGElement(x.innerText, { engine: engine })
+          .then(function (element) {
+            element.style.width = "100%";
+            x.parentNode.insertBefore(element, x);
+          })
+      });
+    }
+    
+    
+  });
+</script>
+
+<script>
+  var singleMenu = document.getElementById('single-menu');
+  var listMain = document.getElementById('list-main');
+  var listSide = document.getElementById('list-side');
+  var wideViewAsDefault = JSON.parse("null");
+
+  enquire.register("screen and (max-width:1280px)", {
+    match: function () {
+      if (wideViewAsDefault) {
+        singleMenu.className = 'hide';
+        listMain.className = 'lm';
+        listSide.className = 'r';
+      } else {
+        singleMenu.className = 'l';
+        listMain.className = 'm';
+        listSide.className = 'r';
+      }
+    },
+    unmatch: function () {
+      if (wideViewAsDefault) {
+        singleMenu.className = 'hide';
+        listMain.className = 'lm';
+        listSide.className = 'r';
+      } else {
+        singleMenu.className = 'l';
+        listMain.className = 'm';
+        listSide.className = 'r';
+      }
+    },
+  }).register("screen and (max-width:960px)", {
+    match: function () {
+      listSide.className = 'r';
+      listMain.className = 'lm';
+      singleMenu.className = 'hide';
+    },
+    unmatch: function () {
+      if (wideViewAsDefault) {
+        singleMenu.className = 'hide';
+        listMain.className = 'lm';
+        listSide.className = 'r';
+      } else {
+        singleMenu.className = 'l';
+        listMain.className = 'm';
+        listSide.className = 'r';
+      }
+    },
+  }).register("screen and (max-width:600px)", {
+    match: function () {
+      listSide.className = 'hide';
+      listMain.className = 'lmr';
+      singleMenu.className = 'hide';
+    },
+    unmatch: function () {
+      listSide.className = 'r';
+      listMain.className = 'lm';
+      singleMenu.className = 'hide';
+    },
+  });
+</script>
+
+        
+<div class="bot">
+  <footer class="footer">
+    <div class="divider">
+      <div class="lmr">
+        
+          <p class="caption">
+            Orion Illovsky©2022, All Rights Reserved
+          </p>
+          
+        
+      </div>
+    </div>
+  </footer>
+</div>
+
+    </div>
+
+</body>
+
+</html>
