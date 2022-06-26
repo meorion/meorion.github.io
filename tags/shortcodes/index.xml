@@ -6,7 +6,7 @@
     <description>Recent content in shortcodes on meorion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <copyright>Orion Illovsky&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://meorion.github.io/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" />
@@ -16,10 +16,10 @@
       
       <item>
         <title>Rich Content</title>
-        <link>https://meorion.github.io/blog/rich-content/</link>
+        <link>https://meorion.github.io/blog/examples/rich-content/</link>
         <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/rich-content/</guid>
+        <guid>https://meorion.github.io/blog/examples/rich-content/</guid>
         <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de&lt;br /&gt;
 pectora summo. Redit teque digerit hominumque toris verebor lumina non cervice&lt;br /&gt;
 subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc&lt;br /&gt;

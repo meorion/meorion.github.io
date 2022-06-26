@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>emacs on meorion</title>
+    <link>https://meorion.github.io/tags/emacs/</link>
+    <description>Recent content in emacs on meorion</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Orion Illovsky&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 25 Jun 2022 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://meorion.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Qs and As</title>
+        <link>https://meorion.github.io/blog/20220625-lambda/</link>
+        <pubDate>Sat, 25 Jun 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://meorion.github.io/blog/20220625-lambda/</guid>
+        <description>&lt;p&gt;Some questions occurred to me today, and I think we have the answer&lt;/p&gt;</description>
+      </item>
+      
+    
+  </channel>
+</rss>

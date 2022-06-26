@@ -329,16 +329,51 @@
   
   <url>
     <loc>https://meorion.github.io/blog/</loc>
-    <lastmod>2022-06-24T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/emacs/</loc>
+    <lastmod>2022-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/hugo/</loc>
+    <lastmod>2022-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://meorion.github.io/blog/racoon/</loc>
-    <lastmod>2022-06-24T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://meorion.github.io/tags/realtalk/</loc>
+    <loc>https://meorion.github.io/tags/org/</loc>
+    <lastmod>2022-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/blog/20220625-lambda/</loc>
+    <lastmod>2022-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/template/</loc>
+    <lastmod>2022-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/toughtalk/</loc>
+    <lastmod>2022-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/web/</loc>
+    <lastmod>2022-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/blog/setting-quotes/</loc>
     <lastmod>2022-06-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -383,6 +418,16 @@
   </url>
   
   <url>
+    <loc>https://meorion.github.io/blog/myname/</loc>
+    <lastmod>2022-04-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/realtalk/</loc>
+    <lastmod>2022-04-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://meorion.github.io/blog/myothername/</loc>
     <lastmod>2022-03-22T00:00:00+00:00</lastmod>
   </url>
@@ -390,11 +435,6 @@
   <url>
     <loc>https://meorion.github.io/tags/example/</loc>
     <lastmod>2022-03-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/blog/myname/</loc>
-    <lastmod>2022-02-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -473,7 +513,15 @@
   </url>
   
   <url>
+    <loc>https://meorion.github.io/blog/example-block-inside-quote-block/</loc>
+  </url>
+  
+  <url>
     <loc>https://meorion.github.io/blog/my-first-post/</loc>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/quotes/</loc>
   </url>
   
   <url>
