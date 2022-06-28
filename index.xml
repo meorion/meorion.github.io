@@ -486,12 +486,28 @@ Cultural Differences When therapists counsel those from other cultures&amp;helli
       </item>
       
       <item>
+        <title>apt update - cURL was updated today. Four vulnerabilites were patched</title>
+        <link>https://meorion.github.io/blog/20220627apt/</link>
+        <pubDate>Mon, 27 Jun 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://meorion.github.io/blog/20220627apt/</guid>
+        <description>&lt;ul&gt;
+&lt;li&gt;curl&lt;/li&gt;
+&lt;li&gt;libcurl3-gnutls [amd64]&lt;/li&gt;
+&lt;li&gt;libcurl3-gnutls [i386]&lt;/li&gt;
+&lt;li&gt;libcurl4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;curl Description: command line tool for transferring data with URL syntax&lt;/p&gt;</description>
+      </item>
+      
+      <item>
         <title>toughtalk</title>
         <link>https://meorion.github.io/blog/20220626-toughtalk/</link>
         <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
         
         <guid>https://meorion.github.io/blog/20220626-toughtalk/</guid>
-        <description>&lt;p&gt;There are times when some things need to be said. That is the purpose of toughtalk, hashtag-toughtalk.&lt;/p&gt;</description>
+        <description>&lt;h2 id=&#34;an-introduction&#34;&gt;An Introduction&lt;/h2&gt;
+&lt;p&gt;There are times when some things need to be said. That is the purpose of toughtalk, hashtag-toughtalk.&lt;/p&gt;</description>
       </item>
       
       <item>
@@ -549,25 +565,6 @@ I am learning the block quote system for: markdown, org. How it works with Hugo 
         
         <guid>https://meorion.github.io/blog/sera/</guid>
         <description>Sera is a little girl who lives aboard a space station. She is one in a line of clones. Where in the line? She doesn&amp;rsquo;t know. When she was born. A few sleep cycles ago. She decided to keep a journal, so she could remember things more precisely. she thought she had a good memory, but was conflicted that if she didn&amp;rsquo;t remember she had a bad memory it would make the excercise futile.</description>
-      </item>
-      
-      <item>
-        <title>author at file header</title>
-        <link>https://meorion.github.io/blog/myname/</link>
-        <pubDate>Fri, 22 Apr 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://meorion.github.io/blog/myname/</guid>
-        <description>headings and the like i make stinky
-my name
-&amp;lt;br&amp;gt;
-hah
-no
-implied
-click
-
- Figure 1: Don&amp;rsquo;t click this image &amp;ndash; It&amp;rsquo;s not a hyperlink
-  thanks for not
-file header says BigO</description>
       </item>
       
       <item>

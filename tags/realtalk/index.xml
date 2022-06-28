@@ -20,26 +20,8 @@
         <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
         
         <guid>https://meorion.github.io/blog/20220626-toughtalk/</guid>
-        <description>&lt;p&gt;There are times when some things need to be said. That is the purpose of toughtalk, hashtag-toughtalk.&lt;/p&gt;</description>
-      </item>
-      
-      <item>
-        <title>author at file header</title>
-        <link>https://meorion.github.io/blog/myname/</link>
-        <pubDate>Fri, 22 Apr 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://meorion.github.io/blog/myname/</guid>
-        <description>headings and the like i make stinky
-my name
-&amp;lt;br&amp;gt;
-hah
-no
-implied
-click
-
- Figure 1: Don&amp;rsquo;t click this image &amp;ndash; It&amp;rsquo;s not a hyperlink
-  thanks for not
-file header says BigO</description>
+        <description>&lt;h2 id=&#34;an-introduction&#34;&gt;An Introduction&lt;/h2&gt;
+&lt;p&gt;There are times when some things need to be said. That is the purpose of toughtalk, hashtag-toughtalk.&lt;/p&gt;</description>
       </item>
       
     
