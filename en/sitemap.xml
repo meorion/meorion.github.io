@@ -328,7 +328,22 @@
   </url>
   
   <url>
+    <loc>https://meorion.github.io/blog/20220707/</loc>
+    <lastmod>2022-07-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://meorion.github.io/blog/</loc>
+    <lastmod>2022-07-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/linux/</loc>
+    <lastmod>2022-07-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/mint/</loc>
     <lastmod>2022-07-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -339,6 +354,11 @@
   
   <url>
     <loc>https://meorion.github.io/tags/realtoughtalk/</loc>
+    <lastmod>2022-07-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/security/</loc>
     <lastmod>2022-07-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -358,22 +378,7 @@
   </url>
   
   <url>
-    <loc>https://meorion.github.io/tags/linux/</loc>
-    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/tags/mint/</loc>
-    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://meorion.github.io/tags/network/</loc>
-    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/tags/security/</loc>
     <lastmod>2022-07-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -390,6 +395,16 @@
   <url>
     <loc>https://meorion.github.io/tags/wwcd/</loc>
     <lastmod>2022-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/blog/20220630/</loc>
+    <lastmod>2022-06-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/sera/</loc>
+    <lastmod>2022-06-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>

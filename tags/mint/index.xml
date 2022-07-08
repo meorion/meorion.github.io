@@ -7,12 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Orion Illovsky&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Wed, 06 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 Jul 2022 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://meorion.github.io/tags/mint/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>apt update (nodejs, nss)</title>
+        <link>https://meorion.github.io/blog/20220707/</link>
+        <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://meorion.github.io/blog/20220707/</guid>
+        <description>&lt;p&gt;nodejs (updated to 16.16.0). code (updated to 1.69) and libnss3 () updated&lt;/p&gt;</description>
+      </item>
       
       <item>
         <title>apt update (openssl, gnupg)</title>
