@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Orion Illovsky&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 27 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 Jul 2022 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://meorion.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,38 @@
     
       
       <item>
-        <title>apt update - cURL was updated today. Four vulnerabilites were patched</title>
+        <title>toughtalk</title>
+        <link>https://meorion.github.io/blog/20220626-toughtalk/</link>
+        <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://meorion.github.io/blog/20220626-toughtalk/</guid>
+        <description>&lt;h2 id=&#34;an-introduction&#34;&gt;An Introduction&lt;/h2&gt;
+&lt;p&gt;There are times when some things need to be said. That is the purpose of toughtalk, hashtag-toughtalk.&lt;/p&gt;</description>
+      </item>
+      
+      <item>
+        <title>apt update (openssl, gnupg)</title>
+        <link>https://meorion.github.io/blog/20220706/</link>
+        <pubDate>Wed, 06 Jul 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://meorion.github.io/blog/20220706/</guid>
+        <description>&lt;p&gt;openssl (could leak info over the network) and gnupg (could allow forged signatures) updated&lt;/p&gt;</description>
+      </item>
+      
+      <item>
+        <title>Clooney</title>
+        <link>https://meorion.github.io/blog/20220702/</link>
+        <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://meorion.github.io/blog/20220702/</guid>
+        <description>I am the quintessential cloononian. In fact, some would say I invented it. In fact, I am going to go home and sketch him. No one is going to stop me.
+  Fear? No. That&amp;rsquo;s not how I would describe it. Eroticism?
+You can bet your bottom bacon, we weren&amp;rsquo;t going to find out. - Sir Francis Bacon
+ </description>
+      </item>
+      
+      <item>
+        <title>apt update - cURL was updated today.</title>
         <link>https://meorion.github.io/blog/20220627apt/</link>
         <pubDate>Mon, 27 Jun 2022 00:00:00 +0000</pubDate>
         
@@ -26,26 +57,17 @@
 &lt;li&gt;libcurl3-gnutls [i386]&lt;/li&gt;
 &lt;li&gt;libcurl4&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;curl Description: command line tool for transferring data with URL syntax&lt;/p&gt;</description>
+&lt;p&gt;curl Description: command line tool for transferring data with URL syntax&lt;/p&gt;
+&lt;p&gt;cURL was updated. Four vulnerabilities were patched&lt;/p&gt;</description>
       </item>
       
       <item>
-        <title>toughtalk</title>
-        <link>https://meorion.github.io/blog/20220626-toughtalk/</link>
-        <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://meorion.github.io/blog/20220626-toughtalk/</guid>
-        <description>&lt;h2 id=&#34;an-introduction&#34;&gt;An Introduction&lt;/h2&gt;
-&lt;p&gt;There are times when some things need to be said. That is the purpose of toughtalk, hashtag-toughtalk.&lt;/p&gt;</description>
-      </item>
-      
-      <item>
-        <title>images within without orders</title>
-        <link>https://meorion.github.io/blog/racoon/</link>
+        <title>nonfont talk</title>
+        <link>https://meorion.github.io/blog/20220625/</link>
         <pubDate>Sat, 25 Jun 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/racoon/</guid>
-        <description>&lt;p&gt;tree top. is a summary&lt;/p&gt;</description>
+        <guid>https://meorion.github.io/blog/20220625/</guid>
+        <description>&lt;p&gt;All you fonties, take a break. This section isn&amp;rsquo;t for you. Time for some nonfont real talk.&lt;/p&gt;</description>
       </item>
       
       <item>
@@ -58,98 +80,13 @@
       </item>
       
       <item>
-        <title>setting up quotes</title>
-        <link>https://meorion.github.io/blog/setting-quotes/</link>
-        <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
+        <title>apt update - libmbmim was patched today</title>
+        <link>https://meorion.github.io/blog/20220623_glib4/</link>
+        <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/setting-quotes/</guid>
-        <description>I am setting up quotes.
-I am learning the block quote system for: markdown, org. How it works with Hugo is also related
- Can images be inside a blockquote? you can bet your bacon, we weren&amp;rsquo;t ready to find out. - Sir Francis Bacon
- </description>
-      </item>
-      
-      <item>
-        <title>born</title>
-        <link>https://meorion.github.io/blog/fondulac/</link>
-        <pubDate>Sun, 19 Jun 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://meorion.github.io/blog/fondulac/</guid>
-        <description>&lt;p&gt;what does she remember? what has she forgotten? fuzz. lint on tongue. sharp angles. mother&amp;rsquo;s voice, like water on leaves. warmth filling her chest that she just now realized was empty. brushing her hair away from her face and around her ears. Her mother gently lowered her head, so her cheek now lay bare against the clean pillow. she would fall asleep. a face, like her own, looking back at her, eyes wide in a silent scream. she couldn&amp;rsquo;t hear anything. red ribbons flowing from her hands as mother ate the little girl&amp;rsquo;s fingers.&lt;/p&gt;</description>
-      </item>
-      
-      <item>
-        <title>mom</title>
-        <link>https://meorion.github.io/blog/mom/</link>
-        <pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://meorion.github.io/blog/mom/</guid>
-        <description>earlier. we got a message from the others. the reconnaissance team. the strike force. the ones who had their shit together. they left. it crippled joyce. she couldn&amp;rsquo;t speak. just solid to flickering activity light. then solid, until she disconnected the power and waited a few months. it was the only thing she could think of to reset her. the time she was off was rough. most of the other half of the crew, that hadn&amp;rsquo;t died, died during this time.</description>
-      </item>
-      
-      <item>
-        <title>Sera</title>
-        <link>https://meorion.github.io/blog/sera/</link>
-        <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://meorion.github.io/blog/sera/</guid>
-        <description>Sera is a little girl who lives aboard a space station. She is one in a line of clones. Where in the line? She doesn&amp;rsquo;t know. When she was born. A few sleep cycles ago. She decided to keep a journal, so she could remember things more precisely. she thought she had a good memory, but was conflicted that if she didn&amp;rsquo;t remember she had a bad memory it would make the excercise futile.</description>
-      </item>
-      
-      <item>
-        <title>author at subtree level</title>
-        <link>https://meorion.github.io/blog/myothername/</link>
-        <pubDate>Tue, 22 Mar 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://meorion.github.io/blog/myothername/</guid>
-        <description>start
-   1 2     3 4    you can only choose four
-click
-
- Figure 1: click me.
-  i am norgus</description>
-      </item>
-      
-      <item>
-        <title>Post 1</title>
-        <link>https://meorion.github.io/blog/post-1/</link>
-        <pubDate>Wed, 12 Jul 2017 17:31:56 -0400</pubDate>
-        
-        <guid>https://meorion.github.io/blog/post-1/</guid>
-        <description>Export this first post only by bringing point here and doing M-x org-hugo-export-wim-to-md.</description>
-      </item>
-      
-      <item>
-        <title>subtree heading is the hugo front-matter title</title>
-        <link>https://meorion.github.io/blog/makeuniqueeachtime/</link>
-        <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
-        
-        <guid>https://meorion.github.io/blog/makeuniqueeachtime/</guid>
-        <description>EXPORT_DATE is the date that appears on the page
-heading NOT set to TODO, will set draft = false (i.e. set an item to TODO to mark it as a draft)
-can use:
-EXPORT_HUGO_WEIGHT (between colons)
-getting this information from https://ox-hugo.scripter.co/doc/org-meta-data-to-hugo-front-matter/</description>
-      </item>
-      
-      <item>
-        <title>Example block inside quote block</title>
-        <link>https://meorion.github.io/blog/example-block-inside-quote-block/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://meorion.github.io/blog/example-block-inside-quote-block/</guid>
-        <description>Some text.
- Some quoted text.
-1  (some-example)    Some other text.</description>
-      </item>
-      
-      <item>
-        <title>My first post</title>
-        <link>https://meorion.github.io/blog/my-first-post/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://meorion.github.io/blog/my-first-post/</guid>
-        <description>This is my post body</description>
+        <guid>https://meorion.github.io/blog/20220623_glib4/</guid>
+        <description>&lt;p&gt;modemmanager, libmbim, libqmi&lt;br /&gt;
+linux focal updates&lt;/p&gt;</description>
       </item>
       
     

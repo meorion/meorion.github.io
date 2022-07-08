@@ -328,43 +328,73 @@
   </url>
   
   <url>
-    <loc>https://meorion.github.io/blog/20220627apt/</loc>
-    <lastmod>2022-06-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://meorion.github.io/blog/</loc>
-    <lastmod>2022-06-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/tags/linux/</loc>
-    <lastmod>2022-06-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/tags/security/</loc>
-    <lastmod>2022-06-27T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://meorion.github.io/tags/realtalk/</loc>
-    <lastmod>2022-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://meorion.github.io/tags/realtoughtalk/</loc>
-    <lastmod>2022-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://meorion.github.io/tags/toughtalk/</loc>
-    <lastmod>2022-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://meorion.github.io/blog/20220626-toughtalk/</loc>
-    <lastmod>2022-06-26T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/blog/20220706/</loc>
+    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/linux/</loc>
+    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/mint/</loc>
+    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/network/</loc>
+    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/security/</loc>
+    <lastmod>2022-07-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/blog/20220702/</loc>
+    <lastmod>2022-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/clooney/</loc>
+    <lastmod>2022-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/wwcd/</loc>
+    <lastmod>2022-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/blog/20220627apt/</loc>
+    <lastmod>2022-06-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -378,7 +408,7 @@
   </url>
   
   <url>
-    <loc>https://meorion.github.io/blog/racoon/</loc>
+    <loc>https://meorion.github.io/blog/20220625/</loc>
     <lastmod>2022-06-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -403,18 +433,8 @@
   </url>
   
   <url>
-    <loc>https://meorion.github.io/blog/setting-quotes/</loc>
-    <lastmod>2022-06-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/blog/fondulac/</loc>
-    <lastmod>2022-06-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/tags/sera/</loc>
-    <lastmod>2022-06-19T00:00:00+00:00</lastmod>
+    <loc>https://meorion.github.io/blog/20220623_glib4/</loc>
+    <lastmod>2022-06-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -430,31 +450,6 @@
                 hreflang="en"
                 href="https://meorion.github.io/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/tags/mom/</loc>
-    <lastmod>2022-05-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/blog/mom/</loc>
-    <lastmod>2022-05-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/blog/sera/</loc>
-    <lastmod>2022-05-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/blog/myothername/</loc>
-    <lastmod>2022-03-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/tags/example/</loc>
-    <lastmod>2022-03-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -520,32 +515,6 @@
   <url>
     <loc>https://meorion.github.io/tags/themes/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/blog/post-1/</loc>
-    <lastmod>2017-07-12T17:31:56-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/blog/makeuniqueeachtime/</loc>
-    <lastmod>2017-06-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/blog/example-block-inside-quote-block/</loc>
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/blog/my-first-post/</loc>
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/tags/quotes/</loc>
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/tags/tag1/</loc>
   </url>
   
 </urlset>

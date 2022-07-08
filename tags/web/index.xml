@@ -23,18 +23,6 @@
         <description>&lt;p&gt;Some questions occurred to me today, and I think we have the answer&lt;/p&gt;</description>
       </item>
       
-      <item>
-        <title>setting up quotes</title>
-        <link>https://meorion.github.io/blog/setting-quotes/</link>
-        <pubDate>Fri, 24 Jun 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://meorion.github.io/blog/setting-quotes/</guid>
-        <description>I am setting up quotes.
-I am learning the block quote system for: markdown, org. How it works with Hugo is also related
- Can images be inside a blockquote? you can bet your bacon, we weren&amp;rsquo;t ready to find out. - Sir Francis Bacon
- </description>
-      </item>
-      
     
   </channel>
 </rss>
