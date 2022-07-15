@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>new on meorion</title>
+    <link>https://meorion.github.io/tags/new/</link>
+    <description>Recent content in new on meorion</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Orion Illovsky&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 14 Jul 2022 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://meorion.github.io/tags/new/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>apt update (thunderbird, git)</title>
+        <link>https://meorion.github.io/blog/20220714/</link>
+        <pubDate>Thu, 14 Jul 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://meorion.github.io/blog/20220714/</guid>
+        <description>&lt;ul&gt;
+&lt;li&gt;git (security update) Potential arbitrary code execution&lt;/li&gt;
+&lt;li&gt;thunderbird (new release) 1:91.9.1 to 1:91.11.0&lt;/li&gt;
+&lt;/ul&gt;</description>
+      </item>
+      
+    
+  </channel>
+</rss>
