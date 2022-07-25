@@ -7,12 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Orion Illovsky&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 15 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 Jul 2022 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://meorion.github.io/tags/security/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>apt update (libfreetype6)</title>
+        <link>https://meorion.github.io/blog/20220722/</link>
+        <pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://meorion.github.io/blog/20220722/</guid>
+        <description>&lt;ul&gt;
+&lt;li&gt;libfreetype6 (security update) heap buffer overflow&lt;/li&gt;
+&lt;li&gt;python3-jwt (security update) signing key confusion&lt;/li&gt;
+&lt;/ul&gt;</description>
+      </item>
+      
+      <item>
+        <title>apt update (webkit)</title>
+        <link>https://meorion.github.io/blog/20220719/</link>
+        <pubDate>Tue, 19 Jul 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://meorion.github.io/blog/20220719/</guid>
+        <description></description>
+      </item>
       
       <item>
         <title>apt update (python)</title>

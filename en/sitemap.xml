@@ -328,27 +328,92 @@
   </url>
   
   <url>
-    <loc>https://meorion.github.io/blog/20220715/</loc>
-    <lastmod>2022-07-15T00:00:00+00:00</lastmod>
+    <loc>https://meorion.github.io/blog/</loc>
+    <lastmod>2022-07-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://meorion.github.io/blog/</loc>
-    <lastmod>2022-07-15T00:00:00+00:00</lastmod>
+    <loc>https://meorion.github.io/tags/capture/</loc>
+    <lastmod>2022-07-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/emacs/</loc>
+    <lastmod>2022-07-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/example/</loc>
+    <lastmod>2022-07-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/hugo/</loc>
+    <lastmod>2022-07-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/mom/</loc>
+    <lastmod>2022-07-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/org/</loc>
+    <lastmod>2022-07-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/blog/20220625-lambda/</loc>
+    <lastmod>2022-07-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/sera/</loc>
+    <lastmod>2022-07-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/web/</loc>
+    <lastmod>2022-07-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/blog/sera/</loc>
+    <lastmod>2022-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/blog/20220722/</loc>
+    <lastmod>2022-07-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://meorion.github.io/tags/linux/</loc>
-    <lastmod>2022-07-15T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://meorion.github.io/tags/mint/</loc>
-    <lastmod>2022-07-15T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://meorion.github.io/tags/security/</loc>
+    <lastmod>2022-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/blog/20220719/</loc>
+    <lastmod>2022-07-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/blog/20220717-goggins/</loc>
+    <lastmod>2022-07-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/blog/20220715/</loc>
     <lastmod>2022-07-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -403,6 +468,16 @@
   </url>
   
   <url>
+    <loc>https://meorion.github.io/blog/20220704/</loc>
+    <lastmod>2022-07-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://meorion.github.io/tags/usa/</loc>
+    <lastmod>2022-07-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://meorion.github.io/blog/20220702/</loc>
     <lastmod>2022-07-02T00:00:00+00:00</lastmod>
   </url>
@@ -423,11 +498,6 @@
   </url>
   
   <url>
-    <loc>https://meorion.github.io/tags/sera/</loc>
-    <lastmod>2022-06-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://meorion.github.io/tags/sara/</loc>
     <lastmod>2022-06-29T00:00:00+00:00</lastmod>
   </url>
@@ -443,37 +513,7 @@
   </url>
   
   <url>
-    <loc>https://meorion.github.io/tags/emacs/</loc>
-    <lastmod>2022-06-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/tags/hugo/</loc>
-    <lastmod>2022-06-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://meorion.github.io/blog/20220625/</loc>
-    <lastmod>2022-06-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/tags/org/</loc>
-    <lastmod>2022-06-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/blog/20220625-lambda/</loc>
-    <lastmod>2022-06-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/tags/template/</loc>
-    <lastmod>2022-06-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://meorion.github.io/tags/web/</loc>
     <lastmod>2022-06-25T00:00:00+00:00</lastmod>
   </url>
   
