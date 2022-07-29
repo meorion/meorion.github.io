@@ -7,12 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Orion Illovsky&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Wed, 27 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 Jul 2022 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://meorion.github.io/tags/security/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>apt update (libmysqlclient21)</title>
+        <link>https://meorion.github.io/blog/20220729/</link>
+        <pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://meorion.github.io/blog/20220729/</guid>
+        <description>&lt;p&gt;libmysqlclient21:i386 (security)&lt;br /&gt;
+libmysqlclient21:amd64 (security)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;oracle released their cumulative critical patch update for the quarter.&lt;/li&gt;
+&lt;/ul&gt;</description>
+      </item>
       
       <item>
         <title>apt update (python3-bottle)</title>
@@ -31,8 +44,8 @@ python3-bottle (security) incorrectly handles errors during early request bindin
         
         <guid>https://meorion.github.io/blog/20220722/</guid>
         <description>&lt;ul&gt;
-&lt;li&gt;libfreetype6 (security update) heap buffer overflow&lt;/li&gt;
 &lt;li&gt;python3-jwt (security update) signing key confusion&lt;/li&gt;
+&lt;li&gt;libfreetype6 (security update) heap buffer overflow&lt;/li&gt;
 &lt;/ul&gt;</description>
       </item>
       
