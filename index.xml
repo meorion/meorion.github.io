@@ -499,22 +499,12 @@ libmysqlclient21:amd64 (security)&lt;/p&gt;
       </item>
       
       <item>
-        <title>advice</title>
+        <title>seeking fitness advice</title>
         <link>https://meorion.github.io/blog/20220625/</link>
         <pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate>
         
         <guid>https://meorion.github.io/blog/20220625/</guid>
-        <description>&lt;p&gt;Long story short, I have a baby chimp for the next couple months. How do I make him swole by end of summer?&lt;/p&gt;</description>
-      </item>
-      
-      <item>
-        <title>Qs and As</title>
-        <link>https://meorion.github.io/blog/20220625-lambda/</link>
-        <pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://meorion.github.io/blog/20220625-lambda/</guid>
-        <description>&lt;p&gt;Some questions occurred to me today, and I think we have the answer&lt;br /&gt;
-(updated: Jul-28th 2022, Jul-24th 2022, Jul-15th 2022. original 2022-06-25)&lt;/p&gt;</description>
+        <description>&lt;p&gt;Long story short, I have a baby chimp for the next couple months. What is the best routine to make him swole by the end of summer?&lt;/p&gt;</description>
       </item>
       
       <item>
@@ -525,6 +515,17 @@ libmysqlclient21:amd64 (security)&lt;/p&gt;
         <guid>https://meorion.github.io/blog/20220727/</guid>
         <description>&lt;p&gt;wireless-regdb (updated database of country wifi channels/bands)&lt;br /&gt;
 python3-bottle (security) incorrectly handles errors during early request bindings&lt;/p&gt;</description>
+      </item>
+      
+      <item>
+        <title>Qs and As</title>
+        <link>https://meorion.github.io/blog/20220625-lambda/</link>
+        <pubDate>Tue, 26 Jul 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://meorion.github.io/blog/20220625-lambda/</guid>
+        <description>&lt;p&gt;Charizard is the most potent of all the variations of the base charmander oeuvre and all its branches. that is not in question. We aren&amp;rsquo;t debating that.&lt;br /&gt;
+But, it does bring up another question. and I think we have the answer&lt;br /&gt;
+(updated: Jul-28th 2022, Jul-24th 2022, Jul-15th 2022. original 2022-06-25)&lt;/p&gt;</description>
       </item>
       
       <item>
@@ -554,7 +555,18 @@ python3-bottle (security) incorrectly handles errors during early request bindin
         <pubDate>Tue, 19 Jul 2022 00:00:00 +0000</pubDate>
         
         <guid>https://meorion.github.io/blog/20220719/</guid>
-        <description></description>
+        <description>&lt;ul&gt;
+&lt;li&gt;code&lt;/li&gt;
+&lt;li&gt;gir1.2-harfbuzz-0.0&lt;/li&gt;
+&lt;li&gt;gir1.2-javascriptcoregtk-4.0&lt;/li&gt;
+&lt;li&gt;gir1.2-webkit2-4.0&lt;/li&gt;
+&lt;li&gt;libharfbuzz-dev&lt;/li&gt;
+&lt;li&gt;libharfbuzz-gobject0&lt;/li&gt;
+&lt;li&gt;libharfbuzz-icu0&lt;/li&gt;
+&lt;li&gt;libharfbuzz0b&lt;/li&gt;
+&lt;li&gt;libjavascriptcoregtk&lt;/li&gt;
+&lt;li&gt;libwebkit2gtk-4.0-37&lt;/li&gt;
+&lt;/ul&gt;</description>
       </item>
       
       <item>

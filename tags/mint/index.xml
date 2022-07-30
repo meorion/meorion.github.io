@@ -55,7 +55,18 @@ python3-bottle (security) incorrectly handles errors during early request bindin
         <pubDate>Tue, 19 Jul 2022 00:00:00 +0000</pubDate>
         
         <guid>https://meorion.github.io/blog/20220719/</guid>
-        <description></description>
+        <description>&lt;ul&gt;
+&lt;li&gt;code&lt;/li&gt;
+&lt;li&gt;gir1.2-harfbuzz-0.0&lt;/li&gt;
+&lt;li&gt;gir1.2-javascriptcoregtk-4.0&lt;/li&gt;
+&lt;li&gt;gir1.2-webkit2-4.0&lt;/li&gt;
+&lt;li&gt;libharfbuzz-dev&lt;/li&gt;
+&lt;li&gt;libharfbuzz-gobject0&lt;/li&gt;
+&lt;li&gt;libharfbuzz-icu0&lt;/li&gt;
+&lt;li&gt;libharfbuzz0b&lt;/li&gt;
+&lt;li&gt;libjavascriptcoregtk&lt;/li&gt;
+&lt;li&gt;libwebkit2gtk-4.0-37&lt;/li&gt;
+&lt;/ul&gt;</description>
       </item>
       
       <item>

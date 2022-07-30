@@ -1114,7 +1114,7 @@
     "datePublished": "2022-07-19T00:00:00Z",
     "dateModified": "2022-07-19T00:00:00Z",
     "url" : "https://meorion.github.io/blog/20220719/",
-    "description": ,
+    "description": "\u003cul\u003e \u003cli\u003ecode\u003c/li\u003e \u003cli\u003egir1.2-harfbuzz-0.0\u003c/li\u003e \u003cli\u003egir1.2-javascriptcoregtk-4.0\u003c/li\u003e \u003cli\u003egir1.2-webkit2-4.0\u003c/li\u003e \u003cli\u003elibharfbuzz-dev\u003c/li\u003e \u003cli\u003elibharfbuzz-gobject0\u003c/li\u003e \u003cli\u003elibharfbuzz-icu0\u003c/li\u003e \u003cli\u003elibharfbuzz0b\u003c/li\u003e \u003cli\u003elibjavascriptcoregtk …\u003c/li\u003e\u003c/ul\u003e",
     "keywords": ["linux","mint","security"],
     "image" : "https://meorion.github.io/images/2022-07-19-webkit.png",
     "author": {
@@ -1216,30 +1216,7 @@
   
   <li class="">
     <a href="https://meorion.github.io/blog/20220625/"
-      class="menu__title ">advice</a>
-  </li>
-  
-
-    
-      
-  
-  
-  
-  
-  
-  
-  
-
-  
-  
-  
-  
-  
-  
-  
-  <li class="">
-    <a href="https://meorion.github.io/blog/20220625-lambda/"
-      class="menu__title ">Qs and As</a>
+      class="menu__title ">seeking fitness advice</a>
   </li>
   
 
@@ -1263,6 +1240,29 @@
   <li class="">
     <a href="https://meorion.github.io/blog/20220727/"
       class="menu__title ">apt update (python3-bottle)</a>
+  </li>
+  
+
+    
+      
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <li class="">
+    <a href="https://meorion.github.io/blog/20220625-lambda/"
+      class="menu__title ">Qs and As</a>
   </li>
   
 
@@ -1983,58 +1983,53 @@
   
 
   <article class="single__contents" data-dir="ltr">
-    <h2 id="list-of-programs-updated">list of programs updated</h2>
-<ul>
-<li>
-<p>libfreetype-dev</p>
-</li>
-<li>
-<p>libfreetype6-dev</p>
-</li>
-<li>
-<p>libfreetype6</p>
-</li>
-<li>
-<p>libfreetype</p>
-</li>
-<li>
-<p>python3-jwt</p>
-<hr />
-</li>
+    <ul>
+<li>code</li>
+<li>gir1.2-harfbuzz-0.0</li>
+<li>gir1.2-javascriptcoregtk-4.0</li>
+<li>gir1.2-webkit2-4.0</li>
+<li>libharfbuzz-dev</li>
+<li>libharfbuzz-gobject0</li>
+<li>libharfbuzz-icu0</li>
+<li>libharfbuzz0b</li>
+<li>libjavascriptcoregtk</li>
+<li>libwebkit2gtk-4.0-37</li>
 </ul>
+<h2 id="list-of-programs-updated">list of programs updated</h2>
+<h3 id="harfbuzz">harfbuzz</h3>
+<p>Harfbuzz v4.3.0 allows DoS (integer overflow in component hb-ot-shape-fallback.cc<br />
+ubuntu notice <a href="https://ubuntu.com/security/CVE-2022-33068" target="_blank">https://ubuntu.com/security/CVE-2022-33068</a><br />
+harfbuzz is converts unicode input into glyph output <a href="https://harfbuzz.github.io/" target="_blank">https://harfbuzz.github.io/</a><br />
+harfbuzz is persian for &ldquo;open type&rdquo;<br />
+harfbuzz runs on top of the FreeType font renderer</p>
+<h3 id="webkitgtk">webkitgtk</h3>
+<p>ubuntu security notice <a href="https://ubuntu.com/security/notices/USN-5522-1" target="_blank">https://ubuntu.com/security/notices/USN-5522-1</a></p>
 <h2 id="changelog">changelog</h2>
-<p>freetype (2.10.1-2ubuntu0.2) focal-security; urgency=medium</p>
+<p>harfbuzz (2.6.4-1ubuntu4.2) focal-security; urgency=medium</p>
 <ul>
-<li>SECURITY UPDATE: Heap buffer overflow in sfnt_init_face
+<li>SECURITY UPDATE: DoS via integer overflow
 <ul>
-<li>debian/patches/CVE-2022-27404.patch: avoid invalid face index in<br />
-src/sfnt/sfobjs.c.</li>
-<li>CVE-2022-27404</li>
+<li>debian/patches/CVE-2022-33068-1.patch: limit glyph extents in<br />
+src/hb-ot-color-sbix-table.hh.</li>
+<li>debian/patches/CVE-2022-33068-2.patch: fix conditional in<br />
+src/hb-ot-color-sbix-table.hh.</li>
+<li>CVE-2022-33068</li>
 </ul>
 </li>
-<li>SECURITY UPDATE: Segmentation violation in FNT_Size_Request
-<ul>
-<li>debian/patches/CVE-2022-27405.patch: properly guard face_index in<br />
-src/base/ftobjs.c.</li>
-<li>CVE-2022-27405</li>
+<li>debian/rules: increase fuzzer timeouts to fix FTBFS on riscv64.</li>
 </ul>
-</li>
-<li>SECURITY UPDATE: Segmentation violation in FT_Request_Size
+<p>&ndash; Marc Deslauriers &lt;marc.deslauriers@ubuntu.com&gt;  Wed, 13 Jul 2022 12:43:13 -0400</p>
+<p>webkit2gtk (2.36.4-0ubuntu0.20.04.1) focal-security; urgency=medium</p>
 <ul>
-<li>debian/patches/CVE-2022-27406.patch: guard face-&gt;size in<br />
-src/base/ftobjs.c.</li>
-<li>CVE-2022-27406</li>
-</ul>
-</li>
-<li>SECURITY UPDATE: Heap-based buffer overflow in ftbench demo
+<li>Updated to 2.36.4 to fix security issues.
 <ul>
-<li>debian/patches/CVE-2022-31782.patch: check the number of glyphs in<br />
-ft2demos/src/ftbench.c.</li>
-<li>CVE-2022-31782</li>
+<li>CVE-2022-22662 (fixed in 2.36.0).</li>
+<li>CVE-2022-22677 and CVE-2022-26710 (fixed in 2.36.4).</li>
 </ul>
 </li>
 </ul>
-<p>&ndash; Marc Deslauriers &lt;marc.deslauriers@ubuntu.com&gt;  Tue, 19 Jul 2022 11:28:34 -0400</p>
+<p>&ndash; Spyros Seimenis &lt;spyros.seimenis@canonical.com&gt;  Wed, 13 Jul 2022 18:42:10 +0300<br />
+&ndash; Marc Deslauriers &lt;marc.deslauriers@ubuntu.com&gt;  Tue, 19 Jul 2022 11:28:34 -0400</p>
   </article>
 </div>
       
@@ -2071,7 +2066,12 @@ ft2demos/src/ftbench.c.</li>
   <div class="toc__body">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#list-of-programs-updated">list of programs updated</a></li>
+    <li><a href="#list-of-programs-updated">list of programs updated</a>
+      <ul>
+        <li><a href="#harfbuzz">harfbuzz</a></li>
+        <li><a href="#webkitgtk">webkitgtk</a></li>
+      </ul>
+    </li>
     <li><a href="#changelog">changelog</a></li>
   </ul>
 </nav>
