@@ -7,12 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Orion Illovsky&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 02 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Aug 2022 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://meorion.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>apt update (gstreamer and GDK-PixBuf)</title>
+        <link>https://meorion.github.io/blog/20220808/</link>
+        <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://meorion.github.io/blog/20220808/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>apt update (mintupdate)</title>
+        <link>https://meorion.github.io/blog/20220807/</link>
+        <pubDate>Sun, 07 Aug 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://meorion.github.io/blog/20220807/</guid>
+        <description></description>
+      </item>
       
       <item>
         <title>apt update (kernel and samba)</title>
