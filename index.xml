@@ -486,12 +486,83 @@ Cultural Differences When therapists counsel those from other cultures&amp;helli
       </item>
       
       <item>
-        <title>apt update (gstreamer and GDK-PixBuf)</title>
+        <title>apt update (netsnmp)</title>
+        <link>https://meorion.github.io/blog/20220816/</link>
+        <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://meorion.github.io/blog/20220816/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>apt update (javascriptcoregtk)</title>
+        <link>https://meorion.github.io/blog/20220815/</link>
+        <pubDate>Mon, 15 Aug 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://meorion.github.io/blog/20220815/</guid>
+        <description>&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;libwebkit2gtk-4.0-37&lt;/strong&gt;:amd64 (2.36.4-0ubuntu0.20.04.1, 2.36.6-0ubuntu0.20.04.1)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;gir1.2-webkit2-4.0&lt;/strong&gt;:amd64 (2.36.4-0ubuntu0.20.04.1, 2.36.6-0ubuntu0.20.04.1)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;libjavascriptcoregtk-4.0&lt;/strong&gt;-18:amd64 (2.36.4-0ubuntu0.20.04.1, 2.36.6-0ubuntu0.20.04.1)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;gir1.2-javascriptcoregtk-4.0&lt;/strong&gt;:amd64 (2.36.4-0ubuntu0.20.04.1, 2.36.6-0ubuntu0.20.04.1)&lt;/li&gt;
+&lt;/ul&gt;</description>
+      </item>
+      
+      <item>
+        <title>apt update (mintupgrade)</title>
+        <link>https://meorion.github.io/blog/20220814/</link>
+        <pubDate>Sun, 14 Aug 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://meorion.github.io/blog/20220814/</guid>
+        <description></description>
+      </item>
+      
+      <item>
+        <title>apt update (epiphany)</title>
+        <link>https://meorion.github.io/blog/20220810/</link>
+        <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://meorion.github.io/blog/20220810/</guid>
+        <description>&lt;ul&gt;
+&lt;li&gt;code epiphany-browser&lt;/li&gt;
+&lt;li&gt;epiphany-browser-data&lt;/li&gt;
+&lt;li&gt;linux-generic&lt;/li&gt;
+&lt;li&gt;linux-headers-generic&lt;/li&gt;
+&lt;li&gt;linux-image-generic&lt;/li&gt;
+&lt;li&gt;linux-libc-dev&lt;/li&gt;
+&lt;/ul&gt;</description>
+      </item>
+      
+      <item>
+        <title>apt update (gstreamer, GDK-PixBuf)</title>
         <link>https://meorion.github.io/blog/20220808/</link>
         <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
         
         <guid>https://meorion.github.io/blog/20220808/</guid>
-        <description></description>
+        <description>&lt;ul&gt;
+&lt;li&gt;libgdk-pixbuf2.0-bin:amd64&lt;/li&gt;
+&lt;li&gt;gir1.2-gdkpixbuf-2.0:amd64&lt;/li&gt;
+&lt;li&gt;libgdk-pixbuf2.0-dev:amd64&lt;/li&gt;
+&lt;li&gt;libgdk-pixbuf2.0-common:all&lt;/li&gt;
+&lt;li&gt;libgdk-pixbuf2.0-0:amd64&lt;/li&gt;
+&lt;li&gt;libgstreamer1.0-0:amd64&lt;/li&gt;
+&lt;li&gt;libgstreamer1.0-0:i386&lt;/li&gt;
+&lt;li&gt;gir1.2-gstreamer-1.0:amd64&lt;/li&gt;
+&lt;li&gt;libgstreamer-plugins-base1.0-0:amd64&lt;/li&gt;
+&lt;li&gt;libgstreamer-plugins-base1.0-0:i386&lt;/li&gt;
+&lt;li&gt;libgstreamer-gl1.0-0:amd64&lt;/li&gt;
+&lt;li&gt;gir1.2-gst-plugins-base-1.0:amd64&lt;/li&gt;
+&lt;li&gt;gstreamer1.0-alsa:amd64&lt;/li&gt;
+&lt;li&gt;gstreamer1.0-gl:amd64&lt;/li&gt;
+&lt;li&gt;gstreamer1.0-plugins-base:amd64&lt;/li&gt;
+&lt;li&gt;gstreamer1.0-plugins-base:i386&lt;/li&gt;
+&lt;li&gt;gstreamer1.0-tools:amd64&lt;/li&gt;
+&lt;li&gt;gstreamer1.0-plugins-base-apps:amd64&lt;/li&gt;
+&lt;li&gt;gstreamer1.0-plugins-good:amd64&lt;/li&gt;
+&lt;li&gt;libgstreamer-plugins-good1.0-0:amd64&lt;/li&gt;
+&lt;li&gt;gstreamer1.0-pulseaudio:amd64&lt;/li&gt;
+&lt;li&gt;gstreamer1.0-x:amd64&lt;/li&gt;
+&lt;/ul&gt;</description>
       </item>
       
       <item>
