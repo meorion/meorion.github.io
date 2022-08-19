@@ -486,6 +486,19 @@ Cultural Differences When therapists counsel those from other cultures&amp;helli
       </item>
       
       <item>
+        <title>apt update (rsync/zlib)</title>
+        <link>https://meorion.github.io/blog/20220817/</link>
+        <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://meorion.github.io/blog/20220817/</guid>
+        <description>&lt;p&gt;rsync (used for backups and file transfers) &lt;a href=&#34;https://github.com/WayneD/rsync/&#34; target=&#34;_blank&#34;&gt;https://github.com/WayneD/rsync/&lt;/a&gt;&lt;br /&gt;
+rsync comes bundled with zlib (closed issue, addressing):&lt;br /&gt;
+&lt;a href=&#34;https://github.com/WayneD/rsync/issues/347&#34; target=&#34;_blank&#34;&gt;https://github.com/WayneD/rsync/issues/347&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ubuntu &lt;a href=&#34;https://ubuntu.com/security/CVE-2022-37434&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/CVE-2022-37434&lt;/a&gt;&lt;br /&gt;
+debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2022-37434&#34; target=&#34;_blank&#34;&gt;https://security-tracker.debian.org/tracker/CVE-2022-37434&lt;/a&gt;&lt;/p&gt;</description>
+      </item>
+      
+      <item>
         <title>apt update (netsnmp)</title>
         <link>https://meorion.github.io/blog/20220816/</link>
         <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
