@@ -15,15 +15,6 @@
     
       
       <item>
-        <title>Browser</title>
-        <link>https://meorion.github.io/docs/browser/</link>
-        <pubDate>Fri, 28 Jan 2022 00:38:51 +0900</pubDate>
-        
-        <guid>https://meorion.github.io/docs/browser/</guid>
-        <description>get rid of an overlay try reader mode  In FireFox, you can load just the main text and images by entering reader mode. This only works on some websites. You will know it is an option when the reader icon is at the end of the address bar:   reader mode    In Chrome, reader mode may or may not be available. To check, this website has some instructions</description>
-      </item>
-      
-      <item>
         <title>Basic Usage</title>
         <link>https://meorion.github.io/docs/gettingstarted/basicusage/</link>
         <pubDate>Tue, 28 Jan 2020 00:34:51 +0900</pubDate>
@@ -483,6 +474,21 @@ Cultural Differences When therapists counsel those from other cultures&amp;helli
         
         <guid>https://meorion.github.io/health/document-index/</guid>
         <description>Markdown here</description>
+      </item>
+      
+      <item>
+        <title>apt update libxslt</title>
+        <link>https://meorion.github.io/blog/2022082212/</link>
+        <pubDate>Sun, 21 Aug 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://meorion.github.io/blog/2022082212/</guid>
+        <description>&lt;p&gt;libxslt security issues reported in chromium browser&lt;br /&gt;
+XSLT: Extensible Stylesheet Language Transformations&lt;br /&gt;
+xml language to style your xml/rss feed.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://gitlab.gnome.org/GNOME/libxslt/-/wikis/home&#34; target=&#34;_blank&#34;&gt;https://gitlab.gnome.org/GNOME/libxslt/-/wikis/home&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;CVE-2021-30560&lt;br /&gt;
+ubuntu &lt;a href=&#34;https://ubuntu.com/security/CVE-2021-30560&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/CVE-2021-30560&lt;/a&gt;&lt;br /&gt;
+debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2021-30560&#34; target=&#34;_blank&#34;&gt;https://security-tracker.debian.org/tracker/CVE-2021-30560&lt;/a&gt;&lt;/p&gt;</description>
       </item>
       
       <item>
