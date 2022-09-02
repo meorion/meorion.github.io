@@ -482,21 +482,7 @@ Cultural Differences When therapists counsel those from other cultures&amp;helli
         <pubDate>Fri, 02 Sep 2022 08:28:00 -0500</pubDate>
         
         <guid>https://meorion.github.io/blog/2022090208/</guid>
-        <description>&lt;hr /&gt;
-&lt;p&gt;&lt;a href=&#34;https://curl.se/docs/CVE-2022-35252.html&#34; target=&#34;_blank&#34;&gt;https://curl.se/docs/CVE-2022-35252.html&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;ubuntu &lt;a href=&#34;https://ubuntu.com/security/CVE-2022-35252&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/CVE-2022-35252&lt;/a&gt;&lt;br /&gt;
-debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2022-35252&#34; target=&#34;_blank&#34;&gt;https://security-tracker.debian.org/tracker/CVE-2022-35252&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;span class=&#34;underline&#34;&gt;programs updated&lt;/span&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;code (1.70.2-1660629410 =&amp;gt; 1.71.0-1662018389)&lt;/li&gt;
-&lt;li&gt;libcurl3-gnutls (7.68.0-1ubuntu2.12 =&amp;gt; 7.68.0-1ubuntu2.13)&lt;/li&gt;
-&lt;li&gt;libcurl3-gnutls:i386 (7.68.0-1ubuntu2.12 =&amp;gt; 7.68.0-1ubuntu2.13)&lt;/li&gt;
-&lt;li&gt;libcurl4 (7.68.0-1ubuntu2.12 =&amp;gt; 7.68.0-1ubuntu2.13)&lt;/li&gt;
-&lt;li&gt;tzdata (2022a-0ubuntu0.20.04 =&amp;gt; 2022c-0ubuntu0.20.04.0)&lt;/li&gt;
-&lt;li&gt;curl (7.68.0-1ubuntu2.12 =&amp;gt; 7.68.0-1ubuntu2.13)&lt;/li&gt;
-&lt;/ul&gt;</description>
+        <description></description>
       </item>
       
       <item>
