@@ -7,12 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Orion Illovsky&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 02 Sep 2022 08:28:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 06 Sep 2022 14:05:00 -0500</lastBuildDate>
     
         <atom:link href="https://meorion.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>apt update notify</title>
+        <link>https://meorion.github.io/blog/2022090614/</link>
+        <pubDate>Tue, 06 Sep 2022 14:05:00 -0500</pubDate>
+        
+        <guid>https://meorion.github.io/blog/2022090614/</guid>
+        <description>&lt;ul&gt;
+&lt;li&gt;gir1.2-notify-0.7 (0.7.9-1ubuntu2 =&amp;gt; 0.7.9-1ubuntu3.20.04.2)&lt;/li&gt;
+&lt;li&gt;libnotify-bin (0.7.9-1ubuntu2 =&amp;gt; 0.7.9-1ubuntu3.20.04.2)&lt;/li&gt;
+&lt;li&gt;libnotify4 (0.7.9-1ubuntu2 =&amp;gt; 0.7.9-1ubuntu3.20.04.2)&lt;/li&gt;
+&lt;li&gt;libtss2-esys0 (2.3.2-1 =&amp;gt; 2.3.2-1ubuntu0.20.04.1)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://bugs.launchpad.net/ubuntu/&amp;#43;source/libnotify/&amp;#43;bug/1802483&#34; target=&#34;_blank&#34;&gt;https://bugs.launchpad.net/ubuntu/+source/libnotify/+bug/1802483&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://bugs.launchpad.net/ubuntu/&amp;#43;source/libnotify/&amp;#43;bug/1970647&#34; target=&#34;_blank&#34;&gt;https://bugs.launchpad.net/ubuntu/+source/libnotify/+bug/1970647&lt;/a&gt;&lt;/p&gt;</description>
+      </item>
       
       <item>
         <title>apt update - curl (CVE-2022-35252)</title>
