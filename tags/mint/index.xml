@@ -7,12 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Orion Illovsky&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Tue, 06 Sep 2022 14:05:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 13 Sep 2022 09:46:00 -0500</lastBuildDate>
     
         <atom:link href="https://meorion.github.io/tags/mint/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>apt update (libpoppler)</title>
+        <link>https://meorion.github.io/blog/2022091309/</link>
+        <pubDate>Tue, 13 Sep 2022 09:46:00 -0500</pubDate>
+        
+        <guid>https://meorion.github.io/blog/2022091309/</guid>
+        <description>&lt;ul&gt;
+&lt;li&gt;effects libtiff. a DoS via a crafted tiff file.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ubuntu &lt;a href=&#34;https://ubuntu.com/security/CVE-2022-0908&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/CVE-2022-0908&lt;/a&gt;&lt;br /&gt;
+debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2022-0908&#34; target=&#34;_blank&#34;&gt;https://security-tracker.debian.org/tracker/CVE-2022-0908&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;effects libtiff. a DoS via a crafted tiff file.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ubuntu &lt;a href=&#34;https://ubuntu.com/security/CVE-2022-0907&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/CVE-2022-0907&lt;/a&gt;&lt;br /&gt;
+debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2022-0907&#34; target=&#34;_blank&#34;&gt;https://security-tracker.debian.org/tracker/CVE-2022-0907&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CVE-2022-38784. effects poppler. integer overflow in the JBIG2 decoder&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ubuntu &lt;a href=&#34;https://ubuntu.com/security/CVE-2022-38784&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/CVE-2022-38784&lt;/a&gt;&lt;br /&gt;
+debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2022-38784&#34; target=&#34;_blank&#34;&gt;https://security-tracker.debian.org/tracker/CVE-2022-38784&lt;/a&gt;&lt;/p&gt;</description>
+      </item>
       
       <item>
         <title>apt update notify</title>
