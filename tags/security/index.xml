@@ -7,12 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Orion Illovsky&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Fri, 30 Sep 2022 08:22:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 05 Oct 2022 07:40:00 -0500</lastBuildDate>
     
         <atom:link href="https://meorion.github.io/tags/security/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>mint update thunderbird</title>
+        <link>https://meorion.github.io/blog/2022100507/</link>
+        <pubDate>Wed, 05 Oct 2022 07:40:00 -0500</pubDate>
+        
+        <guid>https://meorion.github.io/blog/2022100507/</guid>
+        <description>&lt;ul&gt;
+&lt;li&gt;thunderbird&lt;/li&gt;
+&lt;li&gt;thunderbird-gnome-support&lt;/li&gt;
+&lt;li&gt;thunderbird-locale-en&lt;/li&gt;
+&lt;li&gt;xul-ext-lightning&lt;/li&gt;
+&lt;li&gt;zlib1g&lt;/li&gt;
+&lt;li&gt;zlib1g:i386&lt;/li&gt;
+&lt;li&gt;zlib1g-dev&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;</description>
+      </item>
       
       <item>
         <title>mint update ghostscript, webkit</title>
