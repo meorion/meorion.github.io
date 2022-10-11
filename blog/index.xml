@@ -7,12 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Orion Illovsky&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Thu, 06 Oct 2022 09:40:00 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 10 Oct 2022 09:25:00 -0500</lastBuildDate>
     
         <atom:link href="https://meorion.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>mint update kernel code</title>
+        <link>https://meorion.github.io/blog/2022101009/</link>
+        <pubDate>Mon, 10 Oct 2022 09:25:00 -0500</pubDate>
+        
+        <guid>https://meorion.github.io/blog/2022101009/</guid>
+        <description>&lt;p&gt;updates for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;code&lt;/li&gt;
+&lt;li&gt;linux-generic&lt;/li&gt;
+&lt;li&gt;linux-headers-generic&lt;/li&gt;
+&lt;li&gt;linux-image-generic&lt;/li&gt;
+&lt;li&gt;linux-libc-dev&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ubuntu &lt;a href=&#34;https://ubuntu.com/security/CVE-2022-3176&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/CVE-2022-3176&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;</description>
+      </item>
       
       <item>
         <title>mint update libreoffice, dhcp, ubuntu pro</title>
@@ -42,7 +60,7 @@
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Some of the ubuntu-advantage-tools changes were made to facilitate the change by canonical to the ubuntu pro product. Seems to mean businesses with less than five ubuntu licenses can recieve extended support for ubuntu versions that would normally not be supported (EoL). I&amp;rsquo;m thinking this is centered mostly around security and applications they make available to install from their repository.&lt;/p&gt;
+&lt;p&gt;Some of the ubuntu-advantage-tools changes were made to facilitate the change by canonical to the ubuntu pro product. Seems to mean businesses with less than five ubuntu licenses can recieve extended support for ubuntu versions that would normally not be supported (EoL). Possibly, this is centered mostly around security and applications they make available to install from their repository.&lt;/p&gt;
 &lt;hr /&gt;</description>
       </item>
       
@@ -106,7 +124,7 @@ debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2020-2779
       </item>
       
       <item>
-        <title>apt update (libjpeg-turbo, systemd)</title>
+        <title>mint update (libjpeg-turbo, systemd)</title>
         <link>https://meorion.github.io/blog/2022092304/</link>
         <pubDate>Fri, 23 Sep 2022 04:12:00 -0500</pubDate>
         
@@ -115,33 +133,6 @@ debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2020-2779
 &lt;li&gt;libjpeg-turbo&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&#34;https://ubuntu.com/security/notices/USN-5631-1&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/notices/USN-5631-1&lt;/a&gt;&lt;/p&gt;
-&lt;hr /&gt;</description>
-      </item>
-      
-      <item>
-        <title>apt update (bind9, pcre2, mako)</title>
-        <link>https://meorion.github.io/blog/2022092205/</link>
-        <pubDate>Thu, 22 Sep 2022 05:22:00 -0500</pubDate>
-        
-        <guid>https://meorion.github.io/blog/2022092205/</guid>
-        <description>&lt;ul&gt;
-&lt;li&gt;bind9&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;CVE-2022-38178&lt;br /&gt;
-CVE-2022-38177&lt;br /&gt;
-CVE-2022-2795&lt;br /&gt;
-&lt;a href=&#34;https://ubuntu.com/security/notices/USN-5626-1&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/notices/USN-5626-1&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;mako&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;CVE-2022-40023&lt;br /&gt;
-&lt;a href=&#34;https://ubuntu.com/security/CVE-2022-40023&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/CVE-2022-40023&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;pcre2&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;CVE-2022-1586&lt;br /&gt;
-ubuntu &lt;a href=&#34;https://ubuntu.com/security/CVE-2022-1586&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/CVE-2022-1586&lt;/a&gt;&lt;br /&gt;
-CVE-2022-1587&lt;/p&gt;
 &lt;hr /&gt;</description>
       </item>
       
