@@ -7,12 +7,48 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Orion Illovsky&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Mon, 10 Oct 2022 09:25:00 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 13 Oct 2022 22:17:00 -0500</lastBuildDate>
     
         <atom:link href="https://meorion.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>mint update unzip, heimdal, gmp</title>
+        <link>https://meorion.github.io/blog/2022101322/</link>
+        <pubDate>Thu, 13 Oct 2022 22:17:00 -0500</pubDate>
+        
+        <guid>https://meorion.github.io/blog/2022101322/</guid>
+        <description>&lt;p&gt;&lt;span class=&#34;underline&#34;&gt;Programs Updated&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;code&lt;/li&gt;
+&lt;li&gt;libasn1-8-heimdal&lt;/li&gt;
+&lt;li&gt;libasn1-8-heimdal:i386&lt;/li&gt;
+&lt;li&gt;libgmp-dev&lt;/li&gt;
+&lt;li&gt;libgmp10&lt;/li&gt;
+&lt;li&gt;libgmp10:i386&lt;/li&gt;
+&lt;li&gt;libgmpxx4ldbl&lt;/li&gt;
+&lt;li&gt;libgssapi3-heimdal&lt;/li&gt;
+&lt;li&gt;libgssapi3-heimdal:i386&lt;/li&gt;
+&lt;li&gt;libhcrypto4-heimdal&lt;/li&gt;
+&lt;li&gt;libhcrypto4-heimdal:i386&lt;/li&gt;
+&lt;li&gt;libheimbase1-heimdal&lt;/li&gt;
+&lt;li&gt;libheimbase1-heimdal:i386&lt;/li&gt;
+&lt;li&gt;libheimntlm0-heimdal:i386&lt;/li&gt;
+&lt;li&gt;libheimntlm0-heimdal&lt;/li&gt;
+&lt;li&gt;libhx509-5-heimdal&lt;/li&gt;
+&lt;li&gt;libhx509-5-heimdal:i386&lt;/li&gt;
+&lt;li&gt;libkrb5-26-heimdal&lt;/li&gt;
+&lt;li&gt;libkrb5-26-heimdal:i386&lt;/li&gt;
+&lt;li&gt;libroken18-heimdal&lt;/li&gt;
+&lt;li&gt;libroken18-heimdal:i386&lt;/li&gt;
+&lt;li&gt;libwind0-heimdal&lt;/li&gt;
+&lt;li&gt;libwind0-heimdal:i386&lt;/li&gt;
+&lt;li&gt;unzip&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;</description>
+      </item>
       
       <item>
         <title>mint update kernel code</title>
