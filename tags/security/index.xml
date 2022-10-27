@@ -7,12 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Orion Illovsky&amp;copy;{year}, All Rights Reserved</copyright>
-    <lastBuildDate>Wed, 26 Oct 2022 07:36:00 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 27 Oct 2022 02:34:00 -0500</lastBuildDate>
     
         <atom:link href="https://meorion.github.io/tags/security/index.xml" rel="self" type="application/rss+xml" />
     
     
     
+      
+      <item>
+        <title>mint update test from asus</title>
+        <link>https://meorion.github.io/blog/2022102702/</link>
+        <pubDate>Thu, 27 Oct 2022 02:34:00 -0500</pubDate>
+        
+        <guid>https://meorion.github.io/blog/2022102702/</guid>
+        <description>&lt;p&gt;does it work&lt;/p&gt;
+&lt;p&gt;ubuntu &lt;a href=&#34;https://ubuntu.com/security/CVE-2022-37434&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/CVE-2022-37434&lt;/a&gt;&lt;br /&gt;
+debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2022-37434&#34; target=&#34;_blank&#34;&gt;https://security-tracker.debian.org/tracker/CVE-2022-37434&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;</description>
+      </item>
       
       <item>
         <title>mint update update grub2</title>
@@ -207,6 +219,33 @@ debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2020-2779
 &lt;li&gt;libjpeg-turbo&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&#34;https://ubuntu.com/security/notices/USN-5631-1&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/notices/USN-5631-1&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;</description>
+      </item>
+      
+      <item>
+        <title>mint update (bind9, pcre2, mako)</title>
+        <link>https://meorion.github.io/blog/2022092205/</link>
+        <pubDate>Thu, 22 Sep 2022 05:22:00 -0500</pubDate>
+        
+        <guid>https://meorion.github.io/blog/2022092205/</guid>
+        <description>&lt;ul&gt;
+&lt;li&gt;bind9&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;CVE-2022-38178&lt;br /&gt;
+CVE-2022-38177&lt;br /&gt;
+CVE-2022-2795&lt;br /&gt;
+&lt;a href=&#34;https://ubuntu.com/security/notices/USN-5626-1&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/notices/USN-5626-1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mako&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;CVE-2022-40023&lt;br /&gt;
+&lt;a href=&#34;https://ubuntu.com/security/CVE-2022-40023&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/CVE-2022-40023&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pcre2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;CVE-2022-1586&lt;br /&gt;
+ubuntu &lt;a href=&#34;https://ubuntu.com/security/CVE-2022-1586&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/CVE-2022-1586&lt;/a&gt;&lt;br /&gt;
+CVE-2022-1587&lt;/p&gt;
 &lt;hr /&gt;</description>
       </item>
       

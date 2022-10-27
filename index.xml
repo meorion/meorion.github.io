@@ -57,7 +57,7 @@
         
         <guid>https://meorion.github.io/health/chapter-2-considerations/differences/</guid>
         <description>Most psychological approaches and techniques of psychology purport that they transcend culture and their delineations of solutions to problems are universally applicable
- (Corsini &amp;amp; Wedding, 1995; Hall, Lindzey, &amp;amp; Campbell, 1998).
+(Corsini &amp;amp; Wedding, 1995; Hall, Lindzey, &amp;amp; Campbell, 1998).
 Demographic Data It is generally posited that differences between peoples can be a source of dissonance and misunderstanding - this can apply to the relationships between the therapist and client as well.
 Cultural Differences When therapists counsel those from other cultures&amp;hellip;</description>
       </item>
@@ -113,7 +113,7 @@ Cultural Differences When therapists counsel those from other cultures&amp;helli
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
         <guid>https://meorion.github.io/docs/depth1/test1/</guid>
-        <description>hearthstone  count board clears  vs mutanus, warning turn 7  mutanus - 7 mana. try to get high value cards out of your hand or dilute your hand with extra cards around turn seven versus control decks (control shamen, quest priest)  TODO naga priest (new list from VS you should update)n deck imp warlock (looks to win turn 6.5) mulligan  deck (demonic assault three damage)  skeleton mage (look to win turn 9.</description>
+        <description>hearthstone count board clears vs mutanus, warning turn 7 mutanus - 7 mana. try to get high value cards out of your hand or dilute your hand with extra cards around turn seven versus control decks (control shamen, quest priest) TODO naga priest (new list from VS you should update)n deck imp warlock (looks to win turn 6.5) mulligan deck (demonic assault three damage) skeleton mage (look to win turn 9.</description>
       </item>
       
       <item>
@@ -477,6 +477,18 @@ Cultural Differences When therapists counsel those from other cultures&amp;helli
       </item>
       
       <item>
+        <title>mint update test from asus</title>
+        <link>https://meorion.github.io/blog/2022102702/</link>
+        <pubDate>Thu, 27 Oct 2022 02:34:00 -0500</pubDate>
+        
+        <guid>https://meorion.github.io/blog/2022102702/</guid>
+        <description>&lt;p&gt;does it work&lt;/p&gt;
+&lt;p&gt;ubuntu &lt;a href=&#34;https://ubuntu.com/security/CVE-2022-37434&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/CVE-2022-37434&lt;/a&gt;&lt;br /&gt;
+debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2022-37434&#34; target=&#34;_blank&#34;&gt;https://security-tracker.debian.org/tracker/CVE-2022-37434&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;</description>
+      </item>
+      
+      <item>
         <title>mint update update grub2</title>
         <link>https://meorion.github.io/blog/2022102607/</link>
         <pubDate>Wed, 26 Oct 2022 07:36:00 -0500</pubDate>
@@ -669,6 +681,33 @@ debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2020-2779
 &lt;li&gt;libjpeg-turbo&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&#34;https://ubuntu.com/security/notices/USN-5631-1&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/notices/USN-5631-1&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;</description>
+      </item>
+      
+      <item>
+        <title>mint update (bind9, pcre2, mako)</title>
+        <link>https://meorion.github.io/blog/2022092205/</link>
+        <pubDate>Thu, 22 Sep 2022 05:22:00 -0500</pubDate>
+        
+        <guid>https://meorion.github.io/blog/2022092205/</guid>
+        <description>&lt;ul&gt;
+&lt;li&gt;bind9&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;CVE-2022-38178&lt;br /&gt;
+CVE-2022-38177&lt;br /&gt;
+CVE-2022-2795&lt;br /&gt;
+&lt;a href=&#34;https://ubuntu.com/security/notices/USN-5626-1&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/notices/USN-5626-1&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mako&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;CVE-2022-40023&lt;br /&gt;
+&lt;a href=&#34;https://ubuntu.com/security/CVE-2022-40023&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/CVE-2022-40023&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pcre2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;CVE-2022-1586&lt;br /&gt;
+ubuntu &lt;a href=&#34;https://ubuntu.com/security/CVE-2022-1586&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/CVE-2022-1586&lt;/a&gt;&lt;br /&gt;
+CVE-2022-1587&lt;/p&gt;
 &lt;hr /&gt;</description>
       </item>
       
@@ -1008,10 +1047,9 @@ But, it does bring up another question. and I think we have the answer&lt;br /&g
         
         <guid>https://meorion.github.io/blog/sera/</guid>
         <description>IN-PROGRESS One-pager Sera POV
-   one pager sera working 200-500 words
-
- Figure 1: lying down
-  Sera was born in the wreckage of the sleeper star ship, Meridian. The ship collided with an undetected satellite in their destination solar system. She grew up looking at Annie. A girl lying motionless, face shiny, nose slightly wrinkled, honey colored hair in her stasis pod. Both of them under the watch of the Meridian&amp;rsquo;s AI, Joyce.</description>
+one pager sera working 200-500 words
+Figure 1: lying down
+Sera was born in the wreckage of the sleeper star ship, Meridian. The ship collided with an undetected satellite in their destination solar system. She grew up looking at Annie. A girl lying motionless, face shiny, nose slightly wrinkled, honey colored hair in her stasis pod. Both of them under the watch of the Meridian&amp;rsquo;s AI, Joyce.</description>
       </item>
       
       <item>
@@ -1136,7 +1174,7 @@ But, it does bring up another question. and I think we have the answer&lt;br /&g
         
         <guid>https://meorion.github.io/blog/20220702/</guid>
         <description>Cloononian, would sum up my philosophy. I would list him and Faulkner as my biggest influences. A doctor, I saw, said it sounds like encephalitis. My inner personal pint size clooney wanted to argue, so I decided to shut up and let him. melting clocks. talking raisins. a lot of fun.
-  Fear? No. That&amp;rsquo;s not how I would describe it. Eroticism?
+Fear? No. That&amp;rsquo;s not how I would describe it. Eroticism?
 You can bet your bottom bacon, we weren&amp;rsquo;t going to find out.</description>
       </item>
       
