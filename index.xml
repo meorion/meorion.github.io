@@ -477,25 +477,29 @@ Cultural Differences When therapists counsel those from other cultures&amp;helli
       </item>
       
       <item>
-        <title>mint update test from asus</title>
+        <title>ubuntu-22.04/wsl dbus</title>
         <link>https://meorion.github.io/blog/2022102702/</link>
         <pubDate>Thu, 27 Oct 2022 02:34:00 -0500</pubDate>
         
         <guid>https://meorion.github.io/blog/2022102702/</guid>
-        <description>&lt;p&gt;does it work&lt;/p&gt;
-&lt;p&gt;ubuntu &lt;a href=&#34;https://ubuntu.com/security/CVE-2022-37434&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/CVE-2022-37434&lt;/a&gt;&lt;br /&gt;
-debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2022-37434&#34; target=&#34;_blank&#34;&gt;https://security-tracker.debian.org/tracker/CVE-2022-37434&lt;/a&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&#34;https://ubuntu.com/security/notices/USN-5704-1&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/notices/USN-5704-1&lt;/a&gt;&lt;/p&gt;
 &lt;hr /&gt;</description>
       </item>
       
       <item>
-        <title>mint update update grub2</title>
+        <title>mint update libreoffice</title>
         <link>https://meorion.github.io/blog/2022102607/</link>
         <pubDate>Wed, 26 Oct 2022 07:36:00 -0500</pubDate>
         
         <guid>https://meorion.github.io/blog/2022102607/</guid>
-        <description>&lt;p&gt;ubuntu &lt;a href=&#34;https://ubuntu.com/security/CVE-2022-37434&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/CVE-2022-37434&lt;/a&gt;&lt;br /&gt;
-debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2022-37434&#34; target=&#34;_blank&#34;&gt;https://security-tracker.debian.org/tracker/CVE-2022-37434&lt;/a&gt;&lt;/p&gt;
+        <description>&lt;ul&gt;
+&lt;li&gt;libreoffice&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ubuntu &lt;a href=&#34;https://ubuntu.com/security/CVE-2022-3140&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/CVE-2022-3140&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pillow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2022-22817&#34; target=&#34;_blank&#34;&gt;https://security-tracker.debian.org/tracker/CVE-2022-22817&lt;/a&gt;&lt;/p&gt;
 &lt;hr /&gt;</description>
       </item>
       
