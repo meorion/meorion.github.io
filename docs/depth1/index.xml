@@ -2,42 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Depth 1 on meorion</title>
-    <link>https://meorion.github.io/docs/depth1/</link>
+    <link>http://localhost:1313/docs/depth1/</link>
     <description>Recent content in Depth 1 on meorion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Orion Illovsky&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Fri, 28 Feb 2020 10:08:56 +0900</lastBuildDate>
     
-        <atom:link href="https://meorion.github.io/docs/depth1/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/docs/depth1/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Depth 2</title>
-        <link>https://meorion.github.io/docs/depth1/depth2/</link>
+        <link>http://localhost:1313/docs/depth1/depth2/</link>
         <pubDate>Fri, 28 Feb 2020 10:08:56 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/depth1/depth2/</guid>
+        <guid>http://localhost:1313/docs/depth1/depth2/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Test 1</title>
-        <link>https://meorion.github.io/docs/depth1/test1/</link>
+        <link>http://localhost:1313/docs/depth1/test1/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/depth1/test1/</guid>
+        <guid>http://localhost:1313/docs/depth1/test1/</guid>
         <description>hearthstone count board clears vs mutanus, warning turn 7 mutanus - 7 mana. try to get high value cards out of your hand or dilute your hand with extra cards around turn seven versus control decks (control shamen, quest priest) TODO naga priest (new list from VS you should update)n deck imp warlock (looks to win turn 6.5) mulligan deck (demonic assault three damage) skeleton mage (look to win turn 9.</description>
       </item>
       
       <item>
         <title>ttttest</title>
-        <link>https://meorion.github.io/docs/depth1/ttttest/</link>
+        <link>http://localhost:1313/docs/depth1/ttttest/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/depth1/ttttest/</guid>
+        <guid>http://localhost:1313/docs/depth1/ttttest/</guid>
         <description></description>
       </item>
       

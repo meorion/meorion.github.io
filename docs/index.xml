@@ -2,78 +2,78 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docs on meorion</title>
-    <link>https://meorion.github.io/docs/</link>
+    <link>http://localhost:1313/docs/</link>
     <description>Recent content in Docs on meorion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Orion Illovsky&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sat, 11 Jan 2020 14:09:21 +0900</lastBuildDate>
     
-        <atom:link href="https://meorion.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Depth 1</title>
-        <link>https://meorion.github.io/docs/depth1/</link>
+        <link>http://localhost:1313/docs/depth1/</link>
         <pubDate>Fri, 28 Feb 2020 10:08:56 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/depth1/</guid>
+        <guid>http://localhost:1313/docs/depth1/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Getting Started</title>
-        <link>https://meorion.github.io/docs/gettingstarted/</link>
+        <link>http://localhost:1313/docs/gettingstarted/</link>
         <pubDate>Tue, 28 Jan 2020 00:34:39 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/gettingstarted/</guid>
+        <guid>http://localhost:1313/docs/gettingstarted/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Content Management</title>
-        <link>https://meorion.github.io/docs/contentmanagement/</link>
+        <link>http://localhost:1313/docs/contentmanagement/</link>
         <pubDate>Tue, 28 Jan 2020 00:36:39 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/contentmanagement/</guid>
+        <guid>http://localhost:1313/docs/contentmanagement/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Related content</title>
-        <link>https://meorion.github.io/docs/relatedcontent/</link>
+        <link>http://localhost:1313/docs/relatedcontent/</link>
         <pubDate>Tue, 28 Jan 2020 00:39:09 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/relatedcontent/</guid>
+        <guid>http://localhost:1313/docs/relatedcontent/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>Page Resources</title>
-        <link>https://meorion.github.io/docs/pageresources/</link>
+        <link>http://localhost:1313/docs/pageresources/</link>
         <pubDate>Tue, 28 Jan 2020 00:39:06 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/pageresources/</guid>
+        <guid>http://localhost:1313/docs/pageresources/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>Page Bundles</title>
-        <link>https://meorion.github.io/docs/pagebundles/</link>
+        <link>http://localhost:1313/docs/pagebundles/</link>
         <pubDate>Tue, 28 Jan 2020 00:38:59 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/pagebundles/</guid>
+        <guid>http://localhost:1313/docs/pagebundles/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>Image Processing</title>
-        <link>https://meorion.github.io/docs/imageprocessing/</link>
+        <link>http://localhost:1313/docs/imageprocessing/</link>
         <pubDate>Tue, 28 Jan 2020 00:38:48 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/imageprocessing/</guid>
+        <guid>http://localhost:1313/docs/imageprocessing/</guid>
         <description>Markdown here</description>
       </item>
       

@@ -3,16 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://meorion.github.io/ko/</loc>
+    <loc>http://localhost:1313/ko/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://meorion.github.io/"
+                href="http://localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://meorion.github.io/ko/"
+                href="http://localhost:1313/ko/"
                 />
   </url>
   

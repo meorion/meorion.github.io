@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>changelog on meorion</title>
-    <link>https://meorion.github.io/tags/changelog/</link>
-    <description>Recent content in changelog on meorion</description>
+    <title>Changelog on meorion</title>
+    <link>http://localhost:1313/tags/changelog/</link>
+    <description>Recent content in Changelog on meorion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Orion Illovsky&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 31 Aug 2022 07:30:00 -0500</lastBuildDate>
     
-        <atom:link href="https://meorion.github.io/tags/changelog/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/tags/changelog/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
-        <title>apt update ubuntu-advantage-tools</title>
-        <link>https://meorion.github.io/blog/2022083107/</link>
+        <title>mint update ubuntu-advantage-tools</title>
+        <link>http://localhost:1313/blog/2022083107/</link>
         <pubDate>Wed, 31 Aug 2022 07:30:00 -0500</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022083107/</guid>
+        <guid>http://localhost:1313/blog/2022083107/</guid>
         <description>&lt;p&gt;casper (bug. can&amp;rsquo;t skip install integrity test)&lt;br /&gt;
 ubuntu-advantage-tools&lt;/p&gt;
 &lt;p&gt;ubuntu casper bug report (&lt;a href=&#34;https://bugs.launchpad.net/ubuntu/&amp;#43;source/casper/&amp;#43;bug/1892369&#34; target=&#34;_blank&#34;&gt;https://bugs.launchpad.net/ubuntu/+source/casper/+bug/1892369&lt;/a&gt;)&lt;/p&gt;</description>

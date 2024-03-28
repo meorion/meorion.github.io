@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ZDoc</title>
-    <link>https://meorion.github.io/ko/</link>
+    <link>http://localhost:1313/ko/</link>
     <description>Recent content on ZDoc</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
     <copyright>Orion Illovsky&amp;copy;{year}, All Rights Reserved</copyright>
     
-        <atom:link href="https://meorion.github.io/ko/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/ko/index.xml" rel="self" type="application/rss+xml" />
     
     
     

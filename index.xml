@@ -2,60 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>zzzzs on meorion</title>
-    <link>https://meorion.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in zzzzs on meorion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Orion Illovsky&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Wed, 15 Jun 2022 04:15:05 +0900</lastBuildDate>
     
-        <atom:link href="https://meorion.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Basic Usage</title>
-        <link>https://meorion.github.io/docs/gettingstarted/basicusage/</link>
+        <link>http://localhost:1313/docs/gettingstarted/basicusage/</link>
         <pubDate>Tue, 28 Jan 2020 00:34:51 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/gettingstarted/basicusage/</guid>
+        <guid>http://localhost:1313/docs/gettingstarted/basicusage/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>Configuration</title>
-        <link>https://meorion.github.io/docs/gettingstarted/configuration/</link>
+        <link>http://localhost:1313/docs/gettingstarted/configuration/</link>
         <pubDate>Tue, 28 Jan 2020 00:34:56 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/gettingstarted/configuration/</guid>
+        <guid>http://localhost:1313/docs/gettingstarted/configuration/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>Installation</title>
-        <link>https://meorion.github.io/docs/gettingstarted/installation/</link>
+        <link>http://localhost:1313/docs/gettingstarted/installation/</link>
         <pubDate>Tue, 28 Jan 2020 00:34:13 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/gettingstarted/installation/</guid>
+        <guid>http://localhost:1313/docs/gettingstarted/installation/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>Quick Start</title>
-        <link>https://meorion.github.io/docs/gettingstarted/quickstart/</link>
+        <link>http://localhost:1313/docs/gettingstarted/quickstart/</link>
         <pubDate>Tue, 28 Jan 2020 00:34:41 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/gettingstarted/quickstart/</guid>
+        <guid>http://localhost:1313/docs/gettingstarted/quickstart/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>Differences That Might Mitigate Therapeutic Effects When Counseling Minorities</title>
-        <link>https://meorion.github.io/health/chapter-2-considerations/differences/</link>
+        <link>http://localhost:1313/health/chapter-2-considerations/differences/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-2-considerations/differences/</guid>
+        <guid>http://localhost:1313/health/chapter-2-considerations/differences/</guid>
         <description>Most psychological approaches and techniques of psychology purport that they transcend culture and their delineations of solutions to problems are universally applicable
 (Corsini &amp;amp; Wedding, 1995; Hall, Lindzey, &amp;amp; Campbell, 1998).
 Demographic Data It is generally posited that differences between peoples can be a source of dissonance and misunderstanding - this can apply to the relationships between the therapist and client as well.
@@ -64,442 +64,467 @@ Cultural Differences When therapists counsel those from other cultures&amp;helli
       
       <item>
         <title>Evolution (Biological)</title>
-        <link>https://meorion.github.io/health/chapter-5-evolutionary/biological/</link>
+        <link>http://localhost:1313/health/chapter-5-evolutionary/biological/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-5-evolutionary/biological/</guid>
+        <guid>http://localhost:1313/health/chapter-5-evolutionary/biological/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Human Impediments</title>
-        <link>https://meorion.github.io/health/chapter-4-technology/impediments/</link>
+        <link>http://localhost:1313/health/chapter-4-technology/impediments/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-4-technology/impediments/</guid>
+        <guid>http://localhost:1313/health/chapter-4-technology/impediments/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Introduction</title>
-        <link>https://meorion.github.io/health/chapter-1-introduction/intro/</link>
+        <link>http://localhost:1313/health/chapter-1-introduction/intro/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-1-introduction/intro/</guid>
+        <guid>http://localhost:1313/health/chapter-1-introduction/intro/</guid>
         <description>Introduction</description>
       </item>
       
       <item>
         <title>Scholarship and Action</title>
-        <link>https://meorion.github.io/health/chapter-8-conclusion/scholarship/</link>
+        <link>http://localhost:1313/health/chapter-8-conclusion/scholarship/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-8-conclusion/scholarship/</guid>
+        <guid>http://localhost:1313/health/chapter-8-conclusion/scholarship/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Sexual Orientation/Homosexuality</title>
-        <link>https://meorion.github.io/health/chapter-6-special/special/</link>
+        <link>http://localhost:1313/health/chapter-6-special/special/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-6-special/special/</guid>
+        <guid>http://localhost:1313/health/chapter-6-special/special/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Test 1</title>
-        <link>https://meorion.github.io/docs/depth1/test1/</link>
+        <link>http://localhost:1313/docs/depth1/test1/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/depth1/test1/</guid>
+        <guid>http://localhost:1313/docs/depth1/test1/</guid>
         <description>hearthstone count board clears vs mutanus, warning turn 7 mutanus - 7 mana. try to get high value cards out of your hand or dilute your hand with extra cards around turn seven versus control decks (control shamen, quest priest) TODO naga priest (new list from VS you should update)n deck imp warlock (looks to win turn 6.5) mulligan deck (demonic assault three damage) skeleton mage (look to win turn 9.</description>
       </item>
       
       <item>
         <title>Test 2</title>
-        <link>https://meorion.github.io/docs/depth1/depth2/test2/</link>
+        <link>http://localhost:1313/docs/depth1/depth2/test2/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/depth1/depth2/test2/</guid>
+        <guid>http://localhost:1313/docs/depth1/depth2/test2/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Test 3</title>
-        <link>https://meorion.github.io/docs/depth1/depth2/depth3/test3/</link>
+        <link>http://localhost:1313/docs/depth1/depth2/depth3/test3/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/depth1/depth2/depth3/test3/</guid>
+        <guid>http://localhost:1313/docs/depth1/depth2/depth3/test3/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Why Study the Conditions of Other Cultures in the World?</title>
-        <link>https://meorion.github.io/health/chapter-7-world/why/</link>
+        <link>http://localhost:1313/health/chapter-7-world/why/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-7-world/why/</guid>
+        <guid>http://localhost:1313/health/chapter-7-world/why/</guid>
         <description></description>
       </item>
       
       <item>
         <title>references</title>
-        <link>https://meorion.github.io/health/references/</link>
+        <link>http://localhost:1313/health/references/</link>
         <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/references/</guid>
+        <guid>http://localhost:1313/health/references/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>Evolutionary Psychology</title>
-        <link>https://meorion.github.io/health/chapter-5-evolutionary/psychological/</link>
+        <link>http://localhost:1313/health/chapter-5-evolutionary/psychological/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-5-evolutionary/psychological/</guid>
+        <guid>http://localhost:1313/health/chapter-5-evolutionary/psychological/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Minorities with Disabilities</title>
-        <link>https://meorion.github.io/health/chapter-6-special/disabilities/</link>
+        <link>http://localhost:1313/health/chapter-6-special/disabilities/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-6-special/disabilities/</guid>
+        <guid>http://localhost:1313/health/chapter-6-special/disabilities/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Minority Mental Health Research</title>
-        <link>https://meorion.github.io/health/chapter-3-research/research/</link>
+        <link>http://localhost:1313/health/chapter-3-research/research/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-3-research/research/</guid>
+        <guid>http://localhost:1313/health/chapter-3-research/research/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Solutions to Consider</title>
-        <link>https://meorion.github.io/health/chapter-2-considerations/solutions/</link>
+        <link>http://localhost:1313/health/chapter-2-considerations/solutions/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-2-considerations/solutions/</guid>
+        <guid>http://localhost:1313/health/chapter-2-considerations/solutions/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Terms Used</title>
-        <link>https://meorion.github.io/health/chapter-1-introduction/terms/</link>
+        <link>http://localhost:1313/health/chapter-1-introduction/terms/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-1-introduction/terms/</guid>
+        <guid>http://localhost:1313/health/chapter-1-introduction/terms/</guid>
         <description>terms</description>
       </item>
       
       <item>
         <title>Therapy and Action</title>
-        <link>https://meorion.github.io/health/chapter-8-conclusion/action/</link>
+        <link>http://localhost:1313/health/chapter-8-conclusion/action/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-8-conclusion/action/</guid>
+        <guid>http://localhost:1313/health/chapter-8-conclusion/action/</guid>
         <description></description>
       </item>
       
       <item>
         <title>ttttest</title>
-        <link>https://meorion.github.io/docs/depth1/ttttest/</link>
+        <link>http://localhost:1313/docs/depth1/ttttest/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/depth1/ttttest/</guid>
+        <guid>http://localhost:1313/docs/depth1/ttttest/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Why and How Do Inequities Exist?</title>
-        <link>https://meorion.github.io/health/chapter-7-world/inequities/</link>
+        <link>http://localhost:1313/health/chapter-7-world/inequities/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-7-world/inequities/</guid>
+        <guid>http://localhost:1313/health/chapter-7-world/inequities/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Culture and Psychopathology</title>
-        <link>https://meorion.github.io/health/chapter-3-research/culture/</link>
+        <link>http://localhost:1313/health/chapter-3-research/culture/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-3-research/culture/</guid>
+        <guid>http://localhost:1313/health/chapter-3-research/culture/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Ethnic Minority Children</title>
-        <link>https://meorion.github.io/health/chapter-6-special/children/</link>
+        <link>http://localhost:1313/health/chapter-6-special/children/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-6-special/children/</guid>
+        <guid>http://localhost:1313/health/chapter-6-special/children/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Institutional Skills</title>
-        <link>https://meorion.github.io/health/chapter-8-conclusion/skills/</link>
+        <link>http://localhost:1313/health/chapter-8-conclusion/skills/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-8-conclusion/skills/</guid>
+        <guid>http://localhost:1313/health/chapter-8-conclusion/skills/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Mental Disorders</title>
-        <link>https://meorion.github.io/health/chapter-5-evolutionary/disorders/</link>
+        <link>http://localhost:1313/health/chapter-5-evolutionary/disorders/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-5-evolutionary/disorders/</guid>
+        <guid>http://localhost:1313/health/chapter-5-evolutionary/disorders/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Selection of Mental Health Professionals, Training, Power, and Politics</title>
-        <link>https://meorion.github.io/health/chapter-2-considerations/selection/</link>
+        <link>http://localhost:1313/health/chapter-2-considerations/selection/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-2-considerations/selection/</guid>
+        <guid>http://localhost:1313/health/chapter-2-considerations/selection/</guid>
         <description></description>
       </item>
       
       <item>
         <title>World Mental Health of Minorities and the Poor</title>
-        <link>https://meorion.github.io/health/chapter-7-world/world/</link>
+        <link>http://localhost:1313/health/chapter-7-world/world/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-7-world/world/</guid>
+        <guid>http://localhost:1313/health/chapter-7-world/world/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Analyses of Minority Mental Health Research</title>
-        <link>https://meorion.github.io/health/chapter-3-research/analyses/</link>
+        <link>http://localhost:1313/health/chapter-3-research/analyses/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-3-research/analyses/</guid>
+        <guid>http://localhost:1313/health/chapter-3-research/analyses/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Ethics</title>
-        <link>https://meorion.github.io/health/chapter-2-considerations/ethics/</link>
+        <link>http://localhost:1313/health/chapter-2-considerations/ethics/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-2-considerations/ethics/</guid>
+        <guid>http://localhost:1313/health/chapter-2-considerations/ethics/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Ethnic Minority Women</title>
-        <link>https://meorion.github.io/health/chapter-6-special/women/</link>
+        <link>http://localhost:1313/health/chapter-6-special/women/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-6-special/women/</guid>
+        <guid>http://localhost:1313/health/chapter-6-special/women/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Evolutionary Approaches to Cross-Cultural Therapy</title>
-        <link>https://meorion.github.io/health/chapter-5-evolutionary/cross/</link>
+        <link>http://localhost:1313/health/chapter-5-evolutionary/cross/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-5-evolutionary/cross/</guid>
+        <guid>http://localhost:1313/health/chapter-5-evolutionary/cross/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Counseling Models</title>
-        <link>https://meorion.github.io/health/chapter-8-conclusion/models/</link>
+        <link>http://localhost:1313/health/chapter-8-conclusion/models/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-8-conclusion/models/</guid>
+        <guid>http://localhost:1313/health/chapter-8-conclusion/models/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Ethnics Group Classification</title>
-        <link>https://meorion.github.io/health/chapter-3-research/classification/</link>
+        <link>http://localhost:1313/health/chapter-3-research/classification/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-3-research/classification/</guid>
+        <guid>http://localhost:1313/health/chapter-3-research/classification/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Explanations of Racism</title>
-        <link>https://meorion.github.io/health/chapter-5-evolutionary/racism/</link>
+        <link>http://localhost:1313/health/chapter-5-evolutionary/racism/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-5-evolutionary/racism/</guid>
+        <guid>http://localhost:1313/health/chapter-5-evolutionary/racism/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Findings and Solutions</title>
-        <link>https://meorion.github.io/health/chapter-7-world/solutions/</link>
+        <link>http://localhost:1313/health/chapter-7-world/solutions/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-7-world/solutions/</guid>
+        <guid>http://localhost:1313/health/chapter-7-world/solutions/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Insights from Assessment</title>
-        <link>https://meorion.github.io/health/chapter-2-considerations/insights/</link>
+        <link>http://localhost:1313/health/chapter-2-considerations/insights/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-2-considerations/insights/</guid>
+        <guid>http://localhost:1313/health/chapter-2-considerations/insights/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Mental Health Training and the Poor</title>
-        <link>https://meorion.github.io/health/chapter-2-considerations/training/</link>
+        <link>http://localhost:1313/health/chapter-2-considerations/training/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-2-considerations/training/</guid>
+        <guid>http://localhost:1313/health/chapter-2-considerations/training/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Mental Health Training and the Poor</title>
-        <link>https://meorion.github.io/health/chapter-3-research/in-literature/</link>
+        <link>http://localhost:1313/health/chapter-3-research/in-literature/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-3-research/in-literature/</guid>
+        <guid>http://localhost:1313/health/chapter-3-research/in-literature/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Misuse of Minority Data Reporting</title>
-        <link>https://meorion.github.io/health/chapter-3-research/misuse/</link>
+        <link>http://localhost:1313/health/chapter-3-research/misuse/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-3-research/misuse/</guid>
+        <guid>http://localhost:1313/health/chapter-3-research/misuse/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Contributions of Other Cultures</title>
-        <link>https://meorion.github.io/health/chapter-8-conclusion/contributions/</link>
+        <link>http://localhost:1313/health/chapter-8-conclusion/contributions/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-8-conclusion/contributions/</guid>
+        <guid>http://localhost:1313/health/chapter-8-conclusion/contributions/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Ethnic Minority Older Persons</title>
-        <link>https://meorion.github.io/health/chapter-6-special/aging/</link>
+        <link>http://localhost:1313/health/chapter-6-special/aging/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-6-special/aging/</guid>
+        <guid>http://localhost:1313/health/chapter-6-special/aging/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Neccessary and Sufficient Skills</title>
-        <link>https://meorion.github.io/health/chapter-2-considerations/skills/</link>
+        <link>http://localhost:1313/health/chapter-2-considerations/skills/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-2-considerations/skills/</guid>
+        <guid>http://localhost:1313/health/chapter-2-considerations/skills/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Minorities in Rural Areas</title>
-        <link>https://meorion.github.io/health/chapter-6-special/rural/</link>
+        <link>http://localhost:1313/health/chapter-6-special/rural/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-6-special/rural/</guid>
+        <guid>http://localhost:1313/health/chapter-6-special/rural/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Middle-Class Minorities</title>
-        <link>https://meorion.github.io/health/chapter-6-special/middle-class/</link>
+        <link>http://localhost:1313/health/chapter-6-special/middle-class/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-6-special/middle-class/</guid>
+        <guid>http://localhost:1313/health/chapter-6-special/middle-class/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Goals, Plans, Solutions, and Recommendations</title>
-        <link>https://meorion.github.io/health/chapter-6-special/goals/</link>
+        <link>http://localhost:1313/health/chapter-6-special/goals/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-6-special/goals/</guid>
+        <guid>http://localhost:1313/health/chapter-6-special/goals/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Minority Education, Training, and Community Development</title>
-        <link>https://meorion.github.io/health/chapter-4-technology/development/</link>
+        <link>http://localhost:1313/health/chapter-4-technology/development/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-4-technology/development/</guid>
+        <guid>http://localhost:1313/health/chapter-4-technology/development/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Power Dynamics</title>
-        <link>https://meorion.github.io/health/chapter-2-considerations/dynamics/</link>
+        <link>http://localhost:1313/health/chapter-2-considerations/dynamics/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-2-considerations/dynamics/</guid>
+        <guid>http://localhost:1313/health/chapter-2-considerations/dynamics/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Universal Perspective</title>
-        <link>https://meorion.github.io/health/chapter-8-conclusion/perspective/</link>
+        <link>http://localhost:1313/health/chapter-8-conclusion/perspective/</link>
         <pubDate>Thu, 30 Jan 2020 00:38:25 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-8-conclusion/perspective/</guid>
+        <guid>http://localhost:1313/health/chapter-8-conclusion/perspective/</guid>
         <description></description>
       </item>
       
       <item>
         <title>index</title>
-        <link>https://meorion.github.io/health/document-index/</link>
+        <link>http://localhost:1313/health/document-index/</link>
         <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/document-index/</guid>
+        <guid>http://localhost:1313/health/document-index/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
+        <title>bert was here</title>
+        <link>http://localhost:1313/blog/2024032722/</link>
+        <pubDate>Fri, 22 Mar 2024 22:21:00 -0500</pubDate>
+        
+        <guid>http://localhost:1313/blog/2024032722/</guid>
+        <description>&lt;p&gt;Title title field&lt;br /&gt;
+Synopsis synopsis&lt;br /&gt;
+more synopsis&lt;br /&gt;
+genre&lt;br /&gt;
+sci-fi; short story; fantasy; adventure; psychological; mystery&lt;/p&gt;
+&lt;p&gt;tags (eventually want this with tag expansion, looking for tags in this file. should this file be one and the same with security blog posts?)&lt;br /&gt;
+female lead; litRPG; Multiple Lead Characters; Portal Fantasy / Isekai; Soft Sci-fi; Artificial Intelligence; Supernatural; Space Opera; Low Fantasy&lt;/p&gt;</description>
+      </item>
+      
+      <item>
+        <title>Graduation Delayed Now</title>
+        <link>http://localhost:1313/blog/20231127/</link>
+        <pubDate>Mon, 27 Nov 2023 10:49:00 -0600</pubDate>
+        
+        <guid>http://localhost:1313/blog/20231127/</guid>
+        <description>Load Data Layout is not the same as relaxing. (Benjamin Franklin)
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 directory_path = os.getcwd() print(&amp;#34;My current directory is : &amp;#34; + directory_path) pd.options.display.max_colwidth = 400 # read amazon_cells_labelled.txt df_amazon = pd.read_csv(&amp;#34;../amazon_cells_labelled.txt&amp;#34;, sep=&amp;#39;\t&amp;#39;, header=None, names = [&amp;#39;Review&amp;#39;, &amp;#39;Score&amp;#39;]) # add column identifying source of data df_amazon[&amp;#39;Source&amp;#39;] = &amp;#39;amazon&amp;#39; # load yelp file df_yelp = pd.</description>
+      </item>
+      
+      <item>
         <title>AI inspired inspiring art</title>
-        <link>https://meorion.github.io/blog/2022121311/</link>
+        <link>http://localhost:1313/blog/2022121311/</link>
         <pubDate>Tue, 13 Dec 2022 11:49:00 -0600</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022121311/</guid>
+        <guid>http://localhost:1313/blog/2022121311/</guid>
         <description>thirteen seconds to sky bitch </description>
       </item>
       
       <item>
         <title>AI inspired inspiring art part II</title>
-        <link>https://meorion.github.io/blog/2022121312/</link>
+        <link>http://localhost:1313/blog/2022121312/</link>
         <pubDate>Tue, 13 Dec 2022 11:49:00 -0600</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022121312/</guid>
+        <guid>http://localhost:1313/blog/2022121312/</guid>
         <description>nursery nomemory</description>
       </item>
       
       <item>
         <title>wsl ubuntu 22.0.4.1 update python3.10</title>
-        <link>https://meorion.github.io/blog/2022110412/</link>
+        <link>http://localhost:1313/blog/2022110412/</link>
         <pubDate>Fri, 04 Nov 2022 12:29:00 -0500</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022110412/</guid>
+        <guid>http://localhost:1313/blog/2022110412/</guid>
         <description>&lt;ul&gt;
 &lt;li&gt;libpython3.10 python3.10 (CVE-2022-42919)&lt;br /&gt;
 &lt;a href=&#34;https://python-security.readthedocs.io/vuln/multiprocessing-abstract-socket.html&#34; target=&#34;_blank&#34;&gt;https://python-security.readthedocs.io/vuln/multiprocessing-abstract-socket.html&lt;/a&gt;&lt;/li&gt;
@@ -511,10 +536,10 @@ debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2022-4291
       
       <item>
         <title>wsl ubuntu 22.04.1 update openssl</title>
-        <link>https://meorion.github.io/blog/2022110308/</link>
+        <link>http://localhost:1313/blog/2022110308/</link>
         <pubDate>Thu, 03 Nov 2022 08:27:00 -0500</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022110308/</guid>
+        <guid>http://localhost:1313/blog/2022110308/</guid>
         <description>&lt;ul&gt;
 &lt;li&gt;openssl and libssl3 (CVE-2022-3602)&lt;/li&gt;
 &lt;/ul&gt;
@@ -528,20 +553,20 @@ debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2022-4291
       
       <item>
         <title>ubuntu-22.04/wsl dbus</title>
-        <link>https://meorion.github.io/blog/2022102702/</link>
+        <link>http://localhost:1313/blog/2022102702/</link>
         <pubDate>Thu, 27 Oct 2022 02:34:00 -0500</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022102702/</guid>
+        <guid>http://localhost:1313/blog/2022102702/</guid>
         <description>&lt;p&gt;&lt;a href=&#34;https://ubuntu.com/security/notices/USN-5704-1&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/notices/USN-5704-1&lt;/a&gt;&lt;/p&gt;
 &lt;hr /&gt;</description>
       </item>
       
       <item>
         <title>mint update libreoffice</title>
-        <link>https://meorion.github.io/blog/2022102607/</link>
+        <link>http://localhost:1313/blog/2022102607/</link>
         <pubDate>Wed, 26 Oct 2022 07:36:00 -0500</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022102607/</guid>
+        <guid>http://localhost:1313/blog/2022102607/</guid>
         <description>&lt;ul&gt;
 &lt;li&gt;libreoffice&lt;/li&gt;
 &lt;/ul&gt;
@@ -555,10 +580,10 @@ debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2022-4291
       
       <item>
         <title>mint update perl git libksba8</title>
-        <link>https://meorion.github.io/blog/2022101911/</link>
+        <link>http://localhost:1313/blog/2022101911/</link>
         <pubDate>Wed, 19 Oct 2022 11:39:00 -0500</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022101911/</guid>
+        <guid>http://localhost:1313/blog/2022101911/</guid>
         <description>&lt;p&gt;CVE-2022-39260&lt;br /&gt;
 CVE-2022-39253&lt;br /&gt;
 CVE-2022-3515&lt;br /&gt;
@@ -570,10 +595,10 @@ debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2022-3515
       
       <item>
         <title>mint update zlib1g (CVE-2022-37434)</title>
-        <link>https://meorion.github.io/blog/2022101807/</link>
+        <link>http://localhost:1313/blog/2022101807/</link>
         <pubDate>Tue, 18 Oct 2022 07:04:00 -0500</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022101807/</guid>
+        <guid>http://localhost:1313/blog/2022101807/</guid>
         <description>&lt;p&gt;CVE-2022-37434&lt;/p&gt;
 &lt;p&gt;ubuntu &lt;a href=&#34;https://ubuntu.com/security/CVE-2022-37434&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/CVE-2022-37434&lt;/a&gt;&lt;br /&gt;
 debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2022-37434&#34; target=&#34;_blank&#34;&gt;https://security-tracker.debian.org/tracker/CVE-2022-37434&lt;/a&gt;&lt;/p&gt;
@@ -582,10 +607,10 @@ debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2022-3743
       
       <item>
         <title>mint update unzip, heimdal, gmp</title>
-        <link>https://meorion.github.io/blog/2022101322/</link>
+        <link>http://localhost:1313/blog/2022101322/</link>
         <pubDate>Thu, 13 Oct 2022 22:17:00 -0500</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022101322/</guid>
+        <guid>http://localhost:1313/blog/2022101322/</guid>
         <description>&lt;p&gt;&lt;span class=&#34;underline&#34;&gt;Programs Updated&lt;/span&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;code&lt;/li&gt;
@@ -618,10 +643,10 @@ debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2022-3743
       
       <item>
         <title>mint update kernel code</title>
-        <link>https://meorion.github.io/blog/2022101009/</link>
+        <link>http://localhost:1313/blog/2022101009/</link>
         <pubDate>Mon, 10 Oct 2022 09:25:00 -0500</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022101009/</guid>
+        <guid>http://localhost:1313/blog/2022101009/</guid>
         <description>&lt;p&gt;updates for:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;code&lt;/li&gt;
@@ -636,10 +661,10 @@ debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2022-3743
       
       <item>
         <title>mint update libreoffice, dhcp, ubuntu pro</title>
-        <link>https://meorion.github.io/blog/2022100609/</link>
+        <link>http://localhost:1313/blog/2022100609/</link>
         <pubDate>Thu, 06 Oct 2022 09:40:00 -0500</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022100609/</guid>
+        <guid>http://localhost:1313/blog/2022100609/</guid>
         <description>&lt;ol&gt;
 &lt;li&gt;libreoffice &lt;a href=&#34;https://ubuntu.com/security/notices/USN-5661-1&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/notices/USN-5661-1&lt;/a&gt;
 &lt;ol&gt;
@@ -668,10 +693,10 @@ debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2022-3743
       
       <item>
         <title>mint update thunderbird 102.2.2</title>
-        <link>https://meorion.github.io/blog/2022100507/</link>
+        <link>http://localhost:1313/blog/2022100507/</link>
         <pubDate>Wed, 05 Oct 2022 07:40:00 -0500</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022100507/</guid>
+        <guid>http://localhost:1313/blog/2022100507/</guid>
         <description>&lt;p&gt;thunderbird 102.2.2 release. zlib LP:#1961427&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;thunderbird&lt;/li&gt;
@@ -687,10 +712,10 @@ debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2022-3743
       
       <item>
         <title>Sara</title>
-        <link>https://meorion.github.io/blog/2022100205/</link>
+        <link>http://localhost:1313/blog/2022100205/</link>
         <pubDate>Sun, 02 Oct 2022 05:27:00 -0500</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022100205/</guid>
+        <guid>http://localhost:1313/blog/2022100205/</guid>
         <description>&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Title&lt;/strong&gt;: Synching Siesta Fiesta&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Synopsis&lt;/strong&gt;: Sera meets Sara in an augmented virtual reality processed by the Artificial Intelligence, Joyce&lt;/li&gt;
@@ -700,10 +725,10 @@ debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2022-3743
       
       <item>
         <title>mint update ghostscript, webkit</title>
-        <link>https://meorion.github.io/blog/2022093008/</link>
+        <link>http://localhost:1313/blog/2022093008/</link>
         <pubDate>Fri, 30 Sep 2022 08:22:00 -0500</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022093008/</guid>
+        <guid>http://localhost:1313/blog/2022093008/</guid>
         <description>&lt;ul&gt;
 &lt;li&gt;webkit (apple&amp;rsquo;s web infrastructure)&lt;/li&gt;
 &lt;/ul&gt;
@@ -719,10 +744,10 @@ debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2020-2779
       
       <item>
         <title>mint update - nodejs</title>
-        <link>https://meorion.github.io/blog/2022092610/</link>
+        <link>http://localhost:1313/blog/2022092610/</link>
         <pubDate>Mon, 26 Sep 2022 10:54:00 -0500</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022092610/</guid>
+        <guid>http://localhost:1313/blog/2022092610/</guid>
         <description>&lt;p&gt;nodejs update to address:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;CVE-2022-32212: DNS rebinding in &amp;ndash;inspect on macOS (High)&lt;/li&gt;
@@ -740,10 +765,10 @@ debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2020-2779
       
       <item>
         <title>mint update (libjpeg-turbo, systemd)</title>
-        <link>https://meorion.github.io/blog/2022092304/</link>
+        <link>http://localhost:1313/blog/2022092304/</link>
         <pubDate>Fri, 23 Sep 2022 04:12:00 -0500</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022092304/</guid>
+        <guid>http://localhost:1313/blog/2022092304/</guid>
         <description>&lt;ul&gt;
 &lt;li&gt;libjpeg-turbo&lt;/li&gt;
 &lt;/ul&gt;
@@ -752,38 +777,11 @@ debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2020-2779
       </item>
       
       <item>
-        <title>mint update (bind9, pcre2, mako)</title>
-        <link>https://meorion.github.io/blog/2022092205/</link>
-        <pubDate>Thu, 22 Sep 2022 05:22:00 -0500</pubDate>
-        
-        <guid>https://meorion.github.io/blog/2022092205/</guid>
-        <description>&lt;ul&gt;
-&lt;li&gt;bind9&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;CVE-2022-38178&lt;br /&gt;
-CVE-2022-38177&lt;br /&gt;
-CVE-2022-2795&lt;br /&gt;
-&lt;a href=&#34;https://ubuntu.com/security/notices/USN-5626-1&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/notices/USN-5626-1&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;mako&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;CVE-2022-40023&lt;br /&gt;
-&lt;a href=&#34;https://ubuntu.com/security/CVE-2022-40023&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/CVE-2022-40023&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;pcre2&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;CVE-2022-1586&lt;br /&gt;
-ubuntu &lt;a href=&#34;https://ubuntu.com/security/CVE-2022-1586&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/CVE-2022-1586&lt;/a&gt;&lt;br /&gt;
-CVE-2022-1587&lt;/p&gt;
-&lt;hr /&gt;</description>
-      </item>
-      
-      <item>
-        <title>apt update (tiff)</title>
-        <link>https://meorion.github.io/blog/2022092011/</link>
+        <title>mint update (tiff)</title>
+        <link>http://localhost:1313/blog/2022092011/</link>
         <pubDate>Tue, 20 Sep 2022 11:29:00 -0500</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022092011/</guid>
+        <guid>http://localhost:1313/blog/2022092011/</guid>
         <description>&lt;p&gt;libtiff5 had some security patches&lt;br /&gt;
 &lt;a href=&#34;https://ubuntu.com/security/notices/USN-5619-1&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/notices/USN-5619-1&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;ubuntu had a kernel update (bump abi)&lt;/p&gt;
@@ -792,11 +790,11 @@ CVE-2022-1587&lt;/p&gt;
       </item>
       
       <item>
-        <title>apt update (wayland, sqlite, vi)</title>
-        <link>https://meorion.github.io/blog/2022091908/</link>
+        <title>mint update (wayland, sqlite, vi)</title>
+        <link>http://localhost:1313/blog/2022091908/</link>
         <pubDate>Mon, 19 Sep 2022 08:55:00 -0500</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022091908/</guid>
+        <guid>http://localhost:1313/blog/2022091908/</guid>
         <description>&lt;hr /&gt;
 &lt;ul&gt;
 &lt;li&gt;sqlite3&lt;/li&gt;
@@ -836,21 +834,21 @@ CVE-2022-2294&lt;/p&gt;
       </item>
       
       <item>
-        <title>apt update gdk-pixbuf</title>
-        <link>https://meorion.github.io/blog/2022091405/</link>
+        <title>mint update gdk-pixbuf</title>
+        <link>http://localhost:1313/blog/2022091405/</link>
         <pubDate>Wed, 14 Sep 2022 05:09:00 -0500</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022091405/</guid>
+        <guid>http://localhost:1313/blog/2022091405/</guid>
         <description>&lt;p&gt;ubuntu &lt;a href=&#34;https://ubuntu.com/security/CVE-2021-44648&#34; target=&#34;_blank&#34;&gt;https://ubuntu.com/security/CVE-2021-44648&lt;/a&gt;&lt;br /&gt;
 debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2021-44648&#34; target=&#34;_blank&#34;&gt;https://security-tracker.debian.org/tracker/CVE-2021-44648&lt;/a&gt;&lt;/p&gt;</description>
       </item>
       
       <item>
-        <title>apt update (libpoppler)</title>
-        <link>https://meorion.github.io/blog/2022091309/</link>
+        <title>mint update (libpoppler)</title>
+        <link>http://localhost:1313/blog/2022091309/</link>
         <pubDate>Tue, 13 Sep 2022 09:46:00 -0500</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022091309/</guid>
+        <guid>http://localhost:1313/blog/2022091309/</guid>
         <description>&lt;ul&gt;
 &lt;li&gt;effects libtiff. a DoS via a crafted tiff file.&lt;/li&gt;
 &lt;/ul&gt;
@@ -869,11 +867,11 @@ debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2022-3878
       </item>
       
       <item>
-        <title>apt update notify</title>
-        <link>https://meorion.github.io/blog/2022090614/</link>
+        <title>mint update notify</title>
+        <link>http://localhost:1313/blog/2022090614/</link>
         <pubDate>Tue, 06 Sep 2022 14:05:00 -0500</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022090614/</guid>
+        <guid>http://localhost:1313/blog/2022090614/</guid>
         <description>&lt;ul&gt;
 &lt;li&gt;gir1.2-notify-0.7 (0.7.9-1ubuntu2 =&amp;gt; 0.7.9-1ubuntu3.20.04.2)&lt;/li&gt;
 &lt;li&gt;libnotify-bin (0.7.9-1ubuntu2 =&amp;gt; 0.7.9-1ubuntu3.20.04.2)&lt;/li&gt;
@@ -885,40 +883,47 @@ debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2022-3878
       </item>
       
       <item>
-        <title>apt update - curl (CVE-2022-35252)</title>
-        <link>https://meorion.github.io/blog/2022090208/</link>
+        <title>mint update - curl (CVE-2022-35252)</title>
+        <link>http://localhost:1313/blog/2022090208/</link>
         <pubDate>Fri, 02 Sep 2022 08:28:00 -0500</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022090208/</guid>
-        <description></description>
+        <guid>http://localhost:1313/blog/2022090208/</guid>
+        <description>https://curl.se/docs/CVE-2022-35252.html
+ubuntu https://ubuntu.com/security/CVE-2022-35252
+debian https://security-tracker.debian.org/tracker/CVE-2022-35252
+programs updated:
+code (1.70.2-1660629410 =&amp;gt; 1.71.0-1662018389) libcurl3-gnutls (7.68.0-1ubuntu2.12 =&amp;gt; 7.68.0-1ubuntu2.13) libcurl3-gnutls:i386 (7.68.0-1ubuntu2.12 =&amp;gt; 7.68.0-1ubuntu2.13) libcurl4 (7.68.0-1ubuntu2.12 =&amp;gt; 7.68.0-1ubuntu2.13) tzdata (2022a-0ubuntu0.20.04 =&amp;gt; 2022c-0ubuntu0.20.04.0) curl (7.68.0-1ubuntu2.12 =&amp;gt; 7.68.0-1ubuntu2.13) vulnerability description, from https://www.openwall.com/lists/oss-security/2022/08/31/2
+When curl retrieves and parses cookies from an HTTP(S) server, it accepts
+cookies using control codes (byte values below 32). When cookies that contain
+such control codes are later sent back to an HTTP(S) server, it might make the</description>
       </item>
       
       <item>
-        <title>apt update ubuntu-advantage-tools</title>
-        <link>https://meorion.github.io/blog/2022083107/</link>
+        <title>mint update ubuntu-advantage-tools</title>
+        <link>http://localhost:1313/blog/2022083107/</link>
         <pubDate>Wed, 31 Aug 2022 07:30:00 -0500</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022083107/</guid>
+        <guid>http://localhost:1313/blog/2022083107/</guid>
         <description>&lt;p&gt;casper (bug. can&amp;rsquo;t skip install integrity test)&lt;br /&gt;
 ubuntu-advantage-tools&lt;/p&gt;
 &lt;p&gt;ubuntu casper bug report (&lt;a href=&#34;https://bugs.launchpad.net/ubuntu/&amp;#43;source/casper/&amp;#43;bug/1892369&#34; target=&#34;_blank&#34;&gt;https://bugs.launchpad.net/ubuntu/+source/casper/+bug/1892369&lt;/a&gt;)&lt;/p&gt;</description>
       </item>
       
       <item>
-        <title>apt update language-pack-en</title>
-        <link>https://meorion.github.io/blog/2022082705/</link>
+        <title>mint update language-pack-en</title>
+        <link>http://localhost:1313/blog/2022082705/</link>
         <pubDate>Sat, 27 Aug 2022 05:13:00 -0500</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022082705/</guid>
+        <guid>http://localhost:1313/blog/2022082705/</guid>
         <description>&lt;p&gt;language-pack-en update&lt;/p&gt;</description>
       </item>
       
       <item>
-        <title>apt update python3-apt</title>
-        <link>https://meorion.github.io/blog/2022082507/</link>
+        <title>mint update python3-apt</title>
+        <link>http://localhost:1313/blog/2022082507/</link>
         <pubDate>Thu, 25 Aug 2022 07:55:00 -0500</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022082507/</guid>
+        <guid>http://localhost:1313/blog/2022082507/</guid>
         <description>&lt;ul&gt;
 &lt;li&gt;CVE-2021-33061&lt;/li&gt;
 &lt;li&gt;CVE-2021-33656&lt;/li&gt;
@@ -931,19 +936,19 @@ debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2021-3365
       
       <item>
         <title>Soft glow four eyes, two pair</title>
-        <link>https://meorion.github.io/blog/2022082221/</link>
+        <link>http://localhost:1313/blog/2022082221/</link>
         <pubDate>Mon, 22 Aug 2022 21:54:00 -0500</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022082221/</guid>
-        <description></description>
+        <guid>http://localhost:1313/blog/2022082221/</guid>
+        <description>I saw calmer </description>
       </item>
       
       <item>
-        <title>apt update libxslt</title>
-        <link>https://meorion.github.io/blog/2022082212/</link>
+        <title>mint update libxslt</title>
+        <link>http://localhost:1313/blog/2022082212/</link>
         <pubDate>Sun, 21 Aug 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/2022082212/</guid>
+        <guid>http://localhost:1313/blog/2022082212/</guid>
         <description>&lt;p&gt;libxslt security issues reported in chromium browser&lt;br /&gt;
 XSLT: Extensible Stylesheet Language Transformations&lt;br /&gt;
 xml language to style your xml/rss feed.&lt;/p&gt;
@@ -954,11 +959,11 @@ debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2021-3056
       </item>
       
       <item>
-        <title>apt update (rsync/zlib)</title>
-        <link>https://meorion.github.io/blog/20220817/</link>
+        <title>mint update (rsync/zlib)</title>
+        <link>http://localhost:1313/blog/20220817/</link>
         <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220817/</guid>
+        <guid>http://localhost:1313/blog/20220817/</guid>
         <description>&lt;p&gt;rsync (used for backups and file transfers) &lt;a href=&#34;https://github.com/WayneD/rsync/&#34; target=&#34;_blank&#34;&gt;https://github.com/WayneD/rsync/&lt;/a&gt;&lt;br /&gt;
 rsync comes bundled with zlib (closed issue, addressing):&lt;br /&gt;
 &lt;a href=&#34;https://github.com/WayneD/rsync/issues/347&#34; target=&#34;_blank&#34;&gt;https://github.com/WayneD/rsync/issues/347&lt;/a&gt;&lt;/p&gt;
@@ -967,20 +972,22 @@ debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2022-3743
       </item>
       
       <item>
-        <title>apt update (netsnmp)</title>
-        <link>https://meorion.github.io/blog/20220816/</link>
+        <title>mint update (libunbound8)</title>
+        <link>http://localhost:1313/blog/20220816/</link>
         <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220816/</guid>
-        <description></description>
+        <guid>http://localhost:1313/blog/20220816/</guid>
+        <description>&lt;ul&gt;
+&lt;li&gt;libunbound8&lt;/li&gt;
+&lt;/ul&gt;</description>
       </item>
       
       <item>
-        <title>apt update (javascriptcoregtk)</title>
-        <link>https://meorion.github.io/blog/20220815/</link>
+        <title>mint update (javascriptcoregtk)</title>
+        <link>http://localhost:1313/blog/20220815/</link>
         <pubDate>Mon, 15 Aug 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220815/</guid>
+        <guid>http://localhost:1313/blog/20220815/</guid>
         <description>&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;libwebkit2gtk-4.0-37&lt;/strong&gt;:amd64 (2.36.4-0ubuntu0.20.04.1, 2.36.6-0ubuntu0.20.04.1)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;gir1.2-webkit2-4.0&lt;/strong&gt;:amd64 (2.36.4-0ubuntu0.20.04.1, 2.36.6-0ubuntu0.20.04.1)&lt;/li&gt;
@@ -990,20 +997,25 @@ debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2022-3743
       </item>
       
       <item>
-        <title>apt update (mintupgrade)</title>
-        <link>https://meorion.github.io/blog/20220814/</link>
+        <title>mint update (mintupgrade)</title>
+        <link>http://localhost:1313/blog/20220814/</link>
         <pubDate>Sun, 14 Aug 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220814/</guid>
-        <description></description>
+        <guid>http://localhost:1313/blog/20220814/</guid>
+        <description>mintupgrade
+list of programs updated mintupgrade
+changelog mintupgrade (2022.08.13) vanessa; urgency=medium
+[ Corey Wetherington ]
+fix minor grammar issue (#37) [ Clement Lefebvre ]
+l10n: Update POT Always use dialog-info for RESULT_INFO aptsources: Don&amp;rsquo;t use any matching templates debug: Print out repositories at the start of each phase Phase 2 and 3: Ensure the repositories point to the new release l10n: Update POT &amp;ndash; Clement Lefebvre &amp;lt;root@linuxmint.com&amp;gt; Sat, 13 Aug 2022 12:05:51 +0200</description>
       </item>
       
       <item>
-        <title>apt update (epiphany)</title>
-        <link>https://meorion.github.io/blog/20220810/</link>
+        <title>mint update (epiphany)</title>
+        <link>http://localhost:1313/blog/20220810/</link>
         <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220810/</guid>
+        <guid>http://localhost:1313/blog/20220810/</guid>
         <description>&lt;ul&gt;
 &lt;li&gt;code epiphany-browser&lt;/li&gt;
 &lt;li&gt;epiphany-browser-data&lt;/li&gt;
@@ -1015,11 +1027,11 @@ debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2022-3743
       </item>
       
       <item>
-        <title>apt update (gstreamer, GDK-PixBuf)</title>
-        <link>https://meorion.github.io/blog/20220808/</link>
+        <title>mint update (gstreamer, GDK-PixBuf)</title>
+        <link>http://localhost:1313/blog/20220808/</link>
         <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220808/</guid>
+        <guid>http://localhost:1313/blog/20220808/</guid>
         <description>&lt;ul&gt;
 &lt;li&gt;libgdk-pixbuf2.0-bin:amd64&lt;/li&gt;
 &lt;li&gt;gir1.2-gdkpixbuf-2.0:amd64&lt;/li&gt;
@@ -1047,29 +1059,32 @@ debian &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2022-3743
       </item>
       
       <item>
-        <title>apt update (mintupdate)</title>
-        <link>https://meorion.github.io/blog/20220807/</link>
+        <title>mint update (mintupdate)</title>
+        <link>http://localhost:1313/blog/20220807/</link>
         <pubDate>Sun, 07 Aug 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220807/</guid>
-        <description></description>
+        <guid>http://localhost:1313/blog/20220807/</guid>
+        <description>ubuntu.com USN-5542-1 Samba vulnerabilities
+ubuntu.com USN-5543-1 Net-SNMP vulnerabilities
+list of programs updated code gir1.2-gst-plugins-base-1.0 gir1.2-gstreamer-1.0 gstreamer1.0-alsa gstreamer1.0-gl gstreamer1.0-plugins-bad gstreamer1.0-plugins-base gstreamer1.0-plugins-base:i386 gstreamer1.0-plugins-base-apps gstreamer1.0-plugins-good gstreamer1.0-pulseaudio gstreamer1.0-tools gstreamer1.0-x libgnutls-dane0 libgnutls-openssl27 libgnutls28-dev libgnutls30 libgnutls30:i386 libgnutlsxx28 libgstreamer-gl1.0-0 libgstreamer-plugins-bad1.0-0 libgstreamer-plugins-base1.0-0 libgstreamer-plugins-base1.0-0:i386 libgstreamer-plugins-good1.0-0 libgstreamer1.0-0 libgstreamer1.0-0:i386 libnetplan0 libxml2 libxml2:i386 libxml2-dev libxml2-utils linux-firmware mintupgrade netplan.io openjdk-11-jre openjdk-11-jre-headless changelog - openjdk-lts (11.0.16+8-0ubuntu1~20.04) focal-security; urgency=medium OpenJDK 11.0.16 release, build 8. Addresses security issues: CVE-2022-34169, CVE-2022-21541,
+CVE-2022-21540. &amp;ndash; Matthias Klose &amp;lt;doko@ubuntu.com&amp;gt; Fri, 22 Jul 2022 11:14:39 +0200</description>
       </item>
       
       <item>
-        <title>apt update (kernel and samba)</title>
-        <link>https://meorion.github.io/blog/20220802/</link>
+        <title>mint update (kernel and samba)</title>
+        <link>http://localhost:1313/blog/20220802/</link>
         <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220802/</guid>
+        <guid>http://localhost:1313/blog/20220802/</guid>
         <description>&lt;p&gt;Linux Kernel, Samba, and Net-SNMP vulnerabilites were addressed.&lt;/p&gt;</description>
       </item>
       
       <item>
-        <title>apt update (libmysqlclient21)</title>
-        <link>https://meorion.github.io/blog/20220729/</link>
+        <title>mint update (libmysqlclient21)</title>
+        <link>http://localhost:1313/blog/20220729/</link>
         <pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220729/</guid>
+        <guid>http://localhost:1313/blog/20220729/</guid>
         <description>&lt;p&gt;libmysqlclient21:i386 (security)&lt;br /&gt;
 libmysqlclient21:amd64 (security)&lt;/p&gt;
 &lt;ul&gt;
@@ -1079,29 +1094,29 @@ libmysqlclient21:amd64 (security)&lt;/p&gt;
       
       <item>
         <title>seeking fitness advice</title>
-        <link>https://meorion.github.io/blog/20220625/</link>
+        <link>http://localhost:1313/blog/20220625/</link>
         <pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220625/</guid>
+        <guid>http://localhost:1313/blog/20220625/</guid>
         <description>&lt;p&gt;Long story short, I have a baby chimp for the next couple months. What is the best routine to make him swole by the end of summer?&lt;/p&gt;</description>
       </item>
       
       <item>
-        <title>apt update (python3-bottle)</title>
-        <link>https://meorion.github.io/blog/20220727/</link>
+        <title>mint update (python3-bottle)</title>
+        <link>http://localhost:1313/blog/20220727/</link>
         <pubDate>Wed, 27 Jul 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220727/</guid>
+        <guid>http://localhost:1313/blog/20220727/</guid>
         <description>&lt;p&gt;wireless-regdb (updated database of country wifi channels/bands)&lt;br /&gt;
 python3-bottle (security) incorrectly handles errors during early request bindings&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Qs and As</title>
-        <link>https://meorion.github.io/blog/20220625-lambda/</link>
+        <link>http://localhost:1313/blog/20220625-lambda/</link>
         <pubDate>Tue, 26 Jul 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220625-lambda/</guid>
+        <guid>http://localhost:1313/blog/20220625-lambda/</guid>
         <description>&lt;p&gt;Charizard is the most potent of all the variations of the base charmander oeuvre and all its branches. that is not in question. We aren&amp;rsquo;t debating that.&lt;br /&gt;
 But, it does bring up another question. and I think we have the answer&lt;br /&gt;
 (updated: Jul-28th 2022, Jul-24th 2022, Jul-15th 2022. original 2022-06-25)&lt;/p&gt;</description>
@@ -1109,10 +1124,10 @@ But, it does bring up another question. and I think we have the answer&lt;br /&g
       
       <item>
         <title>sera</title>
-        <link>https://meorion.github.io/blog/sera/</link>
+        <link>http://localhost:1313/blog/sera/</link>
         <pubDate>Sat, 23 Jul 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/sera/</guid>
+        <guid>http://localhost:1313/blog/sera/</guid>
         <description>IN-PROGRESS One-pager Sera POV
 one pager sera working 200-500 words
 Figure 1: lying down
@@ -1120,11 +1135,11 @@ Sera was born in the wreckage of the sleeper star ship, Meridian. The ship colli
       </item>
       
       <item>
-        <title>apt update (libfreetype6)</title>
-        <link>https://meorion.github.io/blog/20220722/</link>
+        <title>mint update (libfreetype6)</title>
+        <link>http://localhost:1313/blog/20220722/</link>
         <pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220722/</guid>
+        <guid>http://localhost:1313/blog/20220722/</guid>
         <description>&lt;ul&gt;
 &lt;li&gt;python3-jwt (security update) signing key confusion&lt;/li&gt;
 &lt;li&gt;libfreetype6 (security update) heap buffer overflow&lt;/li&gt;
@@ -1132,11 +1147,11 @@ Sera was born in the wreckage of the sleeper star ship, Meridian. The ship colli
       </item>
       
       <item>
-        <title>apt update (webkit)</title>
-        <link>https://meorion.github.io/blog/20220719/</link>
+        <title>mint update (webkit)</title>
+        <link>http://localhost:1313/blog/20220719/</link>
         <pubDate>Tue, 19 Jul 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220719/</guid>
+        <guid>http://localhost:1313/blog/20220719/</guid>
         <description>&lt;ul&gt;
 &lt;li&gt;code&lt;/li&gt;
 &lt;li&gt;gir1.2-harfbuzz-0.0&lt;/li&gt;
@@ -1153,19 +1168,19 @@ Sera was born in the wreckage of the sleeper star ship, Meridian. The ship colli
       
       <item>
         <title>goggs update</title>
-        <link>https://meorion.github.io/blog/20220717-goggins/</link>
+        <link>http://localhost:1313/blog/20220717-goggins/</link>
         <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220717-goggins/</guid>
+        <guid>http://localhost:1313/blog/20220717-goggins/</guid>
         <description>&lt;p&gt;Goggins new alert&lt;/p&gt;</description>
       </item>
       
       <item>
-        <title>apt update (python)</title>
-        <link>https://meorion.github.io/blog/20220715/</link>
+        <title>mint update (python)</title>
+        <link>http://localhost:1313/blog/20220715/</link>
         <pubDate>Fri, 15 Jul 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220715/</guid>
+        <guid>http://localhost:1313/blog/20220715/</guid>
         <description>&lt;ul&gt;
 &lt;li&gt;python2.7 (security update) injection attack&lt;/li&gt;
 &lt;li&gt;python3.8 (security update) injection attack&lt;/li&gt;
@@ -1173,11 +1188,11 @@ Sera was born in the wreckage of the sleeper star ship, Meridian. The ship colli
       </item>
       
       <item>
-        <title>apt update (thunderbird, git)</title>
-        <link>https://meorion.github.io/blog/20220714/</link>
+        <title>mint update (thunderbird, git)</title>
+        <link>http://localhost:1313/blog/20220714/</link>
         <pubDate>Thu, 14 Jul 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220714/</guid>
+        <guid>http://localhost:1313/blog/20220714/</guid>
         <description>&lt;ul&gt;
 &lt;li&gt;git (security update) Potential arbitrary code execution&lt;/li&gt;
 &lt;li&gt;thunderbird (new release) 1:91.9.1 to 1:91.11.0&lt;/li&gt;
@@ -1185,11 +1200,11 @@ Sera was born in the wreckage of the sleeper star ship, Meridian. The ship colli
       </item>
       
       <item>
-        <title>apt update (xserver)</title>
-        <link>https://meorion.github.io/blog/20220713/</link>
+        <title>mint update (xserver)</title>
+        <link>http://localhost:1313/blog/20220713/</link>
         <pubDate>Wed, 13 Jul 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220713/</guid>
+        <guid>http://localhost:1313/blog/20220713/</guid>
         <description>&lt;ul&gt;
 &lt;li&gt;xserver (security update)&lt;/li&gt;
 &lt;li&gt;focal, kernel (update) 5.4.0.121.122 to 5.4.0.122.123&lt;/li&gt;
@@ -1198,48 +1213,48 @@ Sera was born in the wreckage of the sleeper star ship, Meridian. The ship colli
       </item>
       
       <item>
-        <title>apt update (nodejs, nss)</title>
-        <link>https://meorion.github.io/blog/20220707/</link>
+        <title>mint update (nodejs, nss)</title>
+        <link>http://localhost:1313/blog/20220707/</link>
         <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220707/</guid>
+        <guid>http://localhost:1313/blog/20220707/</guid>
         <description>&lt;p&gt;nodejs (updated to 16.16.0). code (updated to 1.69) and libnss3 () updated&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>toughtalk</title>
-        <link>https://meorion.github.io/blog/20220626-toughtalk/</link>
+        <link>http://localhost:1313/blog/20220626-toughtalk/</link>
         <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220626-toughtalk/</guid>
+        <guid>http://localhost:1313/blog/20220626-toughtalk/</guid>
         <description>&lt;h2 id=&#34;an-introduction&#34;&gt;An Introduction&lt;/h2&gt;
 &lt;p&gt;There are times when some things need to be said. That is the purpose of toughtalk, hashtag-toughtalk.&lt;/p&gt;</description>
       </item>
       
       <item>
-        <title>apt update (openssl, gnupg)</title>
-        <link>https://meorion.github.io/blog/20220706/</link>
+        <title>mint update (openssl, gnupg)</title>
+        <link>http://localhost:1313/blog/20220706/</link>
         <pubDate>Wed, 06 Jul 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220706/</guid>
+        <guid>http://localhost:1313/blog/20220706/</guid>
         <description>&lt;p&gt;openssl (could leak info over the network) and gnupg (could allow forged signatures) updated&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>2022-07-04</title>
-        <link>https://meorion.github.io/blog/20220704/</link>
+        <link>http://localhost:1313/blog/20220704/</link>
         <pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220704/</guid>
+        <guid>http://localhost:1313/blog/20220704/</guid>
         <description>&lt;p&gt;Happy Birthday!&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Clooney</title>
-        <link>https://meorion.github.io/blog/20220702/</link>
+        <link>http://localhost:1313/blog/20220702/</link>
         <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220702/</guid>
+        <guid>http://localhost:1313/blog/20220702/</guid>
         <description>Cloononian, would sum up my philosophy. I would list him and Faulkner as my biggest influences. A doctor, I saw, said it sounds like encephalitis. My inner personal pint size clooney wanted to argue, so I decided to shut up and let him. melting clocks. talking raisins. a lot of fun.
 Fear? No. That&amp;rsquo;s not how I would describe it. Eroticism?
 You can bet your bottom bacon, we weren&amp;rsquo;t going to find out.</description>
@@ -1247,29 +1262,29 @@ You can bet your bottom bacon, we weren&amp;rsquo;t going to find out.</descript
       
       <item>
         <title>mom&#39;s journal</title>
-        <link>https://meorion.github.io/blog/20220630/</link>
+        <link>http://localhost:1313/blog/20220630/</link>
         <pubDate>Thu, 30 Jun 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220630/</guid>
+        <guid>http://localhost:1313/blog/20220630/</guid>
         <description>&lt;p&gt;Chant and then encant enchant. Spoke and then encant enspoke.&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Stricken City</title>
-        <link>https://meorion.github.io/blog/20220629/</link>
+        <link>http://localhost:1313/blog/20220629/</link>
         <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220629/</guid>
+        <guid>http://localhost:1313/blog/20220629/</guid>
         <description>I wanted to see. I wanted to be there. That far off there. The perptually perfect. Something to behold. Not now. No time. Today was the day the world would end. Their world. He would see it. His world, of course would go on. Some of them would go on, too. but not as they know it. Not as they have known it.
 Dusty. Windy. Desolate. a glint of reflection. something reflecting.</description>
       </item>
       
       <item>
-        <title>apt update - cURL was updated today.</title>
-        <link>https://meorion.github.io/blog/20220627apt/</link>
+        <title>mint update - cURL was updated today.</title>
+        <link>http://localhost:1313/blog/20220627apt/</link>
         <pubDate>Mon, 27 Jun 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220627apt/</guid>
+        <guid>http://localhost:1313/blog/20220627apt/</guid>
         <description>&lt;ul&gt;
 &lt;li&gt;curl&lt;/li&gt;
 &lt;li&gt;libcurl3-gnutls [amd64]&lt;/li&gt;
@@ -1281,75 +1296,75 @@ Dusty. Windy. Desolate. a glint of reflection. something reflecting.</descriptio
       </item>
       
       <item>
-        <title>apt update - libmbmim was patched today</title>
-        <link>https://meorion.github.io/blog/20220623_glib4/</link>
+        <title>mint update - libmbmim was patched today</title>
+        <link>http://localhost:1313/blog/20220623_glib4/</link>
         <pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220623_glib4/</guid>
+        <guid>http://localhost:1313/blog/20220623_glib4/</guid>
         <description>&lt;p&gt;modemmanager, libmbim, libqmi&lt;br /&gt;
 linux focal updates&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>Related content</title>
-        <link>https://meorion.github.io/docs/relatedcontent/</link>
+        <link>http://localhost:1313/docs/relatedcontent/</link>
         <pubDate>Tue, 28 Jan 2020 00:39:09 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/relatedcontent/</guid>
+        <guid>http://localhost:1313/docs/relatedcontent/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>Page Resources</title>
-        <link>https://meorion.github.io/docs/pageresources/</link>
+        <link>http://localhost:1313/docs/pageresources/</link>
         <pubDate>Tue, 28 Jan 2020 00:39:06 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/pageresources/</guid>
+        <guid>http://localhost:1313/docs/pageresources/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>Page Bundles</title>
-        <link>https://meorion.github.io/docs/pagebundles/</link>
+        <link>http://localhost:1313/docs/pagebundles/</link>
         <pubDate>Tue, 28 Jan 2020 00:38:59 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/pagebundles/</guid>
+        <guid>http://localhost:1313/docs/pagebundles/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>Image Processing</title>
-        <link>https://meorion.github.io/docs/imageprocessing/</link>
+        <link>http://localhost:1313/docs/imageprocessing/</link>
         <pubDate>Tue, 28 Jan 2020 00:38:48 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/imageprocessing/</guid>
+        <guid>http://localhost:1313/docs/imageprocessing/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>Shortcodes</title>
-        <link>https://meorion.github.io/docs/contentmanagement/shortcodes/</link>
+        <link>http://localhost:1313/docs/contentmanagement/shortcodes/</link>
         <pubDate>Tue, 28 Jan 2020 00:36:19 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/contentmanagement/shortcodes/</guid>
+        <guid>http://localhost:1313/docs/contentmanagement/shortcodes/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>Frontmatter</title>
-        <link>https://meorion.github.io/docs/contentmanagement/frontmatter/</link>
+        <link>http://localhost:1313/docs/contentmanagement/frontmatter/</link>
         <pubDate>Tue, 28 Jan 2020 00:36:14 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/contentmanagement/frontmatter/</guid>
+        <guid>http://localhost:1313/docs/contentmanagement/frontmatter/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>Section</title>
-        <link>https://meorion.github.io/docs/contentmanagement/sections/</link>
+        <link>http://localhost:1313/docs/contentmanagement/sections/</link>
         <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/docs/contentmanagement/sections/</guid>
+        <guid>http://localhost:1313/docs/contentmanagement/sections/</guid>
         <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
       </item>
       

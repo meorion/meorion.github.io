@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>wwcd on meorion</title>
-    <link>https://meorion.github.io/tags/wwcd/</link>
-    <description>Recent content in wwcd on meorion</description>
+    <title>Wwcd on meorion</title>
+    <link>http://localhost:1313/tags/wwcd/</link>
+    <description>Recent content in Wwcd on meorion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Orion Illovsky&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Sat, 02 Jul 2022 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://meorion.github.io/tags/wwcd/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/tags/wwcd/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Clooney</title>
-        <link>https://meorion.github.io/blog/20220702/</link>
+        <link>http://localhost:1313/blog/20220702/</link>
         <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://meorion.github.io/blog/20220702/</guid>
+        <guid>http://localhost:1313/blog/20220702/</guid>
         <description>Cloononian, would sum up my philosophy. I would list him and Faulkner as my biggest influences. A doctor, I saw, said it sounds like encephalitis. My inner personal pint size clooney wanted to argue, so I decided to shut up and let him. melting clocks. talking raisins. a lot of fun.
 Fear? No. That&amp;rsquo;s not how I would describe it. Eroticism?
 You can bet your bottom bacon, we weren&amp;rsquo;t going to find out.</description>

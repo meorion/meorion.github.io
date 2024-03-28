@@ -2,51 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Getting Started on meorion</title>
-    <link>https://meorion.github.io/docs/gettingstarted/</link>
+    <link>http://localhost:1313/docs/gettingstarted/</link>
     <description>Recent content in Getting Started on meorion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Orion Illovsky&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Tue, 28 Jan 2020 00:34:39 +0900</lastBuildDate>
     
-        <atom:link href="https://meorion.github.io/docs/gettingstarted/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/docs/gettingstarted/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Basic Usage</title>
-        <link>https://meorion.github.io/docs/gettingstarted/basicusage/</link>
+        <link>http://localhost:1313/docs/gettingstarted/basicusage/</link>
         <pubDate>Tue, 28 Jan 2020 00:34:51 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/gettingstarted/basicusage/</guid>
+        <guid>http://localhost:1313/docs/gettingstarted/basicusage/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>Configuration</title>
-        <link>https://meorion.github.io/docs/gettingstarted/configuration/</link>
+        <link>http://localhost:1313/docs/gettingstarted/configuration/</link>
         <pubDate>Tue, 28 Jan 2020 00:34:56 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/gettingstarted/configuration/</guid>
+        <guid>http://localhost:1313/docs/gettingstarted/configuration/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>Installation</title>
-        <link>https://meorion.github.io/docs/gettingstarted/installation/</link>
+        <link>http://localhost:1313/docs/gettingstarted/installation/</link>
         <pubDate>Tue, 28 Jan 2020 00:34:13 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/gettingstarted/installation/</guid>
+        <guid>http://localhost:1313/docs/gettingstarted/installation/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>Quick Start</title>
-        <link>https://meorion.github.io/docs/gettingstarted/quickstart/</link>
+        <link>http://localhost:1313/docs/gettingstarted/quickstart/</link>
         <pubDate>Tue, 28 Jan 2020 00:34:41 +0900</pubDate>
         
-        <guid>https://meorion.github.io/docs/gettingstarted/quickstart/</guid>
+        <guid>http://localhost:1313/docs/gettingstarted/quickstart/</guid>
         <description>Markdown here</description>
       </item>
       

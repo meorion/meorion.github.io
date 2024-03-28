@@ -2,105 +2,105 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mental Health Professionals, Minorities, and the Poor on meorion</title>
-    <link>https://meorion.github.io/health/</link>
+    <link>http://localhost:1313/health/</link>
     <description>Recent content in Mental Health Professionals, Minorities, and the Poor on meorion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Orion Illovsky&amp;copy;{year}, All Rights Reserved</copyright>
     <lastBuildDate>Tue, 28 Jan 2020 00:08:29 +0900</lastBuildDate>
     
-        <atom:link href="https://meorion.github.io/health/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/health/index.xml" rel="self" type="application/rss+xml" />
     
     
     
       
       <item>
         <title>Chapter 1: Introduction</title>
-        <link>https://meorion.github.io/health/chapter-1-introduction/</link>
+        <link>http://localhost:1313/health/chapter-1-introduction/</link>
         <pubDate>Sat, 28 May 2022 00:34:39 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-1-introduction/</guid>
+        <guid>http://localhost:1313/health/chapter-1-introduction/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Chapter 2: Factors to Consider When Providing Services to Cross-Cultural Persons</title>
-        <link>https://meorion.github.io/health/chapter-2-considerations/</link>
+        <link>http://localhost:1313/health/chapter-2-considerations/</link>
         <pubDate>Sat, 28 May 2022 00:34:39 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-2-considerations/</guid>
+        <guid>http://localhost:1313/health/chapter-2-considerations/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Chapter 3: Minority Mental Health Research</title>
-        <link>https://meorion.github.io/health/chapter-3-research/</link>
+        <link>http://localhost:1313/health/chapter-3-research/</link>
         <pubDate>Sat, 28 May 2022 00:34:39 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-3-research/</guid>
+        <guid>http://localhost:1313/health/chapter-3-research/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Chapter 4: Using Technology</title>
-        <link>https://meorion.github.io/health/chapter-4-technology/</link>
+        <link>http://localhost:1313/health/chapter-4-technology/</link>
         <pubDate>Sat, 28 May 2022 00:34:39 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-4-technology/</guid>
+        <guid>http://localhost:1313/health/chapter-4-technology/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Chapter 5: Evolutionary Psychology - With Cross-Cultural Applications</title>
-        <link>https://meorion.github.io/health/chapter-5-evolutionary/</link>
+        <link>http://localhost:1313/health/chapter-5-evolutionary/</link>
         <pubDate>Sat, 28 May 2022 00:34:39 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-5-evolutionary/</guid>
+        <guid>http://localhost:1313/health/chapter-5-evolutionary/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Chapter 6: Special Populations: Sexual Orientation, Disabilities, Children, Women, and Older Persons</title>
-        <link>https://meorion.github.io/health/chapter-6-special/</link>
+        <link>http://localhost:1313/health/chapter-6-special/</link>
         <pubDate>Sat, 28 May 2022 00:34:39 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-6-special/</guid>
+        <guid>http://localhost:1313/health/chapter-6-special/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Chapter 7: World Mental Health - It Isn&#39;t the Fault of the Minorities and the Poor</title>
-        <link>https://meorion.github.io/health/chapter-7-world/</link>
+        <link>http://localhost:1313/health/chapter-7-world/</link>
         <pubDate>Sat, 28 May 2022 00:34:39 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-7-world/</guid>
+        <guid>http://localhost:1313/health/chapter-7-world/</guid>
         <description></description>
       </item>
       
       <item>
         <title>Chapter 8: Concluding Remarks</title>
-        <link>https://meorion.github.io/health/chapter-8-conclusion/</link>
+        <link>http://localhost:1313/health/chapter-8-conclusion/</link>
         <pubDate>Sat, 28 May 2022 00:34:39 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/chapter-8-conclusion/</guid>
+        <guid>http://localhost:1313/health/chapter-8-conclusion/</guid>
         <description></description>
       </item>
       
       <item>
         <title>references</title>
-        <link>https://meorion.github.io/health/references/</link>
+        <link>http://localhost:1313/health/references/</link>
         <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/references/</guid>
+        <guid>http://localhost:1313/health/references/</guid>
         <description>Markdown here</description>
       </item>
       
       <item>
         <title>index</title>
-        <link>https://meorion.github.io/health/document-index/</link>
+        <link>http://localhost:1313/health/document-index/</link>
         <pubDate>Tue, 28 Jan 2020 00:10:51 +0900</pubDate>
         
-        <guid>https://meorion.github.io/health/document-index/</guid>
+        <guid>http://localhost:1313/health/document-index/</guid>
         <description>Markdown here</description>
       </item>
       
