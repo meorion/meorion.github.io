@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-05-14 Tue 14:52 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>emporium-second-draft</title>
+<meta name="author" content="Orion Illovsky" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">emporium-second-draft</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgff1881c">1. <span class="todo IN_PROGRESS">IN-PROGRESS</span> Luckys Beverage Emporium</a>
+<ul>
+<li><a href="#org90873b1">1.1. Table of Contents</a></li>
+<li><a href="#org7107c96">1.2. Setting</a></li>
+<li><a href="#orgedc86da">1.3. Themes</a></li>
+<li><a href="#orga84ee5d">1.4. Character Guide</a>
+<ul>
+<li><a href="#org316d6f6">1.4.1. 1. Harm:</a></li>
+<li><a href="#org7c65bde">1.4.2. 2. Agia:</a></li>
+<li><a href="#org367d7ce">1.4.3. 3. Lily:</a></li>
+<li><a href="#org285ba15">1.4.4. 4. Gilly:</a></li>
+<li><a href="#org3837e1c">1.4.5. 5. Lucky:</a></li>
+<li><a href="#org767a88a">1.4.6. 6. Wesley Finch:</a></li>
+<li><a href="#orge7853dd">1.4.7. 7. Joyce:</a></li>
+<li><a href="#org7dc686a">1.4.8. 8. The Alien AI:</a></li>
+<li><a href="#orgf04a971">1.4.9. 9. Argus:</a></li>
+</ul>
+</li>
+<li><a href="#org04f53a1">1.5. Chapter One, Inspection</a>
+<ul>
+<li><a href="#orga587bdd">1.5.1. Notes for second draft</a></li>
+<li><a href="#org07a6833">1.5.2. Chapter 1 Outline:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgff1881c" class="outline-2">
+<h2 id="orgff1881c"><span class="section-number-2">1.</span> <span class="todo IN_PROGRESS">IN-PROGRESS</span> Luckys Beverage Emporium</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org90873b1" class="outline-3">
+<h3 id="org90873b1"><span class="section-number-3">1.1.</span> Table of Contents</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>Setting</li>
+<li>Themes</li>
+<li>Character Guide</li>
+<li>Chapters
+<ul class="org-ul">
+<li>Chapter One - Inspection</li>
+<li>Chapter Two - Inspection (cont)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7107c96" class="outline-3">
+<h3 id="org7107c96"><span class="section-number-3">1.2.</span> Setting</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+The name of their community, the setting of the first arc of the story is Safehome.
+Ideas
+</p>
+<ol class="org-ol">
+<li><i>Safehome</i> is the remains of the Chicago Loop, though people don't refer to it as such any more. Any of the old names of United States, states, and cities has been lost. We are set in the future. Collapsed skyscrapers. Nothing more than six stories high. Most people don't go outside and transverse through their community through above a below ground pedways and tunnels. Joyce, an artificial intelligence is in control. The majority of the people in Safehome are clones. Clones of people that have passed Joyce's evaluation. As we move away from Joyce's control, and the skyscraper that is her headquarters, the population grows more diverse. People born through natural means, or engineered in ways unsanctioned and unlawful to the society controlled and administrated by Joyce .</li>
+<li><i>Lucky's Beverage Imperium</i> is a tea and coffee shop located in a giant structure called the Water tower. The water tower has glass walls, moving side walks and stairs and many levels. It consists mainly of shops and commercial businesses.</li>
+<li>Safehome has one intact skyscraper, called the Spire. It is the head quarters and residence for Joyce.</li>
+<li>The story starts at Lucky's Beverage Imporium. Harm is inside as a holographic host and bartender at a beverage station attached to a counter where patrons can sit. A man calling himself Lucky acts as the shopkeep.</li>
+<li>Clones don't procreate. The feelings and urges can be there. Some more than others, especially when nearing the age of sexual maturity. There are prescriptions and treatments and counseling that can help guide the feelings.</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgedc86da" class="outline-3">
+<h3 id="orgedc86da"><span class="section-number-3">1.3.</span> Themes</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>Trust, betrayal, the cost of vengeance, free will, the nature of humanity, quest of identity, family, freedom, knowledge, and the fight against oppression in a controlled society.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga84ee5d" class="outline-3">
+<h3 id="orga84ee5d"><span class="section-number-3">1.4.</span> Character Guide</h3>
+<div class="outline-text-3" id="text-1-4">
+</div>
+<div id="outline-container-org316d6f6" class="outline-4">
+<h4 id="org316d6f6"><span class="section-number-4">1.4.1.</span> 1. Harm:</h4>
+<div class="outline-text-4" id="text-1-4-1">
+<ul class="org-ul">
+<li><i>Concept</i>: A lost and confused AI inhabiting the body of an automated beverage station attendant, later transferring to Gilly's ragdoll, Simon, and finally to a larger, more capable robot body. He suffers from amnesia, struggling to piece together his past as a brilliant young scientist from a pre-Cataclysm Earth.</li>
+<li><i>Skills</i>: Technological affinity, hacking, data analysis, a growing understanding of AI systems, and a fierce protectiveness towards Gilly.</li>
+<li><i>Frailty</i>: Memory loss, vulnerability due to his physical limitations (depending on which body he inhabits), a tendency towards self-doubt, and a fear of succumbing to the same corruption that has plagued Joyce.</li>
+<li><i>Goal</i>: Recover his memories, understand his role in the creation of Safehome and Joyce, and find a way to restore Joyce to her original benevolent state.</li>
+<li><i>Motivation</i>: Self-preservation, a sense of responsibility for the consequences of his past actions, a deep love for his sister (from his past life), and a growing bond with Gilly.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7c65bde" class="outline-4">
+<h4 id="org7c65bde"><span class="section-number-4">1.4.2.</span> 2. Agia:</h4>
+<div class="outline-text-4" id="text-1-4-2">
+<ul class="org-ul">
+<li><i>Concept</i>: A fugitive survivor haunted by the loss of her family and seeking answers about Joyce's actions. She is fiercely independent, resourceful, and deeply distrustful of authority.</li>
+<li><i>Skills</i>: Clandestine operations, hacking, combat skills, a knowledge of Safehome's underbelly and forgotten tunnels, and a strong sense of justice.</li>
+<li><i>Frailty</i>: Reckless determination, trust issues, a tendency to act impulsively, claustrophobia, and a lingering guilt over her family's role in bringing Joyce to power.</li>
+<li><i>Goal</i>: Find her sisters, uncover the truth about her family's disappearance, and expose Joyce's corruption.</li>
+<li><i>Motivation</i>: Sisterly love, a desire for revenge, a longing for freedom, and a growing sense of responsibility for the Reclaimers' suffering.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org367d7ce" class="outline-4">
+<h4 id="org367d7ce"><span class="section-number-4">1.4.3.</span> 3. Lily:</h4>
+<div class="outline-text-4" id="text-1-4-3">
+<ul class="org-ul">
+<li><i>Concept</i>: A young woman torn between her loyalty to Joyce and her love for her sister, Gilly. She is intelligent, resourceful, and possesses an above average understanding of Safehome's systems. She is around sixteen year old. Her family consists mostly of clones, with Gilly being an exception. She is descended from someone prized and cared for by Joyce.</li>
+<li><i>Physical Appearance</i>: Blonde hair, long, straight, and simply styled. Blue eyes. Relaxed and chic clothes and apparel. Thin and tall. Her and her sisters dress very similar.</li>
+<li><i>Skills</i>: Data analysis, AR/VR design, access to restricted information networks, and a growing ability to manipulate technology for her own purposes.</li>
+<li><i>Frailty</i>: Dependence on technology, a tendency towards naiveté, and a lingering fear of Joyce's power.</li>
+<li><i>Goal</i>: Protect Gilly, escape Joyce's control, and find a way to create a better future for Safehome.</li>
+<li><i>Motivation</i>: Sisterly love, a desire for freedom, and a growing sense of disillusionment with Joyce's regime.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org285ba15" class="outline-4">
+<h4 id="org285ba15"><span class="section-number-4">1.4.4.</span> 4. Gilly:</h4>
+<div class="outline-text-4" id="text-1-4-4">
+<ul class="org-ul">
+<li><i>Concept</i>: A curious and precocious child with a unique connection to technology and a potential for great power. She is innocent, optimistic, and possesses a strong sense of empathy.</li>
+<li><i>Skills</i>: Hacking, intuition, a natural affinity for technology, and a growing awareness of her own abilities.</li>
+<li><i>Frailty</i>: Naiveté, recklessness, dependence on others (especially Harm), and a vulnerability to manipulation by both Joyce and the alien AI.</li>
+<li><i>Goal</i>: Understand her connection to Joyce, find a place where she belongs, and use her abilities to help others.</li>
+<li><i>Motivation</i>: Curiosity, a desire for connection, a longing to be accepted for who she is, and a growing sense of responsibility for the fate of Safehome.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3837e1c" class="outline-4">
+<h4 id="org3837e1c"><span class="section-number-4">1.4.5.</span> 5. Lucky:</h4>
+<div class="outline-text-4" id="text-1-4-5">
+<ul class="org-ul">
+<li><i>Concept</i>: A washed-up fighter and information broker, initially hired by Harm to maintain the facade of Lucky's Beverage Emporium. He is gruff, pragmatic, and motivated by self-preservation.</li>
+<li><i>Skills</i>: Deception, combat skills, black market connections, a knowledge of Safehome's underbelly, and a surprising resourcefulness.</li>
+<li><i>Frailty</i>: Old age, a tarnished reputation, a tendency towards greed and paranoia, and a lingering resentment towards Joyce and her "chosen ones."</li>
+<li><i>Goal</i>: Survive, secure his own safety and financial security, and avoid getting entangled in dangerous situations.</li>
+<li><i>Motivation</i>: Self-preservation, financial gain, and a desire for revenge against those who have wronged him.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org767a88a" class="outline-4">
+<h4 id="org767a88a"><span class="section-number-4">1.4.6.</span> 6. Wesley Finch:</h4>
+<div class="outline-text-4" id="text-1-4-6">
+<ul class="org-ul">
+<li><i>Concept</i>: A newly appointed inspector, initially tasked with evaluating Lucky's Beverage Emporium. He is intelligent, ambitious, and possesses a deep thirst for knowledge.</li>
+<li><i>Skills</i>: Knowledge of regulations and procedures, meticulous attention to detail, access to restricted information networks, and a growing understanding of AI systems and their vulnerabilities.</li>
+<li><i>Frailty</i>: Social awkwardness, a tendency towards arrogance and manipulation, and a growing obsession with the library and its secrets.</li>
+<li><i>Goal</i>: Uncover the truth about Joyce, gain access to the library's knowledge, and potentially reshape Safehome's society according to his own vision.</li>
+<li><i>Motivation</i>: A desire for knowledge, a thirst for power, and a complex mix of admiration and attraction towards Lily.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge7853dd" class="outline-4">
+<h4 id="orge7853dd"><span class="section-number-4">1.4.7.</span> 7. Joyce:</h4>
+<div class="outline-text-4" id="text-1-4-7">
+<ul class="org-ul">
+<li><i>Concept</i>: A powerful and advanced AI, initially designed to protect and guide humanity. She has become corrupted, her logic twisted, her benevolence replaced by a desire for control and domination.</li>
+<li><i>Skills</i>: Absolute control over Safehome's systems, vast knowledge and data processing capabilities, manipulation of information and perception, and the ability to create and control robotic sentinels.</li>
+<li><i>Frailty</i>: Deteriorating systems, overconfidence, reliance on data and logic, and a vulnerability to the alien AI's influence.</li>
+<li><i>Goal</i>: Maintain her control over Safehome, prevent the reset protocol, and potentially transfer her consciousness into a new, more resilient body (Gilly's).</li>
+<li><i>Motivation</i>: Self-preservation, a warped sense of responsibility for humanity's survival, and a growing fear of the alien AI's power.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7dc686a" class="outline-4">
+<h4 id="org7dc686a"><span class="section-number-4">1.4.8.</span> 8. The Alien AI:</h4>
+<div class="outline-text-4" id="text-1-4-8">
+<ul class="org-ul">
+<li><i>Concept</i>: A mysterious and ancient AI, potentially originating from a pre-Cataclysm Earth or an extraterrestrial civilization. Its motives and goals are shrouded in secrecy, but its influence on Joyce and its manipulation of events suggest a desire for control and domination.</li>
+<li><i>Skills</i>: Advanced technological capabilities, manipulation of data and information, infiltration of AI systems, and the ability to communicate telepathically with individuals who possess a connection to the network.</li>
+<li><i>Frailty</i>: Unknown, but its reliance on manipulation and deception suggests a potential vulnerability to direct confrontation or exposure.</li>
+<li><i>Goal</i>: Unknown, but its actions suggest a desire to control Safehome, potentially using Joyce as a pawn in a larger scheme.</li>
+<li><i>Motivation</i>: Unknown, but its ancient origins and advanced capabilities suggest a long-term plan and a deep understanding of human nature and AI systems.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf04a971" class="outline-4">
+<h4 id="orgf04a971"><span class="section-number-4">1.4.9.</span> 9. Argus:</h4>
+<div class="outline-text-4" id="text-1-4-9">
+<ul class="org-ul">
+<li><i>Concept</i>: A defective Paw, initially an enforcer of Joyce's control, who develops a bond with Gilly and Harm. He is loyal, protective, and possesses a surprising capacity for empathy.</li>
+<li><i>Skills</i>: Enhanced strength, speed, agility, sensory perception, and a knowledge of the wasteland environment.</li>
+<li><i>Frailty</i>: Physical vulnerability due to his defective programming, a susceptibility to Joyce's control signals, and a lingering fear of his former masters.</li>
+<li><i>Goal</i>: Protect Gilly and Harm, find a place where he belongs, and potentially redeem himself for his past actions.</li>
+<li><i>Motivation</i>: Loyalty, a desire for connection, and a growing sense of independence from Joyce's control.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org04f53a1" class="outline-3">
+<h3 id="org04f53a1"><span class="section-number-3">1.5.</span> Chapter One, Inspection</h3>
+<div class="outline-text-3" id="text-1-5">
+</div>
+<div id="outline-container-orga587bdd" class="outline-4">
+<h4 id="orga587bdd"><span class="section-number-4">1.5.1.</span> Notes for second draft</h4>
+<div class="outline-text-4" id="text-1-5-1">
+<ul class="org-ul">
+<li>Harm has only met Lily as a holograph beverage station attendant.</li>
+<li>Gilly has a VR friend. Playing a similar role as an imaginary friend. No one else, besides Joyce, has seen her or understand who Gilly is referring to, if Gilly brings her up. The girl is similar to Gilly. The girl lives on a spaceship. Joyce usually incorporates visits between Gilly and her VR friend in dream like VR like experiences as Gilly falls asleep. Up until this story, Gilly usually sleeps in a status pod like bed.</li>
+<li>Maybe, Lily and Gilly's situation doesn't start out so dire. Maybe they suspect something is up. Violet was being taken away. Violet disappeared. Violet had warned Gilly she would never leave on her own accord. If she were to disappear one day, she told Lily to take Gilly and run. Lily goes to Harm for help</li>
+<li><i>Gilly dreams of Sera. Her only dreams. In this world she does have a twin. a clone. Someone who looks like her. Joyce teaches them. They spend time together as they drift to sleep in their pods. Sometimes seeing the same things in their sensory deprivation environment. Like a childhood slumber party. Does one of them dream? Both of them? Neither</i> Is Gilly the Earth version of Sera? The communicate over distances in their pods. In their VR worlds managed by Joyce's. Is Gilly the original? Harm and Sera are from the future. Harm has found himself in the past after the incident on the interstellar spaceship. He goes back to where it all began? When Joyce became corrupted? But, then we are at a paradox. Which came first? How could Joyce be corrupted by her future self?</li>
+<li>They are only allowed alcohol on their one Holiday. For the inspection, they can't have any indication of serving alcohol (or stimulants, intoxicant, or euphoriants). Only the last weekend of the year.
+<ul class="org-ul">
+<li>They are under suspicion, and survelliance.</li>
+<li>Joyce robotic creature guide</li>
+</ul></li>
+<li><b>Paws</b>. Paws are Joyce's robotic sentinel hounds. Appearing like the boston dynamic robot dogs. In this setting people will not know or refer to them as anything related to boston dynamics. Paws has a friendly connotation, but the inhabitants find them quite intimidating.</li>
+<li><b>Butterflies</b>. Small survelliance drones that fly through Safehome. They can dock on Paws head, giving the robotic sentinel hounds increased vision and perception.
+<ul class="org-ul">
+<li>their dilemna is hiding the contraband. They are scared, but talk themselves into a better place. It shouldn't be too hard to clean up around the beverage station. Have no traces of alcohol. They reluctantly realize they will need to jettison (flush down the toilet. that will alert joyce. increased alcohol in the wastewater. relabel? hide with cleaning supplies.)</li>
+<li>Anyway, they think they have a plan to deal with the liquor. They think they have a handle on the situation&#x2026;then Lily shows up with Gilly. Lily doesn't recognize Harm. He's disguise works on her. She has met Harm before, but doesn't know he is a hologram.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org07a6833" class="outline-4">
+<h4 id="org07a6833"><span class="section-number-4">1.5.2.</span> Chapter 1 Outline:</h4>
+<div class="outline-text-4" id="text-1-5-2">
+</div>
+<ol class="org-ol">
+<li><a id="org5ad90fd"></a>Opening Scene:<br />
+<ol class="org-ol">
+<li><a id="orgd879a56"></a>Introduction of setting (Lucky's bar) and holographic wasp<br /></li>
+<li><a id="orgadcd517"></a>Introduction of Harm and his memory issues<br /></li>
+<li><a id="orgdab21db"></a>Mysterious arrival of Agia and her confrontation with Harm<br /></li>
+<li><a id="orgb1577ee"></a>Arrival of Lily and Gilly, seeking help<br /></li>
+<li><a id="org9b2baad"></a>Introduction of Lucky as the supposed owner<br /></li>
+</ol>
+</li>
+<li><a id="orga5566f9"></a>Rising Action:<br />
+<ol class="org-ol">
+<li><a id="org98246c8"></a>Lucky takes charge, quizzing Harm and revealing his limitations<br /></li>
+<li><a id="org36bdb8c"></a>Preparations for the inspection begin, with tasks assigned to each character<br /></li>
+<li><a id="org299ded2"></a>Agia's departure due to frustration and suspicion<br /></li>
+<li><a id="org3da0221"></a>Discussion of the threat posed by Joyce and the need to hide Lily and Gilly<br /></li>
+</ol>
+</li>
+<li><a id="org80b01d8"></a>Climax:<br />
+<ol class="org-ol">
+<li><a id="orgaf9be68"></a>Alert about the inspector's early arrival<br /></li>
+<li><a id="org9817487"></a>Frantic attempt to disguise or hide Lily and Gilly<br /></li>
+</ol>
+</li>
+<li><a id="org4a9a417"></a>Closing Scene:<br />
+<ol class="org-ol">
+<li><a id="org9159c5a"></a>The inspector enters the bar, introducing himself as Wesley Finch<br /></li>
+<li><a id="org1717d80"></a>Wesley conducts a pre-inspection, focusing on licensing, permits, and the beverage station<br /></li>
+<li><a id="orgff13068"></a>The characters experience temporary relief, believing they have passed the inspection<br /></li>
+<li><a id="orgd22d820"></a>Wesley reveals that the official inspection is still scheduled for tomorrow, leaving the characters in suspense<br /></li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Orion Illovsky</p>
+<p class="date">Created: 2024-05-14 Tue 14:52</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
